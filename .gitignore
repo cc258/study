@@ -1,0 +1,9 @@
+.settings/
+Thumbs.db
+logs/
+lib/
+target/
+database/
+eclipse/
+tmp/
+node_modules
