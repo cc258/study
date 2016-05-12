@@ -1,0 +1,13 @@
+{
+  "name": "koabook",
+  "version": "1.0.0",
+  "private": true,
+  "author": "cc",
+  "dependencies": {},
+  "devDependencies": {
+    "co": "^4.6.0",
+    "koa": "^1.2.0",
+    "koa-router": "^5.4.0"
+  },
+  "engines": {}
+}
