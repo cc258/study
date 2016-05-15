@@ -1,20 +1,4 @@
 var koa = require('koa'),
-<<<<<<< HEAD
-	app = koa(),
-	router = require('koa-router'),
-	api = router();
-
-app.use(api.routes());
-
-api.get('/',function*(){
-	this.body = 'hello koa';
-});
-
-api.get('/details/:id',function*(next){
-	this.body = this.params.id;
-});
-
-=======
 	router = require('koa-router'),
 	co = require('co'),
 	fs = require('fs'),
@@ -67,8 +51,4 @@ api.get('/index',function *(next){
 	yield this.render('index',{'title':'我爱你，你爱我'});
 })
 
-
-
-
->>>>>>> e4ba0417401facb24706df629d736e395ebb9a7f
 app.listen(3000);

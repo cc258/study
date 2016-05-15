@@ -1,18 +1,9 @@
 {
-<<<<<<< HEAD
   "name": "koabook",
   "version": "1.0.0",
   "private": true,
   "author": "cc",
   "dependencies": {},
-  "devDependencies": {
-    "co": "^4.6.0",
-    "koa": "^1.2.0",
-    "koa-router": "^5.4.0"
-  },
-  "engines": {}
-}
-=======
   "devDependencies": {
     "co": "^4.6.0",
     "fs": "^0.0.2",
@@ -22,4 +13,3 @@
     "xtpl": "^3.2.0"
   }
 }
->>>>>>> e4ba0417401facb24706df629d736e395ebb9a7f
