@@ -4,6 +4,17 @@
 	<title>{{title}}</title>
 </head>
 <body>
-{{title}},小倩倩
+
+	{{!我是神奇的注释}}
+	{{title}},{{nick+',小月月'}}
+
+
+	<!--
+	<ul>
+	    {{#each(list)}}
+	        <li><a href="{{link}}">{{name}}</a></li>
+	    {{/each}}
+	</ul>
+	-->
 </body>
 </html>

@@ -42,13 +42,15 @@ xtpl(app,{
 
 console.log(xtpl);
 
-
-// app.use(function*(){
-//     yield this.render('index',{title:'1'});
-// });
-
 api.get('/index',function *(next){
-	yield this.render('index',{'title':'我爱你，你爱我'});
+	yield this.html('index',{'title':'我爱你，你爱我'});
 })
+
+app.context.html = function *(viewName,data){
+	if(data){
+		// data.nick = '小倩倩';
+	}
+	yield this.render(viewName,data);
+}
 
 app.listen(3000);
