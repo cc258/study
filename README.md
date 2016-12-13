@@ -1,5 +1,3 @@
-# study
+# Great plan of 2017
 
-2016 front end study
 
-Day Day Up
