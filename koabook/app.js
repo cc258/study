@@ -1,5 +1,9 @@
 var koa = require('koa'),
 	router = require('koa-router'),
+
+	mongoose = require('mongoose'),
+	db = require('./db/db'),
+	User = require('./db/User'),
 	co = require('co'),
 	fs = require('fs'),
 
@@ -10,12 +14,24 @@ api = router();
 
 app.use(api.routes());
 
-api.get('/',function(res){
-	this.body = '123';
+api.get('/',function*(next){
+	// add
+
+	var u = new User({
+		'uid':12,
+		'username':'cc12',
+		'creatTime':Date.now(),
+		'lastLogin':Date.now()
+	})
+
+	// console.log(User.find(u).pretty());
+	console.log(this.body);
+	this.body = yield User.find();
+	console.log(this.body);
 });
 
-api.get('/details/:id',function *(next){
-
+api.get('/details/:id', function* (next){
+	console.log(this.params.id);
 	this.body = this.params.id;
 });
 
@@ -23,17 +39,17 @@ api.get('/details/:id',function *(next){
 function read(file){
 	return function(fn){
 		fs.readFile(file,'utf-8',fn);
-	}
+	};
 }
 
-co(function *(){
-	var c = 2;
-	console.log(c);
-	var a = yield read('package.json');
-	console.log(a);
-	var b = yield read('readme.md');
-	console.log(b);
-})
+// co(function *(){
+// 	var c = 2;
+// 	console.log(c);
+// 	var a = yield read('package.json');
+// 	console.log(a);
+// 	var b = yield read('readme.md');
+// 	console.log(b);
+// });
 
 
 xtpl(app,{
@@ -44,12 +60,12 @@ console.log(xtpl);
 
 
 // app.use(function*(){
-//     yield this.render('index',{title:'1'});
+//     yield this.render('/index',{title:'1'});
 // });
 
-api.get('/index',function *(next){
-	yield this.render('index',{'title':'我爱你，你爱我'});
-})
+api.get('/index',function *(){
+	yield this.render('/index',{'title':'我爱你，你爱我'});
+});
 
 
 
