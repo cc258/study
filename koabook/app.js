@@ -58,6 +58,7 @@ xtpl(app,{
 
 console.log(xtpl);
 
+<<<<<<< HEAD
 
 // app.use(function*(){
 //     yield this.render('/index',{title:'1'});
@@ -66,8 +67,17 @@ console.log(xtpl);
 api.get('/index',function *(){
 	yield this.render('/index',{'title':'我爱你，你爱我'});
 });
+=======
+api.get('/index',function *(next){
+	yield this.html('index',{'title':'我爱你，你爱我'});
+})
+>>>>>>> 5a82205cf562513c0cffa6192859075f3f564ced
 
-
-
+app.context.html = function *(viewName,data){
+	if(data){
+		// data.nick = '小倩倩';
+	}
+	yield this.render(viewName,data);
+}
 
 app.listen(3000);

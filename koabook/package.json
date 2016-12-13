@@ -1,4 +1,9 @@
 {
+  "name": "koabook",
+  "version": "1.0.0",
+  "private": true,
+  "author": "cc",
+  "dependencies": {},
   "devDependencies": {
     "co": "^4.6.0",
     "fs": "^0.0.2",
