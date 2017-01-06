@@ -51,6 +51,12 @@
   banana          连猴子都懂的Git
   ```
 
+  － 删除标签
+  
+  ```
+  $ git tag -d <tagname>
+  ```
+
 ## 新建分支
 
   新建一个开发分支 develop
@@ -94,7 +100,7 @@
 
 ## Git规范
 
-  提交 commit 的类型，包括以下几种:
+  **提交 commit 的类型，包括以下几种:**
 
   - feat: 新功能
   - fix: 修复问题
@@ -108,10 +114,34 @@
 
   修改文件的范围（包括但不限于 doc, middleware, proxy, core, config, plugin）
   用一句话清楚的描述这次提交做了什么
-  补充 subject，适当增加原因、目的等相关因素，也可不写。
+  
+  **分支的划分**
+
+  - 主分支(master)
+  - 开发分支(develop)
+  - 特征分支(feature)
+  - 发布分支(release)
+  - 修复分支(hotfix)
+
+  master和develop是长期分支，master分支上是稳定版本的演进，develop保持最新代码；而feature/release/hotfix是研发过程中的短期辅助分支，开发后需要清除；
+
+  **约定版本号**
+
+  简单而言，在这个版本规范中，版本以X.Y.Z的形式存在，其中X表示不向下兼容的框架级改动版本，Y表示向下兼容的功能性新增版本，Z表示向下兼容的内部问题修复版本。
+
+  ```
+  v1.2.4
+  ```
+
 
 # CI
 # UAE
   - http://doc.ucweb.local/pages/viewpage.action?pageId=13435490
+
 # Mongodb
+
 # npm
+
+# UCBrowser
+  识别为UC浏览器，在链接的后面加上参数：
+  pf=178&ut=AAKUj5W%2BQ928%2FdAiH8%2FMuMMJu3TCCW%2FAjvMxSqu4QrdECw%3D%3D
