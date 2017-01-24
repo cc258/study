@@ -133,15 +133,3 @@
   v1.2.4
   ```
 
-
-# CI
-# UAE
-  - http://doc.ucweb.local/pages/viewpage.action?pageId=13435490
-
-# Mongodb
-
-# npm
-
-# UCBrowser
-  识别为UC浏览器，在链接的后面加上参数：
-  pf=178&ut=AAKUj5W%2BQ928%2FdAiH8%2FMuMMJu3TCCW%2FAjvMxSqu4QrdECw%3D%3D
