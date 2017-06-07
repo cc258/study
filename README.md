@@ -5,13 +5,13 @@
 
 **响应：**
 
-|名称|  类型|  默认值|  必须|  说明|
-| :---- | :---- |:-----|:-----|
+|名称 |类型 |默认值 |必须 |说明 |
+| :---- | :---- |:-----|:-----|:-----|
 |articles|  json array  |无  |是|  (相关)热门文章列表|
 |articles[0].id  |string|  无  |是  |文章id|
 |articles[0].cid  |long|  无  |是|  文章所属频道id|
 |articles[0].title  |string|  无  |是  |文章标题|
-|articles[0].xx|    |    其他参数同 GET /channel 的响应里的article参数。|
+|articles[0].xx|    |    其他参数同 GET /channel 的响应里的article参数。|    |    |
 
 
 
