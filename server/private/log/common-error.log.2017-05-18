@@ -1,0 +1,66 @@
+2017-05-18 16:17:28,452 ERROR 6155 [-/-/100.84.197.148/6e9b6d30-3ba2-11e7-82cf-4d95688ad687/2ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 6155
+hostname: Vayron.local
+
+2017-05-18 16:30:14,145 ERROR 15501 [-/-/100.84.248.177/36fec0f0-3ba4-11e7-baa6-937970e2611e/11ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 15501
+hostname: Vayron.local
+
+2017-05-18 21:45:00,044 ERROR 15500 nodejs.ClusterClientNoResponseError: client no response in 1475940ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 15500
+hostname: Vayron.local
+
+2017-05-19 01:20:25,014 ERROR 15500 nodejs.ClusterClientNoResponseError: client no response in 69652ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 15500
+hostname: Vayron.local
+
+2017-05-19 02:30:43,443 ERROR 15500 nodejs.ClusterClientNoResponseError: client no response in 4208406ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 15500
+hostname: Vayron.local
+
+2017-05-19 13:37:12,740 ERROR 15500 nodejs.ClusterClientNoResponseError: client no response in 39988474ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 15500
+hostname: Vayron.local
+

@@ -1,0 +1,12 @@
+2017-05-17 15:37:38,049 INFO 2835 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-05-17 15:37:38,050 INFO 2835 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-05-17 15:37:38,204 INFO 2835 [egg-watcher:agent] watcher start success
+2017-05-17 15:43:41,283 WARN 2835 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.default.js___jb_old___ rename
+2017-05-17 15:43:44,218 WARN 2835 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.default.js___jb_old___ rename
+2017-05-17 15:44:03,422 INFO 3222 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-05-17 15:44:03,423 INFO 3222 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-05-17 15:44:03,574 INFO 3222 [egg-watcher:agent] watcher start success
+2017-05-17 18:46:06,909 WARN 3222 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.default.js___jb_old___ rename
+2017-05-17 18:46:08,083 WARN 3222 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.default.js___jb_old___ rename
+2017-05-18 14:17:29,556 INFO 3222 [egg-schedule] send message: sendRandom egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-05-18 14:17:29,636 INFO 3222 [egg-schedule] send message: sendRandom egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/clean_log.js

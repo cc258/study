@@ -1,0 +1,4 @@
+web: npm start
+npm: false
+engines:
+  node: '6.9.0'

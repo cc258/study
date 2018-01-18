@@ -1,0 +1,9 @@
+2017-05-18 14:17:29,677 INFO 3222 [egg-logrotator] agent logger reload: got log-reload message
+2017-05-18 16:21:02,986 WARN 3222 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/plugin.js rename
+2017-05-18 16:30:07,279 INFO 15500 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-05-18 16:30:07,280 INFO 15500 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-05-18 16:30:07,470 INFO 15500 [egg-watcher:agent] watcher start success
+2017-05-18 17:44:34,379 WARN 15500 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/app/service/paytype.js rename
+2017-05-19 13:51:04,649 WARN 15500 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/app/router.js rename
+2017-05-19 15:41:04,264 INFO 15500 [egg-schedule] send message: sendRandom egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-05-19 15:41:04,298 INFO 15500 [egg-schedule] send message: sendRandom egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/clean_log.js

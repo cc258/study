@@ -1,0 +1,56 @@
+2017-06-06 10:50:54,317 INFO 2744 [egg-logrotator] agent logger reload: got log-reload message
+2017-06-06 13:41:56,899 INFO 1489 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoinadmin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-06-06 13:41:56,901 INFO 1489 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-06-06 13:41:57,133 INFO 1489 [egg-watcher:agent] watcher start success
+2017-06-06 18:08:22,940 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js rename
+2017-06-06 18:08:54,155 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-06 18:09:11,691 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-06 18:13:26,533 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-06 18:18:21,838 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.default.js___jb_old___ rename
+2017-06-06 18:18:35,280 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/app/middleware/isSuper.js___jb_old___ rename
+2017-06-06 18:23:16,287 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/app/middleware/isSuper.js rename
+2017-06-06 18:23:23,623 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.default.js rename
+2017-06-06 18:26:10,410 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js rename
+2017-06-06 18:53:47,551 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-06 18:55:25,271 WARN 1489 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-07 10:09:13,467 INFO 12791 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoinadmin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-06-07 10:09:13,467 INFO 12791 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-06-07 10:09:13,636 INFO 12791 [egg-watcher:agent] watcher start success
+2017-06-07 10:54:01,967 WARN 12791 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.default.js rename
+2017-06-07 10:54:14,445 WARN 12791 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js rename
+2017-06-07 11:11:55,211 WARN 12791 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-07 11:21:06,760 WARN 12791 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.default.js rename
+2017-06-07 11:23:48,551 WARN 12791 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-07 11:56:25,154 INFO 16887 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoinadmin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-06-07 11:56:25,154 INFO 16887 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-06-07 11:56:25,353 INFO 16887 [egg-watcher:agent] watcher start success
+2017-06-07 17:10:53,082 WARN 16887 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.default.js rename
+2017-06-07 17:10:58,364 WARN 16887 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.prod.js rename
+2017-06-07 17:22:42,807 WARN 16887 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.default.js___jb_old___ rename
+2017-06-07 21:48:17,138 WARN 16887 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js rename
+2017-06-08 20:07:29,485 INFO 55969 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoinadmin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-06-08 20:07:29,485 INFO 55969 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-06-08 20:07:29,722 INFO 55969 [egg-watcher:agent] watcher start success
+2017-06-08 20:10:08,763 WARN 55969 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-08 20:11:08,650 WARN 55969 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-08 20:11:30,527 WARN 55969 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js rename
+2017-06-08 21:22:27,283 WARN 55969 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js rename
+2017-06-09 18:12:50,510 INFO 5305 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoinadmin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-06-09 18:12:50,510 INFO 5305 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-06-09 18:12:50,783 INFO 5305 [egg-watcher:agent] watcher start success
+2017-06-09 18:13:35,909 WARN 5305 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-09 21:46:25,719 WARN 5305 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-09 22:19:38,915 WARN 5305 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/app/router.js rename
+2017-06-12 10:32:42,108 INFO 32975 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoinadmin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-06-12 10:32:42,109 INFO 32975 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-06-12 10:32:42,340 INFO 32975 [egg-watcher:agent] watcher start success
+2017-06-12 11:23:16,512 WARN 32975 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js rename
+2017-06-12 13:56:56,273 INFO 36531 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoinadmin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-06-12 13:56:56,273 INFO 36531 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-06-12 13:56:56,457 INFO 36531 [egg-watcher:agent] watcher start success
+2017-06-12 14:16:04,574 WARN 36531 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-12 14:16:06,286 WARN 36531 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js___jb_old___ rename
+2017-06-12 14:30:53,209 WARN 36531 [agent:development] reload worker because /Users/Vayron/site/ucoin/admin/server/config/config.local.js rename
+2017-08-04 17:49:41,321 INFO 31286 [egg:logger] init all loggers with options: {"dir":"/Users/cuichuang/Documents/study/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoinadmin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"agent"}
+2017-08-04 17:49:41,322 INFO 31286 [nut] reading uae config: /Users/cuichuang/Documents/study/server/conf/config.json
+2017-08-04 17:49:41,498 INFO 31286 [egg-watcher:agent] watcher start success
