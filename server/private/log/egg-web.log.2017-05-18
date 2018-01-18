@@ -1,0 +1,57 @@
+2017-05-18 14:17:29,674 INFO 6155 [egg-logrotator] app logger reload: got log-reload message
+2017-05-18 16:30:08,194 INFO 15501 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"application"}
+2017-05-18 16:30:08,195 INFO 15501 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-05-18 16:30:08,622 INFO 15501 [egg-schedule]: register schedule egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-05-18 16:30:08,622 INFO 15501 [egg-schedule]: register schedule egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-05-18 16:30:08,653 INFO 15501 [egg-mysql] connecting uae_dev@10.20.39.32:3306/UCOIN
+2017-05-18 16:30:08,882 INFO 15501 [egg-static] starting static serve /public/ -> /Users/Vayron/site/ucoin/admin/server/app/public
+2017-05-18 16:30:08,885 INFO 15501 [egg-security] use csrf middleware
+2017-05-18 16:30:08,889 INFO 15501 [egg-security] use methodnoallow middleware
+2017-05-18 16:30:08,890 INFO 15501 [egg-security] use noopen middleware
+2017-05-18 16:30:08,891 INFO 15501 [egg-security] use nosniff middleware
+2017-05-18 16:30:08,892 INFO 15501 [egg-security] use xssProtection middleware
+2017-05-18 16:30:08,893 INFO 15501 [egg-security] use xframe middleware
+2017-05-18 16:30:08,893 INFO 15501 [egg-security] compose 6 middlewares into one security middleware
+2017-05-18 16:30:08,952 INFO 15501 [egg-watcher:app] watcher start success
+2017-05-18 16:30:09,057 INFO 15501 [egg-mysql] instance[0] status OK, rds currentTime: 2017-05-18 16:28:44
+2017-05-18 17:44:35,886 INFO 16729 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"application"}
+2017-05-18 17:44:35,886 INFO 16729 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-05-18 17:44:36,394 INFO 16729 [egg-schedule]: register schedule egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-05-18 17:44:36,395 INFO 16729 [egg-schedule]: register schedule egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-05-18 17:44:36,437 INFO 16729 [egg-mysql] connecting uae_dev@10.20.39.32:3306/UCOIN
+2017-05-18 17:44:36,719 INFO 16729 [egg-static] starting static serve /public/ -> /Users/Vayron/site/ucoin/admin/server/app/public
+2017-05-18 17:44:36,724 INFO 16729 [egg-security] use csrf middleware
+2017-05-18 17:44:36,726 INFO 16729 [egg-security] use methodnoallow middleware
+2017-05-18 17:44:36,727 INFO 16729 [egg-security] use noopen middleware
+2017-05-18 17:44:36,728 INFO 16729 [egg-security] use nosniff middleware
+2017-05-18 17:44:36,729 INFO 16729 [egg-security] use xssProtection middleware
+2017-05-18 17:44:36,730 INFO 16729 [egg-security] use xframe middleware
+2017-05-18 17:44:36,730 INFO 16729 [egg-security] compose 6 middlewares into one security middleware
+2017-05-18 17:44:36,815 INFO 16729 [egg-watcher:app] watcher start success
+2017-05-18 17:44:36,889 INFO 16729 [egg-mysql] instance[0] status OK, rds currentTime: 2017-05-18 17:43:12
+2017-05-18 21:45:00,041 WARN 16729 [ClusterClient:Watcher] follower closed, and try to init it again
+2017-05-19 01:20:25,014 WARN 16729 [ClusterClient:Watcher] follower closed, and try to init it again
+2017-05-19 02:30:43,442 WARN 16729 [ClusterClient:Watcher] follower closed, and try to init it again
+2017-05-19 13:37:12,778 WARN 16729 [ClusterClient:Watcher] follower closed, and try to init it again
+2017-05-19 13:51:06,384 INFO 21928 [egg:logger] init all loggers with options: {"dir":"/Users/Vayron/site/ucoin/admin/server/private/log","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","outputJSON":false,"buffer":true,"appLogName":"ucoin-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"type":"application"}
+2017-05-19 13:51:06,384 INFO 21928 [nut] reading uae config: /Users/Vayron/site/ucoin/admin/server/conf/config.json
+2017-05-19 13:51:06,863 INFO 21928 [egg-schedule]: register schedule egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-05-19 13:51:06,863 INFO 21928 [egg-schedule]: register schedule egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-05-19 13:51:06,908 INFO 21928 [egg-mysql] connecting uae_dev@10.20.39.32:3306/UCOIN
+2017-05-19 13:51:07,364 INFO 21928 [egg-static] starting static serve /public/ -> /Users/Vayron/site/ucoin/admin/server/app/public
+2017-05-19 13:51:07,371 INFO 21928 [egg-security] use csrf middleware
+2017-05-19 13:51:07,377 INFO 21928 [egg-security] use methodnoallow middleware
+2017-05-19 13:51:07,379 INFO 21928 [egg-security] use noopen middleware
+2017-05-19 13:51:07,381 INFO 21928 [egg-security] use nosniff middleware
+2017-05-19 13:51:07,383 INFO 21928 [egg-security] use xssProtection middleware
+2017-05-19 13:51:07,384 INFO 21928 [egg-security] use xframe middleware
+2017-05-19 13:51:07,384 INFO 21928 [egg-security] compose 6 middlewares into one security middleware
+2017-05-19 13:51:07,473 INFO 21928 [egg-watcher:app] watcher start success
+2017-05-19 13:51:07,527 INFO 21928 [egg-mysql] instance[0] status OK, rds currentTime: 2017-05-19 13:49:39
+2017-05-19 15:41:04,277 INFO 21928 [egg-schedule]: get message egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2017-05-19 15:41:04,299 INFO 21928 [egg-schedule]: get message egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2017-05-19 15:41:04,306 INFO 21928 [egg-logrotator] clean all log before 31 days
+2017-05-19 15:41:04,306 INFO 21928 [egg-schedule] egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/clean_log.js excute succeed, used 6ms
+2017-05-19 15:41:04,307 INFO 21928 [egg-logrotator] broadcast log-reload
+2017-05-19 15:41:04,308 INFO 21928 [egg-logrotator] rotate files success by DayRotator, files ["/Users/Vayron/site/ucoin/admin/server/private/log/common-error.log -> /Users/Vayron/site/ucoin/admin/server/private/log/common-error.log.2017-05-18","/Users/Vayron/site/ucoin/admin/server/private/log/ucoin-web.log -> /Users/Vayron/site/ucoin/admin/server/private/log/ucoin-web.log.2017-05-18","/Users/Vayron/site/ucoin/admin/server/private/log/egg-web.log -> /Users/Vayron/site/ucoin/admin/server/private/log/egg-web.log.2017-05-18","/Users/Vayron/site/ucoin/admin/server/private/log/egg-agent.log -> /Users/Vayron/site/ucoin/admin/server/private/log/egg-agent.log.2017-05-18"]
+2017-05-19 15:41:04,308 INFO 21928 [egg-schedule] egg-schedule:/Users/Vayron/site/ucoin/admin/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js excute succeed, used 27ms

@@ -1,0 +1,30 @@
+{
+  "name": "ucoinadmin",
+  "workers": 3,
+  "mysql": {
+    "clients": {
+      "Main": {
+        "host": "10.20.39.32",
+        "port": "3306",
+        "database": "UCOIN",
+        "user": "uae_dev",
+        "password": "EMrfmZvLEQJq",
+        "encryptPassword": false,
+        "connector": "mysql",
+        "dateStrings": true,
+        "connectionLimit": 10
+      },
+      "Sub": {
+        "host": "10.20.39.32",
+        "port": "3306",
+        "database": "UCOIN",
+        "user": "uae_dev",
+        "password": "EMrfmZvLEQJq",
+        "encryptPassword": false,
+        "connector": "mysql",
+        "dateStrings": true,
+        "connectionLimit": 10
+      }
+    }
+  }
+}

@@ -1,0 +1,1616 @@
+2017-05-26 11:13:19,651 ERROR 2305 [-/-/100.84.248.177/44c627a0-41c1-11e7-8f01-bb12cc8896d5/45ms GET /api/store/2/consume] nodejs.TypeError: Cannot read property 'TAX_RATE' of null
+    at BalanceService.queryByName (/Users/Vayron/site/ucoin/admin/server/app/service/balance-catalogue.js:34:23)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+headers: { 'Access-Control-Allow-Origin': 'http://localhost:3000' }
+pid: 2305
+hostname: Vayron.local
+
+2017-05-26 12:08:07,216 ERROR 12845 [-/-/127.0.0.1/ec515fb0-41c8-11e7-a33e-c77b31b40c6c/40ms GET /] nodejs.AssertionError: Can't find index.html from 
+    at ViewManager.resolve (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-view/lib/view_manager.js:74:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+name: 'AssertionError'
+actual: undefined
+expected: true
+operator: '=='
+message: 'Can\'t find index.html from '
+generatedMessage: false
+pid: 12845
+hostname: Vayron.local
+
+2017-05-26 12:08:30,657 ERROR 12845 [-/-/127.0.0.1/fa4acc00-41c8-11e7-a33e-c77b31b40c6c/27ms GET /] nodejs.AssertionError: Can't find index.html from 
+    at ViewManager.resolve (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-view/lib/view_manager.js:74:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+name: 'AssertionError'
+actual: undefined
+expected: true
+operator: '=='
+message: 'Can\'t find index.html from '
+generatedMessage: false
+pid: 12845
+hostname: Vayron.local
+
+2017-05-26 12:42:01,362 ERROR 13318 [-/-/127.0.0.1/a8c31db0-41cd-11e7-871b-0f4b0520b364/6ms GET /] nodejs.AssertionError: Can't find index.html from /Users/Vayron/site/ucoin/admin/server/app/public
+    at ViewManager.resolve (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-view/lib/view_manager.js:74:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+name: 'AssertionError'
+actual: undefined
+expected: true
+operator: '=='
+message: 'Can\'t find index.html from /Users/Vayron/site/ucoin/admin/server/app/public'
+generatedMessage: false
+pid: 13318
+hostname: Vayron.local
+
+2017-05-26 15:45:59,531 ERROR 16767 [-/-/127.0.0.1/5c063150-41e7-11e7-a0ab-2b38b2a22be4/5ms GET /public/media/003-coins.17016441.svg] nodejs.ENOENTError: ENOENT: no such file or directory, stat '/Users/Vayron/site/ucoin/admin/server/app/public/media/003-coins.17016441.svg'
+    at Error (native)
+errno: -2
+code: 'ENOENT'
+syscall: 'stat'
+path: '/Users/Vayron/site/ucoin/admin/server/app/public/media/003-coins.17016441.svg'
+name: 'ENOENTError'
+pid: 16767
+hostname: Vayron.local
+
+2017-05-26 15:46:03,527 ERROR 16767 [-/-/127.0.0.1/5e68d970-41e7-11e7-a0ab-2b38b2a22be4/19ms GET /public/media/003-coins.17016441.svg] nodejs.ENOENTError: ENOENT: no such file or directory, stat '/Users/Vayron/site/ucoin/admin/server/app/public/media/003-coins.17016441.svg'
+    at Error (native)
+errno: -2
+code: 'ENOENT'
+syscall: 'stat'
+path: '/Users/Vayron/site/ucoin/admin/server/app/public/media/003-coins.17016441.svg'
+name: 'ENOENTError'
+pid: 16767
+hostname: Vayron.local
+
+2017-05-26 15:46:15,636 ERROR 16767 [-/-/127.0.0.1/65a08940-41e7-11e7-a0ab-2b38b2a22be4/1ms GET /public/media/003-coins.17016441.svg] nodejs.ENOENTError: ENOENT: no such file or directory, stat '/Users/Vayron/site/ucoin/admin/server/app/public/media/003-coins.17016441.svg'
+    at Error (native)
+errno: -2
+code: 'ENOENT'
+syscall: 'stat'
+path: '/Users/Vayron/site/ucoin/admin/server/app/public/media/003-coins.17016441.svg'
+name: 'ENOENTError'
+pid: 16767
+hostname: Vayron.local
+
+2017-05-26 15:51:19,397 ERROR 16767 [-/-/127.0.0.1/1aaea240-41e8-11e7-a0ab-2b38b2a22be4/1ms GET /public/public/media/003-coins.17016441.svg] nodejs.ENOENTError: ENOENT: no such file or directory, stat '/Users/Vayron/site/ucoin/admin/server/app/public/public/media/003-coins.17016441.svg'
+    at Error (native)
+errno: -2
+code: 'ENOENT'
+syscall: 'stat'
+path: '/Users/Vayron/site/ucoin/admin/server/app/public/public/media/003-coins.17016441.svg'
+name: 'ENOENTError'
+pid: 16767
+hostname: Vayron.local
+
+2017-05-26 16:10:00,326 ERROR 18469 [-/-/127.0.0.1/b6ce5e20-41ea-11e7-b361-fbe44db5bb44/22ms GET /] nodejs.AssertionError: Can't find index.html from 
+    at ViewManager.resolve (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-view/lib/view_manager.js:74:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+name: 'AssertionError'
+actual: undefined
+expected: true
+operator: '=='
+message: 'Can\'t find index.html from '
+generatedMessage: false
+pid: 18469
+hostname: Vayron.local
+
+2017-05-26 16:10:02,056 ERROR 18469 [-/-/127.0.0.1/b7d6cd70-41ea-11e7-b361-fbe44db5bb44/4ms GET /] nodejs.AssertionError: Can't find index.html from 
+    at ViewManager.resolve (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-view/lib/view_manager.js:74:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+name: 'AssertionError'
+actual: undefined
+expected: true
+operator: '=='
+message: 'Can\'t find index.html from '
+generatedMessage: false
+pid: 18469
+hostname: Vayron.local
+
+2017-05-26 16:10:02,959 ERROR 18469 [-/-/127.0.0.1/b86096e0-41ea-11e7-b361-fbe44db5bb44/1ms GET /] nodejs.AssertionError: Can't find index.html from 
+    at ViewManager.resolve (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-view/lib/view_manager.js:74:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+name: 'AssertionError'
+actual: undefined
+expected: true
+operator: '=='
+message: 'Can\'t find index.html from '
+generatedMessage: false
+pid: 18469
+hostname: Vayron.local
+
+2017-05-26 16:10:03,778 ERROR 18469 [-/-/127.0.0.1/b8dd8f10-41ea-11e7-b361-fbe44db5bb44/23ms GET /] nodejs.AssertionError: Can't find index.html from 
+    at ViewManager.resolve (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-view/lib/view_manager.js:74:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+name: 'AssertionError'
+actual: undefined
+expected: true
+operator: '=='
+message: 'Can\'t find index.html from '
+generatedMessage: false
+pid: 18469
+hostname: Vayron.local
+
+2017-05-26 16:17:58,249 ERROR 18555 [-/-/127.0.0.1/d3ab5330-41eb-11e7-ae59-edd90c701a43/5ms GET /] nodejs.AssertionError: Can't find index.html from /Users/Vayron/site/ucoin/admin/server/app/view
+    at ViewManager.resolve (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-view/lib/view_manager.js:74:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+name: 'AssertionError'
+actual: undefined
+expected: true
+operator: '=='
+message: 'Can\'t find index.html from /Users/Vayron/site/ucoin/admin/server/app/view'
+generatedMessage: false
+pid: 18555
+hostname: Vayron.local
+
+2017-05-26 16:18:03,072 ERROR 18555 [-/-/127.0.0.1/d68bdde0-41eb-11e7-ae59-edd90c701a43/6ms GET /] nodejs.AssertionError: Can't find index.html from /Users/Vayron/site/ucoin/admin/server/app/view
+    at ViewManager.resolve (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-view/lib/view_manager.js:74:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+name: 'AssertionError'
+actual: undefined
+expected: true
+operator: '=='
+message: 'Can\'t find index.html from /Users/Vayron/site/ucoin/admin/server/app/view'
+generatedMessage: false
+pid: 18555
+hostname: Vayron.local
+
+2017-05-26 16:18:03,864 ERROR 18555 [-/-/127.0.0.1/d704de70-41eb-11e7-ae59-edd90c701a43/2ms GET /] nodejs.AssertionError: Can't find index.html from /Users/Vayron/site/ucoin/admin/server/app/view
+    at ViewManager.resolve (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-view/lib/view_manager.js:74:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+name: 'AssertionError'
+actual: undefined
+expected: true
+operator: '=='
+message: 'Can\'t find index.html from /Users/Vayron/site/ucoin/admin/server/app/view'
+generatedMessage: false
+pid: 18555
+hostname: Vayron.local
+
+2017-05-26 17:07:17,465 ERROR 20843 [-/-/127.0.0.1/b7804f60-41f2-11e7-95ee-bb10665aad0e/14ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2F127.0.0.1%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2F127.0.0.1%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 20843
+hostname: Vayron.local
+
+2017-05-26 17:07:23,659 ERROR 20843 [-/-/127.0.0.1/bb31bea0-41f2-11e7-95ee-bb10665aad0e/3ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2F127.0.0.1%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2F127.0.0.1%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 20843
+hostname: Vayron.local
+
+2017-05-26 17:07:28,803 ERROR 20843 [-/-/127.0.0.1/be42a820-41f2-11e7-95ee-bb10665aad0e/5ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2F127.0.0.1%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2F127.0.0.1%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 20843
+hostname: Vayron.local
+
+2017-05-26 17:07:59,190 ERROR 20859 [-/-/127.0.0.1/d05f3140-41f2-11e7-9af8-89720caf21e3/12ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 20859
+hostname: Vayron.local
+
+2017-05-26 17:15:22,745 ERROR 21017 [-/-/100.84.248.177/d8bfdb40-41f3-11e7-866d-599f016073c3/10ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 21017
+hostname: Vayron.local
+
+2017-05-26 17:43:44,629 ERROR 21821 [-/-/100.84.248.177/cf26e610-41f7-11e7-afef-d14e4f3ef1d5/7ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 21821
+hostname: Vayron.local
+
+2017-05-26 17:43:48,040 ERROR 21821 [-/-/100.84.248.177/d12fd570-41f7-11e7-afef-d14e4f3ef1d5/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 21821
+hostname: Vayron.local
+
+2017-05-26 18:04:35,878 ERROR 21945 [-/-/100.84.248.177/b8f47f30-41fa-11e7-9ada-8b558c7ba2bb/8ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 21945
+hostname: Vayron.local
+
+2017-05-26 18:04:39,955 ERROR 21945 [-/-/100.84.248.177/bb630e30-41fa-11e7-9ada-8b558c7ba2bb/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 21945
+hostname: Vayron.local
+
+2017-05-26 20:47:43,790 ERROR 30526 [-/-/100.84.248.177/830130a0-4211-11e7-a37b-677dd37e4c7d/35ms GET /api/overview/get] nodejs.TypeError: Cannot read property 'bucid' of undefined
+    at Object.query (/Users/Vayron/site/ucoin/admin/server/app/middleware/accessability.js:18:26)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+
+pid: 30526
+hostname: Vayron.local
+
+2017-05-26 20:47:43,976 ERROR 30526 [-/-/100.84.248.177/831d6b30-4211-11e7-a37b-677dd37e4c7d/6ms GET /api/overview] nodejs.TypeError: Cannot read property 'bucid' of undefined
+    at Object.query (/Users/Vayron/site/ucoin/admin/server/app/middleware/accessability.js:18:26)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+
+pid: 30526
+hostname: Vayron.local
+
+2017-05-26 20:48:15,428 ERROR 30537 [-/-/100.84.248.177/95dc9cf0-4211-11e7-9a60-571733eecf95/28ms GET /api/overview/get] nodejs.TypeError: Cannot read property 'bucid' of undefined
+    at Object.query (/Users/Vayron/site/ucoin/admin/server/app/middleware/accessability.js:18:26)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+
+pid: 30537
+hostname: Vayron.local
+
+2017-05-26 20:48:15,512 ERROR 30537 [-/-/100.84.248.177/95ea0a70-4211-11e7-9a60-571733eecf95/6ms GET /api/overview] nodejs.TypeError: Cannot read property 'bucid' of undefined
+    at Object.query (/Users/Vayron/site/ucoin/admin/server/app/middleware/accessability.js:18:26)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+
+pid: 30537
+hostname: Vayron.local
+
+2017-05-26 20:56:25,354 ERROR 30843 [-/-/100.84.248.177/b9e16350-4212-11e7-92d9-336d935bd2ae/29ms GET /api/overview/get] nodejs.TypeError: Cannot read property 'AccessControlService' of undefined
+    at Object.query (/Users/Vayron/site/ucoin/admin/server/app/middleware/accessability.js:17:31)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 30843
+hostname: Vayron.local
+
+2017-05-26 20:56:25,415 ERROR 30843 [-/-/100.84.248.177/b9eb4e60-4212-11e7-92d9-336d935bd2ae/3ms GET /api/overview] nodejs.TypeError: Cannot read property 'AccessControlService' of undefined
+    at Object.query (/Users/Vayron/site/ucoin/admin/server/app/middleware/accessability.js:17:31)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 30843
+hostname: Vayron.local
+
+2017-05-27 15:13:05,837 ERROR 4254 [-/-/::1/ee067190-42ab-11e7-9a9d-83b286c95160/49ms GET /api/balanceCatalogue/update] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'field list'
+    at Query.Sequence._packetToError (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/protocol/Parser.js:75:12)
+    at Protocol.write (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:548:20)
+    --------------------
+    at Pool.query (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/pify/index.js:29:7
+    at Pool.<anonymous> (/Users/Vayron/site/ucoin/admin/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/Vayron/site/ucoin/admin/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/Vayron/site/ucoin/admin/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/Vayron/site/ucoin/admin/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:54:5
+    at RDSClient.co (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:50:10)
+    sql: UPDATE `BALANCE_CATALOGUE` SET `NAME` = '有妖气4', `TAX_RATE` = NaN, `OPERATE_FEE_RATE` = NaN, `DIVIDE_FEE_RATE` = NaN, `INCLUDE_VOUCHER` = '1', `MODIFY_USER` = 'UNKNOWN', `MODIFY_TIME` = now() WHERE `ID` = '15'
+code: 'ER_BAD_FIELD_ERROR'
+errno: 1054
+sqlState: '42S22'
+index: 0
+headers: { 'Access-Control-Allow-Origin': 'http://localhost:3000' }
+name: 'ER_BAD_FIELD_ERRORError'
+pid: 4254
+hostname: Vayron.local
+
+2017-05-27 15:13:38,850 ERROR 4254 [-/-/100.84.248.177/01b47020-42ac-11e7-9a9d-83b286c95160/34ms GET /api/balanceCatalogue/update] nodejs.ER_BAD_FIELD_ERRORError: ER_BAD_FIELD_ERROR: Unknown column 'NaN' in 'field list'
+    at Query.Sequence._packetToError (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/protocol/sequences/Sequence.js:52:14)
+    at Query.ErrorPacket (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/protocol/Parser.js:75:12)
+    at Protocol.write (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:548:20)
+    --------------------
+    at Pool.query (/Users/Vayron/site/ucoin/admin/server/node_modules/mysql/lib/Pool.js:199:23)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/pify/index.js:29:7
+    at Pool.<anonymous> (/Users/Vayron/site/ucoin/admin/server/node_modules/pify/index.js:12:10)
+    at Pool.ret [as query] (/Users/Vayron/site/ucoin/admin/server/node_modules/pify/index.js:56:34)
+    at RDSClient.proto._query (/Users/Vayron/site/ucoin/admin/server/node_modules/ali-rds/lib/client.js:34:20)
+    at RDSClient.proto.query (/Users/Vayron/site/ucoin/admin/server/node_modules/ali-rds/lib/operator.js:54:29)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:54:5
+    at RDSClient.co (/Users/Vayron/site/ucoin/admin/server/node_modules/co/index.js:50:10)
+    sql: UPDATE `BALANCE_CATALOGUE` SET `NAME` = '有妖气4', `TAX_RATE` = NaN, `OPERATE_FEE_RATE` = NaN, `DIVIDE_FEE_RATE` = NaN, `INCLUDE_VOUCHER` = '1', `MODIFY_USER` = 'UNKNOWN', `MODIFY_TIME` = now() WHERE `ID` = '15'
+code: 'ER_BAD_FIELD_ERROR'
+errno: 1054
+sqlState: '42S22'
+index: 0
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+name: 'ER_BAD_FIELD_ERRORError'
+pid: 4254
+hostname: Vayron.local
+
+2017-05-27 16:07:18,533 ERROR 6546 [-/-/::1/80c87710-42b3-11e7-b0db-fd1eb96f00e3/9ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 6546
+hostname: Vayron.local
+
+2017-05-27 16:07:29,660 ERROR 6546 [-/-/100.84.248.177/876ac4b0-42b3-11e7-b0db-fd1eb96f00e3/3ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+
+pid: 6546
+hostname: Vayron.local
+
+2017-05-27 16:07:30,076 ERROR 6546 [-/-/100.84.248.177/87aa3eb0-42b3-11e7-b0db-fd1eb96f00e3/2ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 6546
+hostname: Vayron.local
+
+2017-05-27 16:10:19,885 ERROR 8998 [-/-/127.0.0.1/ece0e3b0-42b3-11e7-8018-b9ae735ffbc9/12ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 8998
+hostname: Vayron.local
+
+2017-05-27 16:10:20,490 ERROR 8998 [-/-/127.0.0.1/ed3d5b90-42b3-11e7-8018-b9ae735ffbc9/5ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 8998
+hostname: Vayron.local
+
+2017-05-27 16:11:09,423 ERROR 9044 [-/-/127.0.0.1/0a67a2c0-42b4-11e7-ac9e-d17bce942a51/31ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:09,642 ERROR 9044 [-/-/127.0.0.1/0a893480-42b4-11e7-ac9e-d17bce942a51/4ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:11,066 ERROR 9044 [-/-/127.0.0.1/0b62a490-42b4-11e7-ac9e-d17bce942a51/4ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:11,247 ERROR 9044 [-/-/127.0.0.1/0b7e42e0-42b4-11e7-ac9e-d17bce942a51/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:11,395 ERROR 9044 [-/-/127.0.0.1/0b94d820-42b4-11e7-ac9e-d17bce942a51/3ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:11,550 ERROR 9044 [-/-/127.0.0.1/0bac7ed0-42b4-11e7-ac9e-d17bce942a51/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:11,679 ERROR 9044 [-/-/127.0.0.1/0bc054f0-42b4-11e7-ac9e-d17bce942a51/3ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:11,930 ERROR 9044 [-/-/127.0.0.1/0be65380-42b4-11e7-ac9e-d17bce942a51/4ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:11,962 ERROR 9044 [-/-/127.0.0.1/0beb5c90-42b4-11e7-ac9e-d17bce942a51/6ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:12,234 ERROR 9044 [-/-/127.0.0.1/0c14dd90-42b4-11e7-ac9e-d17bce942a51/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:12,255 ERROR 9044 [-/-/127.0.0.1/0c17ead0-42b4-11e7-ac9e-d17bce942a51/4ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:11:12,464 ERROR 9044 [-/-/127.0.0.1/0c37f5f0-42b4-11e7-ac9e-d17bce942a51/0ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:12:29,410 ERROR 9044 [-/-/127.0.0.1/3a14d600-42b4-11e7-ac9e-d17bce942a51/8ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:12:29,693 ERROR 9044 [-/-/127.0.0.1/3a402bc0-42b4-11e7-ac9e-d17bce942a51/2ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:12:34,047 ERROR 9044 [-/-/127.0.0.1/3cd889e0-42b4-11e7-ac9e-d17bce942a51/2ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:12:34,229 ERROR 9044 [-/-/127.0.0.1/3cf47650-42b4-11e7-ac9e-d17bce942a51/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:12:47,168 ERROR 9044 [-/-/127.0.0.1/44aacc00-42b4-11e7-ac9e-d17bce942a51/10ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:12:47,503 ERROR 9044 [-/-/127.0.0.1/44ddc2e0-42b4-11e7-ac9e-d17bce942a51/2ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:12:56,101 ERROR 9044 [-/-/127.0.0.1/49fd8f30-42b4-11e7-ac9e-d17bce942a51/5ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:12:56,492 ERROR 9044 [-/-/127.0.0.1/4a395fb0-42b4-11e7-ac9e-d17bce942a51/2ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:13:20,034 ERROR 9044 [-/-/127.0.0.1/58419910-42b4-11e7-ac9e-d17bce942a51/2ms GET /login] nodejs.InternalServerError: a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:257:14)
+    at Object.loginHandler (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa-userauth/index.js:304:5)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+message: 'a security problem has been detected for url "https://login.alibaba-inc.com/ssoLogin.htm?APP_NAME=ucoin-admin&CLIENT_VERSION=0.3.7&CONTEXT_PATH=%2F&BACK_URL=http%3A%2F%2Factdev.uc.cn%3A7001%2FsendBucSSOToken.do", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:13:20,476 ERROR 9044 [-/-/127.0.0.1/58850ab0-42b4-11e7-ac9e-d17bce942a51/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9044
+hostname: Vayron.local
+
+2017-05-27 16:51:09,797 ERROR 9512 [-/-/100.84.248.177/a123f240-42b9-11e7-b9b5-6dd3eeb5d551/5ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:51:10,235 ERROR 9512 [-/-/100.84.248.177/a166a090-42b9-11e7-b9b5-6dd3eeb5d551/6ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:52:13,956 ERROR 9512 [-/-/100.84.248.177/c761fc40-42b9-11e7-b9b5-6dd3eeb5d551/4ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:52:14,161 ERROR 9512 [-/-/100.84.248.177/c780f5f0-42b9-11e7-b9b5-6dd3eeb5d551/4ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:52:17,224 ERROR 9512 [-/-/100.84.248.177/c9547d70-42b9-11e7-b9b5-6dd3eeb5d551/1ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:52:17,369 ERROR 9512 [-/-/100.84.248.177/c96a9d80-42b9-11e7-b9b5-6dd3eeb5d551/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:52:19,665 ERROR 9512 [-/-/100.84.248.177/cac8f500-42b9-11e7-b9b5-6dd3eeb5d551/1ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:52:19,808 ERROR 9512 [-/-/100.84.248.177/cadeee00-42b9-11e7-b9b5-6dd3eeb5d551/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:52:22,310 ERROR 9512 [-/-/100.84.248.177/cc5cb460-42b9-11e7-b9b5-6dd3eeb5d551/2ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:52:22,451 ERROR 9512 [-/-/100.84.248.177/cc721120-42b9-11e7-b9b5-6dd3eeb5d551/0ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:53:04,239 ERROR 9512 [-/-/100.84.248.177/e55a68e0-42b9-11e7-b9b5-6dd3eeb5d551/1ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:53:04,449 ERROR 9512 [-/-/100.84.248.177/e57a7400-42b9-11e7-b9b5-6dd3eeb5d551/0ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:53:07,951 ERROR 9512 [-/-/100.84.248.177/e790d0e0-42b9-11e7-b9b5-6dd3eeb5d551/3ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+
+pid: 9512
+hostname: Vayron.local
+
+2017-05-27 16:53:08,099 ERROR 9512 [-/-/100.84.248.177/e7a73f10-42b9-11e7-b9b5-6dd3eeb5d551/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 9512
+hostname: Vayron.local
+
+2017-05-28 00:10:31,253 ERROR 4251 nodejs.ClusterClientNoResponseError: client no response in 6465477ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 4251
+hostname: Vayron.local
+
+2017-06-01 10:04:55,881 ERROR 2436 [-/-/::1/b5381d70-466e-11e7-a7a2-2519f8fc7c70/7ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 2436
+hostname: Vayron.local
+
+2017-06-01 10:05:00,663 ERROR 2436 [-/-/::1/b8121870-466e-11e7-a7a2-2519f8fc7c70/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 2436
+hostname: Vayron.local
+
+2017-06-01 12:40:58,518 ERROR 1610 nodejs.ClusterClientNoResponseError: client no response in 1275103ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 1610
+hostname: Vayron.local
+
+2017-06-01 13:08:06,096 ERROR 1610 nodejs.ClusterClientNoResponseError: client no response in 1587545ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 1610
+hostname: Vayron.local
+
+2017-06-01 13:35:21,671 ERROR 1610 nodejs.ClusterClientNoResponseError: client no response in 1585538ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 1610
+hostname: Vayron.local
+
+2017-06-01 13:37:27,168 ERROR 1610 nodejs.ClusterClientNoResponseError: client no response in 85461ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 1610
+hostname: Vayron.local
+
+2017-06-01 18:53:48,184 ERROR 2436 [-/-/::1/97252450-46b8-11e7-a7a2-2519f8fc7c70/7ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 2436
+hostname: Vayron.local
+
+2017-06-01 18:55:05,368 ERROR 2436 [-/-/::1/c526f180-46b8-11e7-a7a2-2519f8fc7c70/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 2436
+hostname: Vayron.local
+
+2017-06-01 19:30:26,619 ERROR 12394 [-/-/::1/b5831740-46bd-11e7-b772-4d4676591535/5ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://localhost:3000' }
+pid: 12394
+hostname: Vayron.local
+
+2017-06-01 19:30:26,664 ERROR 12394 [-/-/100.84.248.177/b58adf70-46bd-11e7-b772-4d4676591535/2ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 12394
+hostname: Vayron.local
+
+2017-06-01 19:30:30,318 ERROR 12394 [-/-/100.84.248.177/b7b86dd0-46bd-11e7-b772-4d4676591535/2ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 12394
+hostname: Vayron.local
+
+2017-06-01 19:30:31,776 ERROR 12394 [-/-/100.84.248.177/b896e6f0-46bd-11e7-b772-4d4676591535/1ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 12394
+hostname: Vayron.local
+
+2017-06-01 19:30:34,979 ERROR 12394 [-/-/100.84.248.177/ba7fa420-46bd-11e7-b772-4d4676591535/3ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 12394
+hostname: Vayron.local
+
+2017-06-01 19:32:34,553 ERROR 12394 [-/-/100.84.248.177/01c55690-46be-11e7-b772-4d4676591535/2ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 12394
+hostname: Vayron.local
+
+2017-06-01 19:33:06,153 ERROR 12394 [-/-/100.84.248.177/149af680-46be-11e7-b772-4d4676591535/2ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 12394
+hostname: Vayron.local
+
+2017-06-01 19:33:09,852 ERROR 12394 [-/-/100.84.248.177/16cf62b0-46be-11e7-b772-4d4676591535/2ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 12394
+hostname: Vayron.local
+
+2017-06-01 19:33:17,458 ERROR 12394 [-/-/100.84.248.177/1b581f20-46be-11e7-b772-4d4676591535/2ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 12394
+hostname: Vayron.local
+
+2017-06-02 10:57:37,780 ERROR 18825 [-/-/::1/3c450f00-473f-11e7-8be5-a34caed19f08/26ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://localhost:3000' }
+pid: 18825
+hostname: Vayron.local
+
+2017-06-02 10:57:39,405 ERROR 18825 [-/-/::1/3d3d78c0-473f-11e7-8be5-a34caed19f08/2ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://localhost:3000' }
+pid: 18825
+hostname: Vayron.local
+
+2017-06-02 10:57:40,403 ERROR 18825 [-/-/::1/3dd5c120-473f-11e7-8be5-a34caed19f08/2ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://localhost:3000' }
+pid: 18825
+hostname: Vayron.local
+
+2017-06-02 10:58:41,011 ERROR 18825 [-/-/::1/61f5f430-473f-11e7-8be5-a34caed19f08/4ms GET /api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://localhost:3000' }
+pid: 18825
+hostname: Vayron.local
+
+2017-06-02 14:08:46,949 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 3578539ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-03 02:46:36,690 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 24175315ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-03 04:13:28,012 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 4210736ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-03 11:01:35,339 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 24487170ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-03 12:00:50,007 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 903237ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-03 12:42:32,698 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 2482657ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-03 12:58:41,588 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 778822ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-03 16:59:00,343 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 13877955ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-03 20:17:29,409 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 9066113ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-03 22:07:41,364 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 4209110ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-04 16:15:33,012 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 65271569ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-04 20:16:58,651 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 10503358ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-04 21:27:49,804 ERROR 18824 nodejs.ClusterClientNoResponseError: client no response in 650259ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 18824
+hostname: Vayron.local
+
+2017-06-05 11:45:32,988 ERROR 2745 [-/-/100.84.197.148/6d443b80-49a1-11e7-b5e8-758f9b577672/6ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 2745
+hostname: Vayron.local
+
+2017-06-05 14:05:41,239 ERROR 2745 [-/-/100.84.197.148/00f9f960-49b5-11e7-b5e8-758f9b577672/3ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 2745
+hostname: Vayron.local
+
+2017-06-05 14:05:46,549 ERROR 2745 [-/-/100.84.197.148/04243740-49b5-11e7-b5e8-758f9b577672/1ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 2745
+hostname: Vayron.local
+
+2017-06-05 16:50:00,112 ERROR 2745 [-/-/100.84.197.148/f5524dd0-49cb-11e7-b5e8-758f9b577672/2ms GET /favicon.ico] nodejs.InternalServerError: a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.
+    at Object.throw (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.4.0@koa/lib/context.js:89:23)
+    at Object.redirect (/Users/Vayron/site/ucoin/admin/server/node_modules/egg-security/lib/safe_redirect.js:64:34)
+    at Object.proto.(anonymous function) [as redirect] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.0.0@delegates/index.js:40:31)
+    at Object.siteFile (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.3.0@egg/app/middleware/site_file.js:17:50)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+message: 'a security problem has been detected for url "https://www.alibaba.com/favicon.ico", redirection is prohibited.'
+pid: 2745
+hostname: Vayron.local
+
+2017-06-06 00:21:19,136 ERROR 2744 nodejs.ClusterClientNoResponseError: client no response in 4205476ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 2744
+hostname: Vayron.local
+
+2017-06-06 10:02:48,996 ERROR 2744 nodejs.ClusterClientNoResponseError: client no response in 34889176ms exceeding maxIdleTime 30000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/Vayron/site/ucoin/admin/server/node_modules/.1.6.4@cluster-client/lib/leader.js:72:23)
+    at ontimeout (timers.js:365:14)
+    at tryOnTimeout (timers.js:237:5)
+    at Timer.listOnTimeout (timers.js:207:5)
+name: 'ClusterClientNoResponseError'
+pid: 2744
+hostname: Vayron.local
+
+2017-06-06 10:15:15,556 ERROR 22117 [-/-/100.84.248.177/faa37600-4a5d-11e7-ac6f-9d732f7bf17b/22ms GET /ucoinadmin/api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 22117
+hostname: Vayron.local
+
+2017-06-06 10:16:30,850 ERROR 22117 [-/-/100.84.248.177/2784df10-4a5e-11e7-ac6f-9d732f7bf17b/3ms GET /ucoinadmin/api/user] nodejs.TypeError: Cannot read property 'userid' of undefined
+    at Object.assemble_args (/Users/Vayron/site/ucoin/admin/server/app/common/commFunc.js:12:24)
+    at UserController.index (/Users/Vayron/site/ucoin/admin/server/app/controller/user.js:8:36)
+    at next (native)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:65:19)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+    at Object.co (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:50:10)
+    at Object.toPromise (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:118:63)
+    at next (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:99:29)
+    at onFulfilled (/Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:69:7)
+    at /Users/Vayron/site/ucoin/admin/server/node_modules/.4.6.0@co/index.js:54:5
+headers: { 'Access-Control-Allow-Origin': 'http://100.84.248.177:3000' }
+pid: 22117
+hostname: Vayron.local
+
