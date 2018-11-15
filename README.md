@@ -1,4 +1,3 @@
-
 # Great plan of 2017
 
 # Preact
@@ -7,13 +6,655 @@
 # Vue
 # Node
 # Git
-  - https://github.com/Gazler/githug
-  - http://www.jianshu.com/p/482b32716bbe
-  - http://backlogtool.com/git-guide/cn/
+# CI
+# UAE
+# Mongodb
+# npm
 
 
-## 标签
-  - 轻标签
+# Great Plan of 2017
+
+---
+
+# ES6
+
+> [ECMAScript 6 入门](http://es6.ruanyifeng.com/?search=values&x=0&y=0#docs/let)
+
+> Promise精简写法
+
+下面两种写法一样：
+
+```js
+// demo1
+new Promise(function(resolve, reject) {
+  resolve('value');
+}).then(function(data) {});
+
+// demo2
+Promise.resolve('value').then(function(data) {});
+```
+
+> 时间转换
+
+```js
+Date.parse(Date());
+// 1488372059000 时间戳
+
+const today = new Date();
+today.toISOString().slice(0,10);
+
+// "2017-03-01"
+
+today.toISOString();
+
+// "2017-03-01T12:44:09.787Z"
+// 该标准称为 ISO-8601 与中国的时间有差异+0800
+// toISOString() 方法可以使用ISO标准将 Date 对象转换为字符串。
+// 格式为: (注意毫秒数是3位数)
+// YYYY-MM-DDTHH:mm:ss.sss
+
+// 也可以通过以下方式获得
+
+today.getFullYear()
+today.getMonth() + 1
+today.getDate()
+today.getHours()
+today.getMinutes()
+```
+
+> 字符串提取
+
+
+```
+slice() - 提取字符串的片断，并在新的字符串中返回被提取的部分。
+('hello world').slice(6,11);
+// 从位置6，到位置11
+```
+
+> uri编码
+
+
+```
+var p = '?keyword=' + encodeURIComponent('hello');
+var p = encodeURI('http://www.uc.cn');
+```
+
+* encodeURIComponent() 部分URI进行编码，它输出符号的utf-8形式，不编译的特殊字符 - _ . ! ~ * ’ ( )
+* encodeURI() 完整的URI进行编码，不编译的特殊字符 - _ . ! ~ * ’ ( ) ;/?:pout:&=+$,#
+
+
+> uri解码
+
+
+```
+decodeURIComponent()
+decodeURI()
+```
+
+> 数组去重——使用Set特性
+
+
+```markup
+const arr1 = [1, 3, 5, 5, 8];
+const arr2 = Array.from(new Set(arr1))
+[1, 3, 5, 8]
+```
+
+
+# CSS
+
+> 有序列表数字符号
+
+
+```css
+ol{
+  	counter-reset: section;
+  	>li{
+  		position: relative;
+  		padding: 0 0 0 30px;
+  		line-height: 30px;
+  		margin: 0 0 48px;
+  		counter-increment: section;
+  	}
+  	>li:before{
+  		display: block;
+  		position: absolute;
+  		top: 7px;
+  		left: 5px;
+  		font-size: 12px;
+  		width: 15px;
+  		height: 15px;
+  		line-height: 15px;
+  		color: #fff;
+  		background: #0081ff;
+  		text-align: center;
+  		content: counter(section);
+  	}
+  }
+```
+
+> Flex 垂直中齐
+
+
+```css
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+```
+
+> Flex 兼容样式，添加到父元素
+
+
+```css
+display -webkit-box
+display -moz-box
+display -ms-flexbox
+display -webkit-flex
+display flex
+-webkit-box-flex 1
+-moz-box-flex 1
+-webkit-flex 1
+-ms-flex 1
+flex 1
+-moz-box-pack: center; /*Firefox*/
+-webkit-box-pack: center; /*Safari,Opera,Chrome*/
+box-pack: center;
+vertical-align middle
+-moz-box-align: center; /*Firefox*/
+-webkit-box-align: center; /*Safari,Opera,Chrome*/
+-moz-box-orient: horizontal; /*Firefox*/
+-webkit-box-orient: horizontal; /*Safari,Opera,Chrome*/
+box-orient: horizontal;
+box-align: center;
+-webkit-box-align: center;
+-moz-align-items: center;
+-webkit-align-items: center;
+align-items center
+-webkit-box-pack: center;
+-moz-justify-content: center;
+-webkit-justify-content: center;
+justify-content center
+```
+
+> 一行显示，超出隐藏
+
+```css
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+```
+
+
+# Chai
+
+# MySQL
+
+[MySQL教程](http://www.yiibai.com/mysql/show-databases.html)
+
+### Mac配置MySQL
+
+* Mac配置MySQL
+
+
+推荐去官网上直接下载dmg包，下一步，安装后，记录下root用户的初始密码。
+
+* 启动MySQL
+
+
+在系统偏好设置里面找到Mysql,并点击start mysql server：running表示成功
+
+* 配置路径
+
+
+打开「默认」终端配置文件，（如果你的终端是Zsh,对应的配置文件是~/.zshrc)
+
+`vi ~/.zshrc`
+
+在最后一行添加
+
+```
+export PATH=$PATH:/usr/local/mysql/bin
+```
+
+保存后，之后在命令行输入
+
+```
+source ~/.bash_profile
+```
+
+ok
+
+* 登陆
+
+
+```shell
+mysql -u root -p
+```
+
+接下来输入安装时的默认密码，回车之后成功进入mysql；
+在当前环境下输入
+
+* 修改密码
+
+```sql
+SET PASSWORD FOR 'root'@'localhost' = PASSWORD('123');
+```
+
+`123` 你的密码。
+
+完成后，重新登陆验证。
+
+* 登陆后使用mysql语句
+
+先执行登陆语句
+
+```
+mysql -u root -p
+```
+
+再显示已有的数据库
+
+```
+mysql> SHOW DATABASE;
+```
+
+** 注意一条语句，是必须要用;结束 **
+
+
+
+
+
+
+
+# Mock
+
+# Webpack
+
+> [webpack中library和libraryTarget与externals的使用](https://github.com/zhengweikeng/blog/issues/10)
+
+
+> [webpack使用优化（基本篇）](https://github.com/lcxfs1991/blog/issues/2)
+
+
+> js-xlsx导出Excel文件时，添加支持浏览器补丁
+
+
+Forked version of js-xlsx to add browserify support. See [https://github.com/SheetJS/js-xlsx/issues/143](https://github.com/SheetJS/js-xlsx/issues/143) for details on the original issue, and this commit for the fix.
+
+$ npm install xlsx-browserify-shim
+
+# Preact
+
+> [Preact – React的轻量解决方案](https://github.com/lcxfs1991/blog/issues/13)
+
+
+# React
+
+> [React 中文文档@编程思想](https://chenyitian.gitbooks.io/react-docs/content/docs/thinking-in-react.html)
+
+
+> [React小书](http://huziketang.com/books/react/lesson2)
+> [基于webpack + react + react-router + redux + less + flex.css + ES6 的React版cnode社区](http://react-china.org/t/webpack-react-react-router-redux-less-flex-css-es6-react-cnode/6332)
+
+
+> [分享一个 react + redux 完整的项目，同时写一下个人感悟](http://react-china.org/t/react-redux/9072/13)
+
+
+### 查看安装的React版本
+
+```shell
+npm ls react
+```
+
+### 组件的生命周期
+
+> 组件在初始化时会触发5个钩子函数：
+
+
+* `getDefaultProps()`
+  设置默认的props，也可以用defaultProps设置组件的默认属性。
+
+* `getInitialState()`
+  在使用es6的class语法时是没有这个钩子函数的，可以直接在constructor中定义this.state。此时可以访问this.props。
+
+* `componentWillMount()`
+  组件初始化时只调用一次，此时可以修改state。
+
+* `render()`
+  react最重要的步骤，创建虚拟dom，进行diff算法，更新dom树都在此进行。此时就不能更改state了。
+
+* `componentDidMount()`
+  组件渲染之后调用，可以通过this.getDOMNode()获取和操作dom节点，只调用一次。
+
+
+> 组件还有其他5个钩子函数：
+
+
+* `componentWillReceiveProps(nextProps)`
+  组件初始化时不调用，组件接受新的props时调用。
+
+* `shouldComponentUpdate(nextProps, nextState)`
+  react性能优化非常重要的一环。组件接受新的state或者props时调用，
+  我们可以设置在此对比前后两个props和state是否相同，如果相同则返回false阻止更新，因为相同的属性状态一定会生成相同的dom树，这样就不需要创造新的dom树和旧的dom树进行diff算法对比，节省大量性能，尤其是在dom结构复杂的时候。不过调用this.forceUpdate会跳过此步骤。
+
+* `componentWillUpdata(nextProps, nextState)`
+  组件初始化时不调用，只有在组件将要更新时才调用，此时可以修改state
+
+* `render()`
+  不多说
+
+* `componentDidUpdate()`
+  组件初始化时不调用，组件更新完成后调用，此时可以获取dom节点。
+
+* `componentWillUnmount()`
+  组件将要卸载时调用，一些事件监听和定时器需要在此时清除。
+
+
+以上可以看出来react总共有10个周期函数（render重复一次），这个10个函数可以满足我们所有对组件操作的需求，利用的好可以提高开发效率和组件性能。
+
+### 项目搭建
+
+上面说了react，react-router和redux的知识点。但是怎么样将它们整合起来，搭建一个完整的项目。
+
+1. 先引用 react.js，redux，react-router 等基本文件，建议用npm安装，直接在文件中引用。
+
+2. 从 react.js，redux，react-router 中引入所需要的对象和方法。
+
+
+```js
+import React, {Component, PropTypes} from 'react';
+import ReactDOM, {render} from 'react-dom';
+import {Provider, connect} from 'react-redux';
+import {createStore, combineReducers, applyMiddleware} from 'redux';
+import { Router, Route, Redirect, IndexRoute, browserHistory, hashHistory } from 'react-router';
+```
+
+1. 根据需求创建顶层ui组件，每个顶层ui组件对应一个页面。
+
+2. 创建actionCreators和reducers，并用combineReducers将所有的reducer合并成一个大的reduer。利用createStore创建store并引入combineReducers和applyMiddleware。
+
+3. 利用connect将actionCreator，reuder和顶层的ui组件进行关联并返回一个新的组件。
+
+4. 利用connect返回的新的组件配合react-router进行路由的部署，返回一个路由组件Router。
+
+5. 将Router放入最顶层组件Provider，引入store作为Provider的属性。
+
+6. 调用render渲染Provider组件且放入页面的标签中。
+
+
+可以看到顶层的ui组件其实被套了四层组件，Provider，Router，Route，Connect，这四个并不会在视图上进行任何改变，它们只是功能性的。
+
+上图的顶层ui组件属性总共有18个，如果刚刚接触react，可能对这些属性怎么来的感到困惑，其实这些属性来自五个地方：
+
+组件自定义属性1个，actionCreator返回的对象6个，reducer返回的state4个，Connect组件属性0个，以及Router注入的属性7个。
+
+### 总结react中遇到的坑和一些小的知识点
+
+在使用react 中经常会遇到各种个样的问题，如果对react不熟悉则会对遇到的问题感到莫名其妙而束手无策，接下来分析一下react中容易遇到的问题和注意点。
+
+* setState()是异步的
+  this.setState()会调用render方法，但并不会立即改变state的值，state是在render方法中赋值的。所以执行this.setState()后立即获取state的值是不变的。同样的直接赋值state并不会出发更新，因为没有调用render函数。
+
+* 组件的生命周期
+  componentWillMount，componentDidMount 只有在初始化的时候才调用。
+  componentWillReceiveProps，shouldComponentUpdate，componentWillUpdata，componentDidUpdate 只有组件在更新的时候才被调用，初始化时不调用。
+
+* reducer必须返回一个新的对象才能触发组件的更新
+  因为在connect函数中会对新旧两个state进行浅对比，如果state只是值改变但是引用地址没有改变，connect会认为它们相同而不触发更新。
+
+* 组件命名的首字母必须是大写，这是类命名的规范。
+
+* 组件卸载之前，加在dom元素上的监听事件，和定时器需要手动清除，因为这些并不在react的控制范围内，必须手动清除。
+
+* 按需加载时如果组件是通过export default 暴露出去，那么require.ensure时必须加上default。
+
+* componentWillUpdate中可以直接改变state的值，而不能用setState。
+
+* 如果使用es6class类继承react的component组件，constructor中必须调用super，因为子类需要用super继承component的this，否则实例化的时候会报错。
+
+
+### 组件的所有子节点（this.props.children）
+
+this.props 对象的属性与组件的属性一一对应，但是有一个例外，就是 this.props.children 属性。它表示组件的所有子节点.
+
+```jsx
+var NotesList = React.createClass({
+  render: function() {
+    return (
+      <ol>
+      {
+        this.props.children.map(function (child) {
+          return <li>{child}</li>
+        })
+      }
+      </ol>
+    );
+  }
+});
+
+React.render(
+  <NotesList>
+    <span>hello</span>
+    <span>world</span>
+  </NotesList>,
+  document.body
+);
+```
+
+上面代码的 NoteList 组件有两个 span 子节点，它们都可以通过 this.props.children 读取，运行结果如下。
+
+这里需要注意，只有当子节点多于1个时，this.props.children 才是一个数组，否则是不能用 map 方法的， 会报错。
+
+
+### React中使用HTML展示
+
+```jsx
+<div dangerouslySetInnerHTML={{__html: '<sup>xx</sup>'}} />
+```
+
+
+
+# Koa
+
+> [《一起学 Node.js》-express blog](https://github.com/nswbmw/N-blog/blob/master/book/2.1%20require.md)
+
+> [《一起学 Node.js》-koa blog](https://nswbmw.github.io/N-club/7/7.3.html)
+
+> [一步步学KOA【死马】： learn koa step by step](https://github.com/dead-horse/koa-step-by-step#generator)
+
+> [Koa2进阶学习笔记](https://chenshenhai.github.io/koa2-note/)
+
+有助于基础理解
+
+
+## Koa1
+
+- co 也是 Koa 1 选择的底层异步库，所有的 Koa 1 的中间件都必须是一个 generator function。
+
+## Koa2
+
+
+
+
+# Vue
+# Node
+
+* `>version`
+* `>=version`
+* `<version`
+* `<=version`
+* `~version` 大致版本
+* `^version` 兼容版本
+
+
+语义化版本（semver）
+
+即 dependencies、devDependencies 和 peerDependencies 里的如：`"co": "^4.6.0"`。
+
+semver 格式：主版本号.次版本号.修订号。版本号递增规则如下：
+
+* `主版本号`：做了不兼容的 API 修改
+* `次版本号`：做了向下兼容的功能性新增
+* `修订号`：做了向下兼容的 bug 修正
+
+
+作为 Node.js 的开发者，我们在发布 npm 模块的时候一定要遵守语义化版本的命名规则，即：有 breaking change 发大版本，有新增的功能发小版本，有小的 bug 修复或优化则发修订版本。
+
+* `dependencies` 产品依赖
+* `devDependencies` 开发依赖
+
+
+npm i -S egg 安装产品依赖
+npm i -D egg-bin 安装开发依赖
+
+
+如果执行 `npm i` 会安装所有模块
+如果执行 `npm install --production` 只会安装 `dependencies` 产品依赖
+
+# Markdown
+
+> metalsmith API［Markdown 转 HTML工具］
+
+
+* [metalsmith API & 插件](http://www.metalsmith.io/)
+
+
+### 使用API做一个真正的实例。
+
+.use(plugin)
+
+添加插件函数处理中间件队列，Metalsmith支持使用多个中间件，所以插件需要遵守相同的模式附带参数 (files, metalsmith, callback), 推荐修改文件或数据参数，并回调进入下个步骤。
+
+Add the given plugin function to the middleware stack. Metalsmith uses ware to support middleware, so plugins should follow the same pattern of taking arguments of (files, metalsmith, callback), modifying the files or metalsmith.metadata() argument by reference, and then calling callback to trigger the next step.
+
+.build(fn)
+
+使用给定的设置和具有签名fn（err，files）的回调来构建。
+
+.source(path)
+
+设置资源相对路径，或指定一个不存在的目录，默认目录是./src
+
+Set the relative path to the source directory, or get the full one if no path is provided. The source directory defaults to ./src.
+
+.destination(path)
+
+设置输出相对路径，或指定一个不存在的目录，默认目录是./build
+
+Set the relative path to the destination directory, or get the full one if no path is provided. The destination directory defaults to ./build.
+
+.concurrency(max)
+
+指定文件第一次打开或编辑时的最大值， 默认无限制。避免一次打开太多文件，将并发设置为低于ulimit -n的值。
+
+Set the maximum number of files to open at once when reading or writing. Defaults to Infinity. To avoid having too many files open at once (EMFILE errors), set the concurrency to something lower than ulimit -n.
+
+.clean(boolean)
+
+设置在写入目标目录之前是否删除目标目录，或获取当前设置。 默认为true。
+
+Set whether to remove the destination directory before writing to it, or get the current setting. Defaults to true.
+
+.frontmatter(boolean)
+
+设置是否解析YAML frontmatter。 默认为true
+
+.ignore(path)
+
+忽略文件/路径加载到Metalsmith。
+
+路径可以是字符串，函数或字符串和/或函数的数组。
+
+字符串使用glob语法从minimatch匹配文件和目录忽略。
+
+函数以文件的完整路径作为它们的第一个参数，
+
+以及Node的fs.lstat函数返回的lstat对象作为它们的第二个参数来调用，
+
+并且必须返回true来忽略该文件，否则返回false来保留它。
+
+.metadata(json)
+
+获取全局元数据。 这对于想要设置可应用于所有文件的全局级元数据的插件非常有用。
+
+Get the global metadata. This is useful for plugins that want to set global-level metadata that can be applied to all files.
+
+.path(paths…)
+
+解析相对于工作目录的任何数量的路径…。 这对于希望从其他目录读取额外资源的插件（例如./layouts）非常有用。
+
+Resolve any amount of paths… relative to the working directory. This is useful for plugins who want to read extra assets from another directory, for example ./layouts.
+
+.run(files, fn)
+
+在文件的字典上运行所有中间件函数，并使用fn（err，files）回调函数，其中文件是更改的字典。
+
+Run all of the middleware functions on a dictionary of files and callback with fn(err, files), where files is the altered dictionary.
+
+---
+
+
+### Plan I：
+
+1. 建立配置文件 metalsmith.json
+
+2. 配置项
+
+   ```
+   {
+     "source": "./src",
+     "destination": "./dest",
+     "plugins": {
+       "metalsmith-markdown": {},
+       "metalsmith-layouts":{
+         "engine": "ejs",
+         "directory": "template"
+       }
+     }
+   }
+   ```
+
+3. 建立配置好的目录和ejs模版文件
+
+4. package.json 安装对应的插件
+
+   ```
+   npm i --save metalsmith-markdown
+   npm i --save metalsmith-layouts
+   npm i --save ejs
+   ...
+   ```
+
+5. 运行 `metalsmith`
+
+
+---
+
+> [Raneto](https://github.com/gilbitron/Raneto)--支持Markdown的开源知识库
+
+- 本地新增文档
+- 可视化编辑markdown
+- 管理用户，管理本地文档
+
+
+
+### API
+
+免费开源API发布系统，书写官方文档，发布与展示
+
+RAML vs. Swagger vs. API Blueprint
+
+
+# Git
+* [https://github.com/Gazler/githug](https://github.com/Gazler/githug)
+* [http://www.jianshu.com/p/482b32716bbe](http://www.jianshu.com/p/482b32716bbe)
+* [http://backlogtool.com/git-guide/cn/](http://backlogtool.com/git-guide/cn/)
+
+
+### 标签
+* 轻标签
 
   ```
   $ git tag <tagname>
@@ -266,160 +907,6 @@ v1.2.4
 ### 什么是npm?
 
 js开发者可以通过npm方便地分享，更新，和重复使用代码。
-
-
-### 使用介绍
-
-* 允许用户从NPM服务器下载别人编写的第三方包到本地使用。
-* 允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。
-* 允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。
-
-新版的nodejs已经集成了npm，所以之前npm也一并安装好了。同样可以通过输入 "npm -v" 来测试是否成功安装。命令如下，出现版本提示表示安装成功:
-
-```js
-$ npm -v
-2.3.0
-```
-
-### 本地安装/全局安装
-
-npm 安装 Node.js 模块语法格式如下：
-
-```
-$ npm install <Module Name>
-```
-
-以下实例，我们使用 npm 命令安装常用的 Node.js web框架模块 express:
-
-```
-$ npm install express
-```
-
-```
-npm install express   //本地安装
-npm install express -g   //全局安装
-```
-
-### 本地安装
-
-  1. 将安装包放在 ./node_modules 下（运行 npm 命令时所在的目录），如果没有 node_modules 目录，会在当前执行 npm 命令的目录下生成 node_modules 目录。
-  2. 可以通过 require() 来引入本地安装的包。
-
-### 全局安装
-
-  1. 将安装包放在 /usr/local 下或者你 node 的安装目录。
-  2. 可以直接在命令行里使用。
-
-### 查看安装信息
-
-你可以使用以下命令来查看所有全局安装的模块：
-
-```
-$ npm list -g
-```
-
-如果要查看某个模块的版本号，可以使用命令如下：
-
-```
-$ npm list grunt
-
-projectName@projectVersion /path/to/project/folder
-└── grunt@0.4.1
-```
-
-### Package.json 属性说明
-
-name - 包名。
-
-version - 包的版本号。
-
-description - 包的描述。
-
-homepage - 包的官网 url 。
-
-author - 包的作者姓名。
-
-contributors - 包的其他贡献者姓名。
-
-dependencies - 依赖包列表。如果依赖包没有安装，npm 会自动将依赖包安装在 node_module 目录下。
-
-repository - 包代码存放的地方的类型，可以是 git 或 svn，git 可在 Github 上。
-
-main - main 字段指定了程序的主入口文件，require('moduleName') 就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js。
-
-keywords - 关键字
-
-
-### 卸载模块
-
-我们可以使用以下命令来卸载 Node.js 模块。
-
-```
-$ npm uninstall express
-卸载后，你可以到 /node_modules/ 目录下查看包是否还存在，或者使用以下命令查看：
-```
-
-```
-$ npm ls
-```
-
-### 更新模块
-
-我们可以使用以下命令更新模块：
-
-```
-$ npm update express
-```
-
-### 搜索模块
-
-使用以下来搜索模块：
-
-```
-$ npm search express
-```
-
-### 创建模块
-
-创建模块，package.json 文件是必不可少的。我们可以使用 NPM 生成 package.json 文件，生成的文件包含了基本的结果。
-
-```
-$ npm init
-This utility will walk you through creating a package.json file.
-It only covers the most common items, and tries to guess sensible defaults.
-
-See `npm help json` for definitive documentation on these fields
-and exactly what they do.
-
-Use `npm install <pkg> --save` afterwards to install a package and
-save it as a dependency in the package.json file.
-
-Press ^C at any time to quit.
-name: (node_modules) runoob                   # 模块名
-version: (1.0.0)
-description: Node.js 测试模块(www.runoob.com)  # 描述
-entry point: (index.js)
-test command: make test
-git repository: https://github.com/runoob/runoob.git  # Github 地址
-keywords:
-author:
-license: (ISC)
-About to write to ……/node_modules/package.json:      # 生成地址
-
-{
-  "name": "runoob",
-  "version": "1.0.0",
-  "description": "Node.js 测试模块(www.runoob.com)",
-  ……
-}
-
-
-Is this ok? (yes) yes
-```
-
-在最后输入 "yes" 后会生成 package.json 文件。
-
-
 
 # NPM 包应用
 
@@ -1124,6 +1611,7 @@ press `:q!` 不保存并退出
 
 # 浏览器JSSDK
 
+[官方文档](http://doc.ucweb.local/pages/viewpage.action?pageId=41194515)
 
 # 活动开发流程
 
@@ -1132,6 +1620,10 @@ press `:q!` 不保存并退出
 ### 巴比塔文案模型
 ### 构建开发环境
 ### 前端组件
+* [所有组件](http://gitlab.alibaba-inc.com/bread)
+* [国际前端业务全家桶](http://gitlab.alibaba-inc.com/bread/bucket)
+* [Preact多语言组件](http://gitlab.alibaba-inc.com/bread/preact-intl)
+* [Preact Router](http://gitlab.alibaba-inc.com/bread/preact-router)
 
 
 # Project
@@ -1175,3 +1667,443 @@ press `:q!` 不保存并退出
 # vs code
 
 [教程](https://github.com/i5ting/vsc)
+
+# 戒烟
+
+* 早晨的口臭，喉咙干燥
+
+* 夜间的猛力咳嗽和干呕
+
+* 抽烟没有好处，再好的烟也是毒
+
+* 注意心脏和肺部健康
+
+
+自打我们懂事时起，潜意识无时无刻不遭到各种信息的狂轰滥炸，其中许多信息都告诉我们：香烟是世界上最好的东西，能让我们放松，给我们信心和勇气。你觉得我是在夸大？看电影、话剧或动画片时，如果一个角色即将被处自打我们懂事时起，潜意识无时无刻不遭到各种信息的狂轰滥炸，其中许多信息都告诉我们：香烟是世界上最好的东西，能让我们放松，给我们信心和勇气。你觉得我是在夸大？看电影、话剧或动画片时，如果一个角色即将被处以死刑，他的最后遗愿通常是什么？没错，吸一支烟。这样的情节并不会对我们的意识造成任何影响，但是我们的潜意识却会吸收其中的隐含信息，也就是：“香烟是世界上最好的东西，所以我才会把它作为临终选择。”在绝大多数战争片中，受伤的人都会得到一支香烟。
+
+年复一年，这样的信息轰炸并没有改变。今天青少年的潜意识，仍然要承受各种信息的狂轰滥炸。尽管电视香烟广告已遭禁止，但在播放电视剧的黄金时间，屏幕上的明星们却都在吞云吐雾。体育运动也是一样。许多参加一级方程式大赛的赛车都以香烟品牌命名——或者是反过来，香烟品牌是以赛车命名？我曾看到过这样的插播广告：一对裸体的夫妇在做爱之后，躺在床上共吸一支香烟。广告的暗示意味再明显不过了。尽管我无法赞同广告商的动机，但却不得不佩服他们的宣传手段。经常会有这样的宣传片：一个人正面临危急关头——他的热气球即将起火坠落，或者摩托车侧厢即将栽进峡谷，或者他是哥伦布，他的船马上就要从海洋的尽头掉进深渊之中。轻音乐响起，没有任何话语说明，那个人点起一支烟，脸上洋溢着幸福的表情。我们的主观意识或许会直接忽略这样的场面，但是潜意识却难免受其影响。
+
+的确，反对吸烟的宣传也不是不存在——强调吸烟有害健康，提倡大众戒烟的宣传——但是单纯强调吸烟的危害，并不能为吸烟者提供戒烟的动力，更无法阻止青少年尝试吸烟。我自己还是个烟鬼的时候一直以为，当年我如果知晓吸烟与肺癌之间的关系，绝对不会开始吸烟。事实是，就算那样也不会有任何区别。吸烟的陷阱在今天，跟在文艺复兴时代没有任何区别。反对吸烟的宣传不仅于事无补，反而会把事情弄糟。所有的烟盒上都印有“吸烟有害健康”的字样，然而有人会去看吗？
+我相信，关于吸烟有害健康的宣传，甚至会增加香烟的销量。吸烟者看到这样的宣传，无疑会心情紧张，于是抽掉更多的烟。
+
+只有当我们决心戒烟，或是弄不到香烟，或是身处禁止吸烟的地方（学校、医院、超市、剧院、教堂等）时，才会觉得吸烟很重要。
+吸烟者必须意识到，禁止吸烟的地方会越来越多。总有一天，任何公共场合都不允许吸烟。
+过去吸烟者迈进朋友或陌生人家里时，还可以问一句“你介意我吸烟吗”？现在，社会礼仪已经不允许他开口，他只能绝望地打量周围，希望看到一个留有烟痕的烟灰缸。如果看不到，他只能强忍烟瘾，直到实在忍不住，不得不征求主人的同意。主人的回答有可能是“实在忍不住就吸吧”，也有可能是“最好还是不要，烟味很长时间都散不掉”。
+
+可怜的吸烟者，原本已经感觉十分糟糕了，现在更是无地自容。
+
+过去冬天打室内保龄球时，我经常假装上厕所，然后偷偷点一支烟。这样的事原本只有14岁的男孩子会做，而我却是个40岁的会计师。真是可怜！就算回到球场上，我也无法享受打球的过程，只是在强忍着等球打完，好重获“自由”。保龄球原本是一种休闲，却因为吸烟成为一种负担。
+
+对我来说，戒烟的最大快乐就是，我终于可以自由享受生活，不必再忍受烟瘾的奴役。不必再花一半的时间盼望着吸烟，另一半时间则一边吸烟，一边希望自己当初没有染上烟瘾。
+吸烟者应该时刻记住，当他们在非吸烟者家里或禁止吸烟的场所忍受折磨时，折磨他们的并不是非吸烟者，而是尼古丁这个恶魔。
+
+我们必须消除洗脑作用的影响。否则，吸烟者终其一生，都无法好好享受：
+
+·良好的健康
+·充沛的精力
+·心灵的安宁
+·财富
+·自信
+·勇气
+·自尊
+·幸福
+·自由
+
+我已经解释过，吸烟者认为吸烟是一种享受，能帮他们放松，或是能起到别的什么正面作用。这是一种错觉，吸烟的真正作用是对尼古丁戒断症状的暂时缓解。
+过去，吸烟曾经是社会地位的标志。不过，那样的时代早已一去不复返。如今，我们的潜意识整天都在接受暗示：在恰当的时机点上一支烟是一种享受。
+
+2017-04-06
+一天没有吸烟，有几个瞬间想吸烟，我倒是看看不抽会怎么样，抱着对自己的好奇心，泡上一杯柠檬水，就这么不经意间过了，时常觉得柠檬水是很神奇的东西，有人说也会像烟一样上瘾，我想如果真会这样，应该也不差吧。
+
+2017-04-07
+有些担心被烟吸引，要懂得照顾自己，今天没有咳嗽，早早的起床洗澡，感觉萌萌达，在路上感官向远处延伸，天色不错，感触空气中饱饱的水份。\
+
+2017-04-10
+第四天，在超市买了些菜，看到背景里五颜六色的小盒子，联想起烟雾飘渺的场景，差点就要伸出手时，低头间一串串娇艳欲滴的红提，勾起了我的味蕾，不如水果来得美好。
+
+# 减肥
+
+* 最近两天晚上没东西吃，小肚子仿佛消瘦了一些，注意坚持过9点不再吃零食，防蛀牙，也能保持好身材
+
+
+分享我理解的减肥十件事：
+
+1.不要减少用餐数量
+
+2.把用餐的碟子从12寸改为10寸，可以少吃22%食物
+
+3.计算卡路里数量，人体需求2000卡路里/天，超过需要的热量将变成脂肪
+
+4.吃蛋白质食物可以饱腹更长时间
+
+5.粥可饱腹长时间（增大食物体积，延长消化时间
+
+6.人类天生食物多样化，多样化催生占有欲，导致进食量加大
+
+7.吃低脂乳制品，因为钙会与食物脂肪结合，变成皂质的物质，肠道不能吸收，从身体排出。
+
+8.运动，可燃烧脂肪，运动后持续燃烧脂肪24小时
+
+9.保持活跃，相同的饮食
+
+10.不要节食，饥饿会让你选择高热量的食物
+
+# 咳嗽-治疗
+
+1. 茄子把冰冻5小时，再煮水喝
+2. 煲点老鸭汤
+3. 冰糖雪梨不能治疗有痰咳嗽
+4. 橙子削顶后抹盐，蒸
+
+
+
+# Atom
+
+[80个有趣且好用的Atom插件](https://github.com/kompasim/atom-plugins)
+
+# 信息流专题页-插件开发
+
+初始化插件：rpg sample component-preact-compat
+
+# 信息流专题页
+
+> 看图模式
+
+
+* 需要前后端配合，实现完全符合的数据格式
+* 达到的效果和预期不一致
+* 在业务纯熟的时候实现该功能
+
+
+## 信息流专题页遇到的问题
+
+> 开发环境不一样
+
+
+* 开发环境不能良好的对接，编译，部署，发布
+
+* 配置环境，引入前端JS，CSS和预期不一致，在导入阿里包文件时，找不到对应的包文件。
+
+* 手动拷贝需要的JS，CSS文件到指定的路径，实现。
+
+* 部署到测试环境每次需要10-20分钟，不方便调试和测试，过程不顺利，花费时间多。
+
+* 在测服发现模版问题后，请求后台协助排查没有得到支持，前端多方协助，排查问题后，定位到后台模版问题，得到解决。
+
+* 前期不习惯用插件开发的方式，每次修改比较花时间，以后的开发中，建议还是先开发功能，后提取。
+
+
+> 对需求的理解
+
+
+* 本来是由前端提供前端文件，最终包括了开发JSP文件，部署新专题入口，配置前端文件。
+
+* 【评论模块】
+
+1. 不能直接接入——（广耀整理了一份，协助接入）
+2. 很多细节配置，页面报错——（已经处理）
+3. 专题没有评论的数据——（评论功能由前端开发，存在一些问题，经讨论后，暂不上线）
+
+
+> 后期增加的需求
+
+
+* 【看图模式】功能——1.提供了开发文档，数据格式有误，不完全标准规范。2.没有告知需要引入JSSDK，是找到刘威龙了解时发现的问题。3.真实数据与所需数据不匹配，不能按照API展示数据，需要前后端配合，实现完全符合的数据格式，达到的效果和预期不一致，在业务纯熟的时候实现该功能，经过产品讨论后，暂时不实现该功能。
+
+* 【预览模式】功能——1.需求经过讨论后由后端实现，在项目快结束时，后端研发提出前端再实现另外一种方案。临近发布，暂时不实现该功能。
+
+
+---
+
+
+已经提测，发布到测服，等待发布上线
+
+1. 希望后端发布到release预发布环境看效果，没有得到相应的支持。
+2. 记录所有开发的问题，注意事项，方便后期维护与迭代
+3. 项目结束开发阶段，后续跟进上线情况。
+
+
+# Broccoli
+
+## Broccoli开发组件
+
+通过脚手架初始化项目，然后安装依赖，最后直接启动。
+
+```
+$ rpg sample component-react
+$ tnpm i
+$ tnpm run dev
+```
+
+## Broccoli下创建组件
+
+### 发布组件
+
+> 【组件】发布到tnpm
+
+
+```
+tnpm run build
+tnpm publish
+```
+
+> 【组件】更新到Broccoli正式, 开发, 测试环境
+
+
+```
+npm run pub && npm run pub:dev && npm run pub:test
+```
+
+> 【构建服务】代码库 (build-service)
+
+
+* 拉取构建服务代码，checkout release分支
+* [添加需要的依赖包到ci-build.sh](http://xn--ci-build-612ms6sf9ax8as74ub8yajs3ds2mtx2b.sh)
+* 提交到任意release分支，都会触发打包
+
+* 更新[UAE构建服务](http://uae.ucweb.local/apps/3958/status)上的最新包。
+* 【后台服务】[后台开发服务](http://broccoliadmin.dev.uae.uc.cn/web/)，就能用上你的最新组件啦。
+
+
+> 组件可视化配置
+
+
+* 进入adminn项目
+* 在 install_components.sh, builder/webpack.config.components.js 文件中添加插件名称
+* npm run build:components
+* npm run build:components:prod
+
+
+需要定义的内容：
+
+1. 文本
+
+
+点击后行为
+选择字体类型；
+选择字体大小；
+选择字体颜色；
+是否加粗；
+是否倾斜；
+是否加下划线；
+选择对齐方式；
+选择间距（默认有）；
+选择背景颜色
+
+1. 图片
+
+
+点击后行为
+宽度100%
+高度适应
+上传
+替换
+
+1. 全景图
+
+
+点击后行为
+支持滑动，陀螺仪方向 360度旋转
+上传
+替换
+
+1. 视频
+
+
+点击后行为
+全屏／非全屏
+上传替换
+
+1. 轮播图
+
+
+点击后行为
+不无限循环
+上传，
+替换，
+增加，
+删除，
+
+1. 按钮
+
+
+点击后行为
+选择字体类型；
+选择字体大小；
+选择字体颜色；
+是否加粗；
+选择背景颜色；
+填写按钮宽度；
+填写按钮高度；
+
+伟大的组件库
+
+* broccoli-show-star-topic-loading
+* broccoli-tpl-rule
+* broccoli-tpl-draw-prize
+
+
+# 幻幕广告
+
+7-3
+
+* 幻幕广告同步问题给产品-播放器进度条已播放进度不生效
+  1. input range 拖动条before after不被支持
+  2. IOS下按钮太小不触发拖动
+* 确认金桥区域下载页详细需求
+  完成金桥区域下载页详细需求，确认通过。
+
+
+7-4
+
+* 幻幕广告
+  1. 发布失败 —— 全流程多次调试，发布成功
+  2. 按钮SVG图像不能正常显示—— 尝试了多钟方式，定位到的原因是，SVG传上SDN后，通过地址栏访问报错，解决方案：SVG换成PNG图像
+  3. 视频Android版本，界面测试通过。
+  4. 界面可视化失败 —— 分析原因，可能是组件的衔接问题，需要验证，改写
+  5. 整理统计埋点内容，同步产品
+* 发布哥伦布第一个试用组件
+
+
+7-5
+
+* 幻幕广告
+  1. 按钮SVG图像不能正常显示—— SVG换成PNG图像
+  2. 视频IOS版本，界面测试通过。
+     安装特别包，生成二维码扫描：
+     UMax:{“document”:“[http://render.test.uae.uc.cn/umax/apps/xuanjingguanggao/routes/image](http://render.test.uae.uc.cn/umax/apps/xuanjingguanggao/routes/image)”}
+     UMax:{“document”:“[http://100.84.247.216:5001/examples/](http://100.84.247.216:5001/examples/)”}
+  3. 界面可视化失败，改写动画模块，测试后，不能达到可视化。原因：组件可视化编辑需要兼容处理功能，已由铭浩添加
+  4. 新增需求——前端接收客户端数据，设定页面第一元素是否动画，动画延迟时长。
+* UC开放平台
+  完成pfId项添加，上线
+
+
+7-6
+
+* 幻幕广告
+  1. 新增需求——前端接收客户端数据，设定页面第一元素是否动画，动画延迟时长。
+* UClite灵动版-落地页优化
+  1. 测试定位问题
+
+
+7-7
+
+* 幻幕广告
+  1. 抽取组件作为Broccoli基本组件调用。
+* UClite灵动版-落地页优化
+  1. 测试定位问题
+
+
+7-8
+* 图片要有默认尺寸
+*
+本周工作：
+* []幻幕广告接入Broccoli平台，配置了可视化环境，方便产品设计师更新，上线
+* []抽取通用组件，供Broccoli自由拖拽，并应用到以后的项目中。
+* []UC开放平台完成渠道功能，发布上线
+* []UClite灵动版-落地页优化
+* []完成了通用视频组件，在IOS,Android平台下UC浏览器，能达到理想效果【跨多个平台，效果一致，操作一致，功能一致】。
+
+
+# 开放平台
+
+> 问题
+
+
+* 审批后台U4应用列表,XXL应用列表无数据显示
+
+
+可能的原因：旧数据或非法操作导致列表不能展示
+
+# 金桥区域下载页
+
+## 运营配置后台
+
+* [链接进入](http://broccoliadmin.zc.uae.uc.cn/web/apps/0003)
+
+
+## 发布后访问
+
+* [正式地址](http://broccoli.uc.cn/apps/jqqyxzy/routes/cash_redpack)
+
+
+#
+
+# 开放平台本周工作报道
+
+1、信息流移动端本周一发布上线
+2、更新处理完反馈的问题，同步到线上环境
+3、完成H5详情页定制
+
+今天1:30的云栖大会上演示
+
+4、同步U盟账号，旧数据打通
+5、开发第三方平台登录，正在联调，预计本周完成
+
+
+
+11.6——11.10
+站点头部调整，账号登录后展示优化，添加用户中心账号管理入口
+信息流，U4文档更新，改变文档UI
+后台管理，增加应用对应的用户信息展示。
+
+
+NODE化后台管理服务
+
+
+流年似水化成河，记忆辗转化成歌
+
+优秀是一种习惯
+
+将来的你会感激现在努力的自己
+
+所有的生命都值得温柔以待
+
+知世俗而不世俗，是最善良的成熟。
+
+如果我走过你走过的路,看过你看过的风景,会不会离你更近一些
+
+有多逗逼，就有多深情。
+
+浪漫了时光，温柔了岁月
+
+我许你万千宠爱，你回我翻脸无情
+
+两个人的回忆，现在只被我一个人想起
+
+我捧你的时候你是杯子，松手的时候你就是个玻璃碴子
+
+昨天的我你爱理不理,今天的我你高攀不起
+
+我能把你宠上天，也能杀你不眨眼
+
+写一封信给从前的自己：我很好，只是想你。
+
+从你的世界路过，晴时满树花开，雨天一湖涟漪
+
+曾经我也小鹿乱撞过，现在可能是撞死了吧
+
+有没有一盏灯，恰好让你心有悸动?
+
+有梦不觉寒
+
+
+# 健康
+
+ 1.健康生活方式：
+（1）饮食---会吃就是会养生。A.早餐要吃够五种颜色，五谷杂粮粥（大米，小米，糙米，燕麦，红豆，绿豆，薏米熬粥），或者吃够五种颜色的蔬菜，肉类在早上吃最好；午餐吃饱，有荤有素；晚餐吃少（不吃最好），米饭+粥+薯类，不要吃肉和油；B.一顿三餐，主食要占到50%以上，最好在70-80%，蔬菜20-30%，肉类5-30%，绝对不要超过30%；
+（2）起居---跟着太阳公公的节奏。早上6:00之前要起床（升阳气），不加班的话，22:30之前一定要睡觉，23:00-3:00是肝胆经回血的时候，要熟睡；每天要7次小便，早9:00前大便；
+（3）运动---运动是健康向上的阶梯。推荐传统健身方法：站桩（大成桩），八段锦，太极拳和禅坐，女同学推荐瑜伽。无论男女，一定要有一项持之以恒的运动健身方法，哪怕是跑步也好。“日有百痛（运动痛），可度百岁而无病痛，日无一痛则一病呜呼”；
+ 2.常见疾病的缓解调理方法：
+（1）颈椎肩周疾病：每坐1-2个小时，起来远眺窗外，双手带双臂从胸前环绕到头顶最后到身后画圆数十次；也可以练八段锦前四式；早晚练两次：身体直立，两臂自然下垂，头向身体的左右前后上五个方向最大限度的放松倾斜拉伸1分钟；揉手上的后溪穴和肩上的肩井穴；艾灸大椎穴；
+（2）习惯性便秘：晚餐不吃油腻，多吃薯类和蔬菜，早餐吃五谷杂粮粥，早5:00-7:00敲两臂的大肠经，早起一杯阴阳水（前晚的凉白开和刚烧的开水混合）；
+（3）小儿湿疹：隔衣服艾灸双臂尺泽穴和合谷穴各7分钟；
+（4）小儿免疫力低下，便秘，脾胃虚弱：每晚睡前捏脊9/21次，上下捋脊柱及两侧，抹按摩油从内向外拔捋四肢，顺时针揉肚子49次；常吃北京同仁堂产的“小儿健脾丸”
+（5）甲状腺结节：每天喝三杯黑茶或普洱茶+玫瑰花+陈皮泡水，晨起空腹运动或快走至少30分钟，早晚两次翘脚跟远眺10分钟；
+（6）预防老人突发性中风：70岁以上老人，每天出门前用力空掌拍腋下极泉、肩膀尖、肩井穴各36次；家里常备、随身携带北京同仁堂产的“安宫牛黄丸”，发现中风马上热水服下；
+（7）脾胃虚寒、大便不成型：晨起喝一杯红糖姜水，吃附子理中丸+桂附地黄丸；
+（8）饭水分离养生法：每顿饭前后各两个小时不喝任何汤和水，先吃米饭再吃菜，每口饭细嚼慢咽，让食物与唾液充分搅拌；
+（9）肾虚：两手空拳放置腰眼处，两腿与肩同宽站立微曲带动身体颤动5分钟；八段锦的“两手攀足固肾腰”；睡前练“还阳卧”；
+（10）失眠：睡前泡脚，搓脚底涌泉穴，深呼吸法（连续深呼吸几十次，然后自然呼吸数呼吸次数），自我暗示放松法（观想从头到脚，默念放松，放松。。。），推荐用软管枕（头凉脚暖睡得香，天猫有卖）；
+ 好了，就写这些吧。以上均为验证过的方法，至少本人和家人是有效的。大家日后如果有疑问和需要，可以加我随问随答！祝各位看官及家人，吉祥安康！！！最后唠叨一句，再忙再累，也不要忽视健康！
