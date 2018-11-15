@@ -25,35 +25,35 @@
   $ git tag apple
   ```
   如果没有使用参数而执行tag，可以显示已有标签列表。
- 
+
   ```
   $ git tag
   ```
 * 注解标签
- 
-  若要添加注解标签，可以在tag命令指定 -a选项执行。  
-  执行后会启动编辑区，请输入注解，  
+
+  若要添加注解标签，可以在tag命令指定 -a选项执行。
+  执行后会启动编辑区，请输入注解，
   也可以指定-m选项来添加注解。
   ```
   $ git tag -a <tagname>
   ```
- 
+
   在HEAD指向的提交里添加名为banana的标签，请执行以下的命令。
- 
+
   ```
   $ git tag -am "连猴子都懂的Git" banana
   ```
- 
+
   如果在tag命令指定-n选项执行，可以显示标签的列表和注解。
- 
+
   ```
   $ git tag -n
   apple           first commit
   banana          连猴子都懂的Git
   ```
- 
+
   － 删除标签
- 
+
   ```
   $ git tag -d <tagname>
   ```
@@ -130,7 +130,7 @@ git branch --set-upstream-to=origin/relase dev
 * deps: 升级依赖
 
 
-修改文件的范围（包括但不限于 doc, middleware, proxy, core, config, plugin）  
+修改文件的范围（包括但不限于 doc, middleware, proxy, core, config, plugin）
 用一句话清楚的描述这次提交做了什么
 
 ** 分支的划分 **
@@ -176,10 +176,10 @@ v1.2.4
 * preact添加组件 rpg cmp preact xxx
 * 安装前端组件 rpg install xxx
 * 更新多语言 rpg sync
- 
+
 * react添加页面 rpg view xxx --react
 * react添加组件 rpg cmp react xxx
- 
+
 * 插件开发脚手架 rpg sample component
 
 
@@ -209,41 +209,41 @@ v1.2.4
 - config.local.js
 
 * [印度签到](http://uae.ucweb.local/apps/3429/services)
- 
+
 * KeyValue项对应了项目代码的config.json, config.default.js, config.local.js
- 
+
   如：action.path
- 
+
   “/indonesiasignin” —— 注意要有双引号
- 
+
   路径地址
- 
+
   配置 /conf
- 
+
 * 活动项目中配置文件夹包含一下几个分类的配置文件：
- 
+
 * 路由
- 
+
   routes //路由表
- 
+
 * 配置
- 
+
   application.conf //配置文件入口，存放活动平台相关的配置
- 
+
   business.conf //业务性配置，如抽奖次数等
- 
+
   environment.conf //环境性配置，如：数据库地址，MC 地址等
- 
+
   play_common.conf //通用 play 配置(不常改动)
- 
+
   play_origin.conf //原有 play 项目配置，用于帮助理解
- 
+
 * 日志
- 
+
   log4j.properties //Log4j 配置，已包含常用打日志功能
- 
+
 * 其他
- 
+
   messages //用于 play 的 i18n 功能
 
 ### UAE配置文件起效
@@ -267,11 +267,165 @@ v1.2.4
 
 js开发者可以通过npm方便地分享，更新，和重复使用代码。
 
+
+### 使用介绍
+
+* 允许用户从NPM服务器下载别人编写的第三方包到本地使用。
+* 允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。
+* 允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。
+
+新版的nodejs已经集成了npm，所以之前npm也一并安装好了。同样可以通过输入 "npm -v" 来测试是否成功安装。命令如下，出现版本提示表示安装成功:
+
+```js
+$ npm -v
+2.3.0
+```
+
+### 本地安装/全局安装
+
+npm 安装 Node.js 模块语法格式如下：
+
+```
+$ npm install <Module Name>
+```
+
+以下实例，我们使用 npm 命令安装常用的 Node.js web框架模块 express:
+
+```
+$ npm install express
+```
+
+```
+npm install express   //本地安装
+npm install express -g   //全局安装
+```
+
+### 本地安装
+
+  1. 将安装包放在 ./node_modules 下（运行 npm 命令时所在的目录），如果没有 node_modules 目录，会在当前执行 npm 命令的目录下生成 node_modules 目录。
+  2. 可以通过 require() 来引入本地安装的包。
+
+### 全局安装
+
+  1. 将安装包放在 /usr/local 下或者你 node 的安装目录。
+  2. 可以直接在命令行里使用。
+
+### 查看安装信息
+
+你可以使用以下命令来查看所有全局安装的模块：
+
+```
+$ npm list -g
+```
+
+如果要查看某个模块的版本号，可以使用命令如下：
+
+```
+$ npm list grunt
+
+projectName@projectVersion /path/to/project/folder
+└── grunt@0.4.1
+```
+
+### Package.json 属性说明
+
+name - 包名。
+
+version - 包的版本号。
+
+description - 包的描述。
+
+homepage - 包的官网 url 。
+
+author - 包的作者姓名。
+
+contributors - 包的其他贡献者姓名。
+
+dependencies - 依赖包列表。如果依赖包没有安装，npm 会自动将依赖包安装在 node_module 目录下。
+
+repository - 包代码存放的地方的类型，可以是 git 或 svn，git 可在 Github 上。
+
+main - main 字段指定了程序的主入口文件，require('moduleName') 就会加载这个文件。这个字段的默认值是模块根目录下面的 index.js。
+
+keywords - 关键字
+
+
+### 卸载模块
+
+我们可以使用以下命令来卸载 Node.js 模块。
+
+```
+$ npm uninstall express
+卸载后，你可以到 /node_modules/ 目录下查看包是否还存在，或者使用以下命令查看：
+```
+
+```
+$ npm ls
+```
+
+### 更新模块
+
+我们可以使用以下命令更新模块：
+
+```
+$ npm update express
+```
+
+### 搜索模块
+
+使用以下来搜索模块：
+
+```
+$ npm search express
+```
+
+### 创建模块
+
+创建模块，package.json 文件是必不可少的。我们可以使用 NPM 生成 package.json 文件，生成的文件包含了基本的结果。
+
+```
+$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+name: (node_modules) runoob                   # 模块名
+version: (1.0.0)
+description: Node.js 测试模块(www.runoob.com)  # 描述
+entry point: (index.js)
+test command: make test
+git repository: https://github.com/runoob/runoob.git  # Github 地址
+keywords:
+author:
+license: (ISC)
+About to write to ……/node_modules/package.json:      # 生成地址
+
+{
+  "name": "runoob",
+  "version": "1.0.0",
+  "description": "Node.js 测试模块(www.runoob.com)",
+  ……
+}
+
+
+Is this ok? (yes) yes
+```
+
+在最后输入 "yes" 后会生成 package.json 文件。
+
+
+
 # NPM 包应用
 
 ### axios 处理ajax请求
 
-跨域post实例，用到了qs组件来避开ajax信使请求，并兼容Android。  
+跨域post实例，用到了qs组件来避开ajax信使请求，并兼容Android。
 信使请求:post请求中，请求头部带有OPTIONS
 
 ```
@@ -720,35 +874,35 @@ exports.mysql = {
 ### 添加环境变量
 
 * 很多时候需要为系统添加应用，如果默认的终端是zsh，
- 
+
   通过vi修改对应的配置文件是：
- 
+
   ```
   $ vi ~/.zshrc
   ```
   按下 i 表示进入编辑状态
- 
+
 * 给 Linux/Unix 系统增加环境变量，是使用 export 命令。
- 
+
   ```
   # Java默认路径配置,#是注释，不会生效
   export JAVA_HOME=$(/usr/libexec/java_home/bin)
   export PATH=$JAVA_HOME:$PATH
   ```
- 
+
   解释：
- 
+
   环境变量中，各个值是以冒号分隔开的。
- 
+
   上面的语句表示给 PATH 这个变量重新赋值，让它等于  $JAVA_HOME 同时后面加上原来的 $PATH
- 
+
   * 退出vi编辑
 
- 
+
   按下 ESC 退出编辑状态
- 
+
   按下 :wq 表示保存并退出vi
- 
+
 * 使配置生效
 
 
@@ -760,12 +914,12 @@ $ source ~/.zshrc
 
 其实我用了 oh-my-zsh 原来他自带了很多插件没有开启。。。
 
-如何开启？  
-zsh配置文件 `~/.zshrc` 有一行 `plugins=(git)`，想加什么插件就把名字放里面就是了  
+如何开启？
+zsh配置文件 `~/.zshrc` 有一行 `plugins=(git)`，想加什么插件就把名字放里面就是了
 比如 `plugins=(npm git)` 就开启了`npm`，`git`插件。
 
-更多插件?  
-[Plugins Overview](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins-Overview)  
+更多插件?
+[Plugins Overview](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins-Overview)
 或者进入 ~/.oh-my-zsh/plugins文件夹探索，每个人的需求不一样，里面有一些比较神奇的插件，比如敲两下esc 它会给你自动加上 sudo 的 sudo 插件，让复制显示进度条的cp插件，解压用的 extract 插件（有没有觉得在命令行下敲一大堆选项才能解压有点奇怪？），vi 粉的vi-mode npm等等
 
 
@@ -890,7 +1044,7 @@ zsh配置文件 `~/.zshrc` 有一行 `plugins=(git)`，想加什么插件就把�
 | glum                 | git pull upstream master                                                                                                                |
 | gvt                  | git verify-tag                                                                                                                          |
 | gwch                 | git whatchanged -p --abbrev-commit --pretty = medium                                                                                    |
-| gwip                 | git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit -m "--wip--" 
+| gwip                 | git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit -m "--wip--"
 
 
 
@@ -959,11 +1113,11 @@ press `:q!` 不保存并退出
 * 搜索软件：brew search 软件名，例：brew search wget
 * 卸载软件：brew uninstall 软件名，例：brew uninstall wget
 * 更新Homebrew：brew update
- 
+
 * 更新具体软件：brew upgrade 软件名 ，例：brew upgrade git
 * 显示已安装软件：brew list
 * 查看软件信息：brew info／home 软件名 ，例：brew info git ／ brew home git
- 
+
 * 查看那些已安装的程序需要更新： brew outdated
 * 显示包依赖：brew reps
 
