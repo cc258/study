@@ -804,99 +804,7 @@ v1.2.4
 * [移动应用UI规范](http://www.zcool.com.cn/article/ZMzc5MTQ0.html)
 
 
-# omelette
 
-> [煎蛋🍳](http://gitlab.alibaba-inc.com/omelette/wiki/blob/master/docs/GettingStarted/HelloWorld.md)
-
-
-> [从入门到放弃 —— 手把手 Omelette 开发指南](http://gitlab.alibaba-inc.com/omelette/wiki#buildin-plugins)
-
-
-脚手架使用:
-* preact添加页面 rpg view xxx --preact
-* preact添加组件 rpg cmp preact xxx
-* 安装前端组件 rpg install xxx
-* 更新多语言 rpg sync
-
-* react添加页面 rpg view xxx --react
-* react添加组件 rpg cmp react xxx
-
-* 插件开发脚手架 rpg sample component
-
-
-> 组件
-
-
-* [活动项目日志组件](http://git.ucweb.local/pffe/log)
-* [性能统计和前端错误收集 组件 - perf](http://git.ucweb.local/pffe/perf)
-
-
-# CI
-# UAE
-* [UAE文档](http://doc.ucweb.local/pages/viewpage.action?pageId=13435490)
-* [发布到UAE](http://gitlab.alibaba-inc.com/omelette/wiki/blob/master/docs/Guide/AllInOmelette.md)
-
-
-> UAE配置
-
-### 申请机器 —— 线下申请
-
-### UAE配置文件
-
-主要是为了配置不同环境下的参数
-
-- config.json
-- config.default.js
-- config.local.js
-
-* [印度签到](http://uae.ucweb.local/apps/3429/services)
-
-* KeyValue项对应了项目代码的config.json, config.default.js, config.local.js
-
-  如：action.path
-
-  “/indonesiasignin” —— 注意要有双引号
-
-  路径地址
-
-  配置 /conf
-
-* 活动项目中配置文件夹包含一下几个分类的配置文件：
-
-* 路由
-
-  routes //路由表
-
-* 配置
-
-  application.conf //配置文件入口，存放活动平台相关的配置
-
-  business.conf //业务性配置，如抽奖次数等
-
-  environment.conf //环境性配置，如：数据库地址，MC 地址等
-
-  play_common.conf //通用 play 配置(不常改动)
-
-  play_origin.conf //原有 play 项目配置，用于帮助理解
-
-* 日志
-
-  log4j.properties //Log4j 配置，已包含常用打日志功能
-
-* 其他
-
-  messages //用于 play 的 i18n 功能
-
-### UAE配置文件起效
-
-1. 找到应用的UAE
-2. 点击：「配置文件」 —— 「config.json」 —— 编辑文件中的内容「严格的JSON模式，最后不能有逗号」
-3. 点击「保存」
-4. 点击上面的「应用配置」
-5. 选择想要生效的包
-6. 重启
-
-以后的包不再需要进行操作，也能应用到配置文件。
 
 
 
@@ -1068,11 +976,6 @@ export default Editor;
 ```
 
 
-
-
-
-# [WA统计](http://wa.ucdns.uc.cn:8888/)
-
 ### 添加管理权限
 
 * ‘应用管理’ -> ‘权限设置’ -> 添加阿里邮箱
@@ -1117,7 +1020,6 @@ lt=xxxxx : 自定义日志
 # Egg
 
 * [egg是什么](https://eggjs.org/zh-cn/intro/index.html)
-* [egg buc](http://gitlab.alibaba-inc.com/egg/egg-buc-login)
 
 ### Part A 快速初始化
 
@@ -1609,9 +1511,6 @@ press `:q!` 不保存并退出
 * 显示包依赖：brew reps
 
 
-# 浏览器JSSDK
-
-[官方文档](http://doc.ucweb.local/pages/viewpage.action?pageId=41194515)
 
 # 活动开发流程
 
@@ -1620,10 +1519,7 @@ press `:q!` 不保存并退出
 ### 巴比塔文案模型
 ### 构建开发环境
 ### 前端组件
-* [所有组件](http://gitlab.alibaba-inc.com/bread)
-* [国际前端业务全家桶](http://gitlab.alibaba-inc.com/bread/bucket)
-* [Preact多语言组件](http://gitlab.alibaba-inc.com/bread/preact-intl)
-* [Preact Router](http://gitlab.alibaba-inc.com/bread/preact-router)
+
 
 
 # Project
@@ -1835,36 +1731,6 @@ $ tnpm i
 $ tnpm run dev
 ```
 
-## Broccoli下创建组件
-
-### 发布组件
-
-> 【组件】发布到tnpm
-
-
-```
-tnpm run build
-tnpm publish
-```
-
-> 【组件】更新到Broccoli正式, 开发, 测试环境
-
-
-```
-npm run pub && npm run pub:dev && npm run pub:test
-```
-
-> 【构建服务】代码库 (build-service)
-
-
-* 拉取构建服务代码，checkout release分支
-* [添加需要的依赖包到ci-build.sh](http://xn--ci-build-612ms6sf9ax8as74ub8yajs3ds2mtx2b.sh)
-* 提交到任意release分支，都会触发打包
-
-* 更新[UAE构建服务](http://uae.ucweb.local/apps/3958/status)上的最新包。
-* 【后台服务】[后台开发服务](http://broccoliadmin.dev.uae.uc.cn/web/)，就能用上你的最新组件啦。
-
-
 > 组件可视化配置
 
 
@@ -1964,92 +1830,6 @@ npm run pub && npm run pub:dev && npm run pub:test
   5. 整理统计埋点内容，同步产品
 * 发布哥伦布第一个试用组件
 
-
-7-5
-
-* 幻幕广告
-  1. 按钮SVG图像不能正常显示—— SVG换成PNG图像
-  2. 视频IOS版本，界面测试通过。
-     安装特别包，生成二维码扫描：
-     UMax:{“document”:“[http://render.test.uae.uc.cn/umax/apps/xuanjingguanggao/routes/image](http://render.test.uae.uc.cn/umax/apps/xuanjingguanggao/routes/image)”}
-     UMax:{“document”:“[http://100.84.247.216:5001/examples/](http://100.84.247.216:5001/examples/)”}
-  3. 界面可视化失败，改写动画模块，测试后，不能达到可视化。原因：组件可视化编辑需要兼容处理功能，已由铭浩添加
-  4. 新增需求——前端接收客户端数据，设定页面第一元素是否动画，动画延迟时长。
-* UC开放平台
-  完成pfId项添加，上线
-
-
-7-6
-
-* 幻幕广告
-  1. 新增需求——前端接收客户端数据，设定页面第一元素是否动画，动画延迟时长。
-* UClite灵动版-落地页优化
-  1. 测试定位问题
-
-
-7-7
-
-* 幻幕广告
-  1. 抽取组件作为Broccoli基本组件调用。
-* UClite灵动版-落地页优化
-  1. 测试定位问题
-
-
-7-8
-* 图片要有默认尺寸
-*
-本周工作：
-* []幻幕广告接入Broccoli平台，配置了可视化环境，方便产品设计师更新，上线
-* []抽取通用组件，供Broccoli自由拖拽，并应用到以后的项目中。
-* []UC开放平台完成渠道功能，发布上线
-* []UClite灵动版-落地页优化
-* []完成了通用视频组件，在IOS,Android平台下UC浏览器，能达到理想效果【跨多个平台，效果一致，操作一致，功能一致】。
-
-
-# 开放平台
-
-> 问题
-
-
-* 审批后台U4应用列表,XXL应用列表无数据显示
-
-
-可能的原因：旧数据或非法操作导致列表不能展示
-
-# 金桥区域下载页
-
-## 运营配置后台
-
-* [链接进入](http://broccoliadmin.zc.uae.uc.cn/web/apps/0003)
-
-
-## 发布后访问
-
-* [正式地址](http://broccoli.uc.cn/apps/jqqyxzy/routes/cash_redpack)
-
-
-#
-
-# 开放平台本周工作报道
-
-1、信息流移动端本周一发布上线
-2、更新处理完反馈的问题，同步到线上环境
-3、完成H5详情页定制
-
-今天1:30的云栖大会上演示
-
-4、同步U盟账号，旧数据打通
-5、开发第三方平台登录，正在联调，预计本周完成
-
-
-
-11.6——11.10
-站点头部调整，账号登录后展示优化，添加用户中心账号管理入口
-信息流，U4文档更新，改变文档UI
-后台管理，增加应用对应的用户信息展示。
-
-
-NODE化后台管理服务
 
 
 流年似水化成河，记忆辗转化成歌
