@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+    <meta name="MobileOptimized" content="320" />
+    <title>使用canvas来绘制图形</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        font-size: 18px;
+    }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <span id="start_btn">start_btn</span>
+    <span id="stop_btn">stop_btn</span>
+</body>
+<script type="text/javascript">
+'use strict';
+var canvas = document.getElementById('canvas'),
+    play = 1,
+    stopBtn = document.getElementById('stop_btn'),
+    startBtn = document.getElementById('start_btn'),
+    playRec = [],
+    playAnimate;
+
+canvas.width = 1000;
+canvas.height = 500;
+
+function ArrayData(x, y, w, h) {
+    this.x = x;
+    this.y = y;
+    this.width = w;
+    this.height = h;
+
+    this.radius = Math.random()*30;
+    this.angle = 0;
+    this.reverseX = false;
+    this.reverseY = false;
+}
+
+function randomData() {
+    for (var i = 0; i < 10; i++) {
+        var x = Math.random() * 250;
+        var y = Math.random() * 250;
+        var w = Math.random() * 50;
+        playRec.push(new ArrayData(x, y, w, w));
+    }
+}
+
+// console.log(playRec[4]);
+
+function draw() {
+
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < playRec.length; i++) {
+            var tmpRec = playRec[i];
+
+            if(tmpRec.x < 0){
+                tmpRec.reverseX = false;
+            }else if(tmpRec.x +tmpRec.width > canvas.width){
+                tmpRec.reverseX = true;
+            }
+
+            if(tmpRec.y < 0){
+                tmpRec.reverseY = false;
+            }else if(tmpRec.y + tmpRec.height > canvas.height){
+                tmpRec.reverseY = true;
+            }
+
+            // tmpRec.x = tmpRec.x + (tmpRec.radius*Math.cos(tmpRec.angle*(Math.PI/180)));
+            // tmpRec.y = tmpRec.y + (tmpRec.radius*Math.sin(tmpRec.angle*(Math.PI/180)));
+
+            // tmpRec.angle += 5;
+
+            if(!tmpRec.reverseX){
+                tmpRec.x += 4;
+            }else{
+                tmpRec.x -= 4;
+            }
+
+            if(!tmpRec.reverseY){
+                tmpRec.y += 4;
+            }else{
+                tmpRec.y -= 4;
+            }
+
+            if(tmpRec.angle > 360){
+                tmpRec.angle = 0;
+            }
+            ctx.fillRect(tmpRec.x, tmpRec.y, tmpRec.width, tmpRec.height);
+        }
+    }
+}
+
+function animate() {
+    randomData();
+    clearInterval(playAnimate);
+
+    playAnimate = setInterval(function() {
+        if (play) {
+            draw();
+        }
+    }, 50);
+
+}
+
+function clearAnimate() {
+    clearInterval(playAnimate);
+    playAnimate = null;
+
+}
+
+
+startBtn.onclick = function() {
+    play = 1;
+    animate();
+};
+
+stopBtn.onclick = function() {
+    play = 0;
+    clearAnimate();
+};
+</script>
+
+</html>

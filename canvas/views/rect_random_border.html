@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+    <meta name="MobileOptimized" content="320" />
+    <title>使用canvas来绘制图形</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font-size: 0;
+        line-height: 0;
+    }
+    #canvas{
+        background: #001022;
+    }
+    span{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+    }
+    .stop-btn{
+        margin-left: 30px;
+        background-color: #e44b23;
+    }
+    .start-btn{
+        margin-left: -130px;
+        background-color: #60b044;
+    }
+    </style>
+</head>
+
+<body><canvas id="canvas"></canvas><span id="start_btn" class="start-btn">Start</span><span id="stop_btn" class="stop-btn">Stop</span></body>
+<script type="text/javascript">
+'use strict';
+var canvas = document.getElementById('canvas'),
+    win_w = document.documentElement.clientWidth,
+    win_h = document.documentElement.clientHeight,
+    play = 1,
+    stopBtn = document.getElementById('stop_btn'),
+    startBtn = document.getElementById('start_btn'),
+    playRec = [],
+    playAnimate;
+
+function changeSize(){
+    canvas.width = win_w;
+    canvas.height = win_h;
+    canvas.style.width = win_w+'px';
+    canvas.style.height = win_h+'px';
+    
+}
+
+// function ArrayData(x, y, radius, mass,vX, vY, aX, aY) {
+function ArrayData(x, y, vX, vY, w, h) {
+    this.x = x;
+    this.y = y;
+
+    this.vX = vX;
+    this.vY = vY;
+
+    this.w = w;
+    this.h = h;
+    this.reverseX = 0;
+    this.reverseY = 0;
+}
+
+function randomData() {
+    for (var i = 0; i < 30; i++) {
+        var x = 20 + Math.random() * (canvas.width - 40);
+        var y = 20 + Math.random() * (canvas.height - 40);
+
+        var vX = Math.random()*20-10;
+        var vY = Math.random()*4-2;
+
+        var w = Math.random() * 25 + 10;
+        var h = w;
+
+        playRec.push(new ArrayData(x, y,vX,vY,w,h));
+    }
+}
+
+function draw() {
+
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < playRec.length; i++) {
+
+            var tmpRec = playRec[i];
+
+            if(tmpRec.x < 0){
+                tmpRec.reverseX = 0;
+            }else if(tmpRec.w+tmpRec.x>canvas.width){
+                tmpRec.reverseX = 1;
+            }
+
+            if(tmpRec.y < 0){
+                tmpRec.reverseY = 0;
+            }else if(tmpRec.h+tmpRec.y>canvas.height){
+                tmpRec.reverseY = 1;
+            }
+
+            if(!tmpRec.reverseX){
+                tmpRec.x += Math.abs(tmpRec.vX);
+            }else{
+                tmpRec.x -= Math.abs(tmpRec.vX);
+            }
+
+            if(!tmpRec.reverseY){
+                tmpRec.y += 2;
+            }else{
+                tmpRec.y -= 2;
+            }
+
+            // tmpRec.x += tmpRec.vX;
+            // tmpRec.y += tmpRec.vY;
+
+            ctx.fillRect(tmpRec.x,tmpRec.y,tmpRec.w,tmpRec.h);
+        }
+    }
+}
+
+function animate() {
+
+    playRec = [];
+    clearAnimate();
+
+    randomData();
+
+    playAnimate = setInterval(function() {
+        if (play) {
+            draw();
+        }
+    }, 50);
+
+}
+
+function clearAnimate() {
+    clearInterval(playAnimate);
+    playAnimate = null;
+
+}
+
+
+startBtn.onclick = function() {
+    play = 1;
+    animate();
+};
+
+stopBtn.onclick = function() {
+    play = 0;
+    clearAnimate();
+};
+
+window.onload = function(){
+    changeSize();
+};
+</script>
+
+</html>

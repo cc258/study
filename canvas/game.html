@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+    <meta name="MobileOptimized" content="320" />
+    <title>使用canvas来绘制图形</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        font-size: 0;
+        line-height: 0;
+    }
+    #canvas{
+        background: #001022;
+    }
+    span{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+    }
+    .stop-btn{
+        margin-left: 30px;
+        background-color: #e44b23;
+    }
+    .start-btn{
+        margin-left: -130px;
+        background-color: #60b044;
+    }
+    </style>
+</head>
+
+<body><canvas id="canvas"></canvas><span id="start_btn" class="start-btn">Start</span><span id="stop_btn" class="stop-btn">Stop</span></body>
+<script type="text/javascript">
+'use strict';
+var canvas = document.getElementById('canvas'),
+    win_w = document.documentElement.clientWidth,
+    win_h = document.documentElement.clientHeight,
+    play = 1,
+    stopBtn = document.getElementById('stop_btn'),
+    startBtn = document.getElementById('start_btn'),
+    playRec = [],
+    playAnimate;
+
+function changeSize(){
+    canvas.width = win_w;
+    canvas.height = win_h;
+    canvas.style.width = win_w+'px';
+    canvas.style.height = win_h+'px';
+}
+
+function ArrayData(x, y, radius, mass,vX, vY, aX, aY) {
+    this.x = x;
+    this.y = y;
+
+    this.radius = radius;
+    this.mass = mass;
+
+    this.vX = vX;
+    this.vY = vY;
+
+    this.aX = aX;
+    this.aY = aY;
+}
+
+function randomData() {
+    for (var i = 0; i < 30; i++) {
+        var x = 20 + Math.random() * (canvas.width - 40);
+        var y = 20 + Math.random() * (canvas.height - 40);
+        var radius = 10 + Math.random() * 10;
+        var mass = radius/2;
+
+        var vX = Math.random() * 4 - 2;
+        var vY = Math.random() * 4 - 2;
+
+        var aX = 0;
+        var aY = 0;
+        playRec.push(new ArrayData(x, y, radius,mass,vX, vY, aX, aY));
+    }
+}
+
+function draw() {
+
+    if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#ffffff';
+        for (var i = 0; i < playRec.length; i++) {
+
+            var tmpRec = playRec[i];
+
+            for (var j = i + 1; j < playRec.length; j++) {
+
+                var tmpRecB = playRec[j];
+                var dX = tmpRecB.x - tmpRec.x;
+                var dY = tmpRecB.y - tmpRec.y;
+                var distance = Math.sqrt(dX * dX + dY * dY);
+
+                if (distance <= tmpRec.radius + tmpRecB.radius) {
+                    var angle = Math.atan2(dY, dX);
+                    var sine = Math.sin(angle);
+                    var cosine = Math.cos(angle);
+
+                    var x = 0;
+                    var y = 0;
+                    var xB = dX * cosine + dY * sine;
+                    var yB = dY * cosine - dX * sine;
+
+                    var vX = tmpRec.vX * cosine + tmpRec.vY * sine;
+                    var vY = tmpRec.vY * cosine - tmpRec.vX * sine;
+
+                    var vXb = tmpRecB.vX * cosine + tmpRecB.vY * sine;
+                    var vYb = tmpRecB.vY * cosine - tmpRecB.vX * sine;
+
+                    var vTotal = vX-vXb;
+                    vX = ((tmpRec.mass - tmpRecB.mass)*vX+2*tmpRecB.mass*vXb)/(tmpRec.mass+tmpRecB.mass);
+                    vXb = vTotal+vX;
+
+                    xB = x + tmpRec.radius+tmpRecB.radius;
+
+                    tmpRec.x = tmpRec.x+(x*cosine - y*sine);
+                    tmpRec.y = tmpRec.y+(y*cosine + x*sine);
+
+                    tmpRecB.x = tmpRec.x+(xB*cosine-yB*sine);
+                    tmpRecB.y = tmpRec.y+(yB*cosine+xB*sine);
+
+                    tmpRec.vX = vX*cosine-vY*sine;
+                    tmpRec.vY = vY*cosine+vX*sine;
+
+                    tmpRecB.vX = vXb*cosine-vYb*sine;
+                    tmpRecB.vY = vYb*cosine+vXb*sine;
+
+                    
+                }
+            }
+
+            tmpRec.x += tmpRec.vX;
+            tmpRec.y += tmpRec.vY;
+
+
+            if (Math.abs(tmpRec.vX) < 10) {
+                tmpRec.vX += tmpRec.aX;
+            }
+            
+            if (Math.abs(tmpRec.vY) < 10) {
+                tmpRec.vY += tmpRec.aY;
+            }
+
+            if (tmpRec.x - tmpRec.radius < 0) {
+                tmpRec.x = tmpRec.radius;
+                tmpRec.vX *= -1;
+                tmpRec.aX *= -1;
+            } else if (tmpRec.x + tmpRec.radius > canvas.width) {
+                tmpRec.x = canvas.width - tmpRec.radius;
+                tmpRec.vX *= -1;
+                tmpRec.aX *= -1;
+            }
+
+            if (tmpRec.y - tmpRec.radius < 0) {
+                tmpRec.y = tmpRec.radius;
+                tmpRec.vY *= -1;
+                tmpRec.aY *= -1;
+            } else if (tmpRec.y + tmpRec.radius > canvas.height) {
+                tmpRec.Y = canvas.height - tmpRec.radius;
+                tmpRec.vY *= -1;
+                tmpRec.aY *= -1;
+            }
+
+            ctx.beginPath();
+            ctx.arc(tmpRec.x, tmpRec.y, tmpRec.radius, 0, Math.PI * 2, false);
+            ctx.closePath();
+            ctx.fill();
+        }
+    }
+}
+
+function animate() {
+
+    playRec = [];
+    clearAnimate();
+
+    randomData();
+
+    playAnimate = setInterval(function() {
+        if (play) {
+            draw();
+        }
+    }, 50);
+
+}
+
+function clearAnimate() {
+    clearInterval(playAnimate);
+    playAnimate = null;
+
+}
+
+
+startBtn.onclick = function() {
+    play = 1;
+    animate();
+};
+
+stopBtn.onclick = function() {
+    play = 0;
+    clearAnimate();
+};
+
+window.onload = function(){
+    changeSize();
+};
+</script>
+
+</html>

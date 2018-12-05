@@ -1,4 +1,4 @@
-# Great plan of 2017
+# Great plan
 
 # Preact
 # React
@@ -12,7 +12,7 @@
 # npm
 
 
-# Great Plan of 2017
+# Great Plan
 
 ---
 
@@ -456,6 +456,27 @@ React.render(
 
 
 
+> JSX 简介
+
+JSX， 一种 JavaScript 的语法扩展。
+推荐在 React 中使用 JSX 来描述用户界面
+JSX 乍看起来可能比较像是模版语言
+事实上它完全是在 JavaScript 内部实现的。
+
+我们书写 JSX 的时候一般都会带上换行和缩进，这样可以增强代码的可读性。与此同时，我们同样推荐在 JSX 代码的外面扩上一个小括号，这样可以防止 分号自动插入 的 bug。
+
+JSX 本身其实也是一种表达式
+
+在编译之后呢，JSX 其实会被转化为普通的 JavaScript 对象。
+
+这也就意味着，你其实可以在 if 或者 for 语句里使用 JSX，将它赋值给变量，当作参数传入，作为返回值都可以
+
+因为 JSX 的特性更接近 JavaScript 而不是 HTML , 所以 React DOM 使用 camelCase 小驼峰命名 来定义属性的名称，而不是使用 HTML 的属性名称。
+
+React DOM 在渲染之前默认会 过滤 所有传入的值。它可以确保你的应用不会被注入攻击。所有的内容在渲染之前都被转换成了字符串。这样可以有效地防止 XSS(跨站脚本) 攻击。
+
+
+
 # Koa
 
 > [《一起学 Node.js》-express blog](https://github.com/nswbmw/N-blog/blob/master/book/2.1%20require.md)
@@ -512,6 +533,66 @@ npm i -D egg-bin 安装开发依赖
 
 如果执行 `npm i` 会安装所有模块
 如果执行 `npm install --production` 只会安装 `dependencies` 产品依赖
+
+
+
+# NVM —— node版本管理工具
+
+## 开始安装(Linux系统下)
+
+curl方式
+
+```bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+```
+## 可能遇到的问题
+
+安装完后，如果是用xshell连远程主机的话，先重连一次，不然会发现提示找不到nvm命令
+
+如果是zsh的话，请用
+
+```bash
+source ~/.zshrc
+```
+
+## 常用命令一览
+
+- 终端输入nvm，会看到帮助信息
+
+```
+nvm
+```
+
+- 列出全部可以安装的版本号
+
+```
+nvm ls-remote
+```
+
+- 安装指定版本
+
+```
+nvm install 7.9.0  #命令后加版本号就可以进行安装，字母v可以不写
+```
+
+- 切换指定版本，切换效果是全局的
+
+```
+nvm use v7.8.0
+```
+
+- 查看当前使用的版本
+- ** 非常重要 **，安装后必须运行一下，确保安装好了
+
+```
+nvm current
+```
+
+- 查看该系统已经安装的版本，这个命令也能看到当前使用的是哪个版本
+
+```
+nvm ls
+```
 
 # Markdown
 
@@ -724,6 +805,7 @@ $ git merge <commit>
 ```
 
 合并 develop 分支到 release
+
 1. 切换到release分支
 2. 拉取最新代码
 3. 合并 develop 分支到 release
@@ -806,6 +888,296 @@ v1.2.4
 
 
 
+
+# Typescript
+
+> [TypeScript 入门教程](https://ts.xcatliu.com/)
+
+> [Typescript官网——语句都不通顺，读起来很吃力](https://typescript.bootcss.com/)
+
+## 安装
+
+```
+npm install -g typescript
+npm install -D typescript ts-loader source-map-loader
+```
+
+- 这些依赖会让TypeScript和webpack在一起良好地工作。
+- ts-loader可以让Webpack使用TypeScript的标准配置文件tsconfig.json编译TypeScript代码。
+-source-map-loader使用TypeScript输出的sourcemap文件来告诉webpack何时生成自己的sourcemaps。 这就允许你在调试最终生成的文件时就好像在调试TypeScript源码一样。
+
+## 使用tsconfig.json
+
+如果一个目录下存在一个tsconfig.json文件，那么它意味着这个目录是TypeScript项目的根目录。 tsconfig.json文件中指定了用来编译这个项目的根文件和编译选项。
+
+```
+{
+    "compileOnSave": true,
+    "extends": "./configs/base",
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "../../built/local/tsc.js",
+        "sourceMap": true
+    },
+    "files": [
+        "core.ts",
+        "sys.ts",
+        "types.ts"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
+```
+
+可以通过以下方式之一来编译：
+
+- ```tsc``` 编译器会从当前目录开始去查找tsconfig.json文件，逐级向上搜索父目录。
+- ```tsc -p 目录``` 指定一个包含tsconfig.json文件的目录。
+- ```tsc tsconfig.json```
+
+## ```compileOnSave```
+
+最顶层设置compileOnSave标记，可以让IDE在保存文件的时候根据tsconfig.json重新生成文件。
+
+## ```files```
+
+"files"或"include"文件的引用文件也会包含进来
+
+## ```include```
+
+使用"include"引入的文件可以使用"exclude"属性过滤。
+
+## ```exclude```
+
+如果没有特殊指定，"exclude"默认情况下会排除node_modules，bower_components，jspm_packages和<outDir>目录。
+
+## ```extends```
+
+tsconfig.json文件可以利用extends属性从另一个配置文件里继承配置。
+
+## [配置选项文档](https://zhongsp.gitbooks.io/typescript-handbook/content/doc/handbook/Compiler%20Options.html)
+
+### JavaScript 中的 基本类型 ：Boolean, Number, String, Null, Undefined, Symbol.
+
+### TypeScript 只会进行静态检查，如果发现有错误，编译的时候就会报错。TypeScript 编译的时候即使报错了，还是会生成编译结果。
+
+### 如果要在报错的时候终止 js 文件的生成，可以在 tsconfig.json 中配置 noEmitOnError 即可。
+
+
+# Jest
+
+## Install
+
+```shell
+npm install jest -D
+```
+
+## Additional Configuration
+
+> Generate a basic configuration file
+
+```
+jest --init
+```
+
+> Using Babel
+
+To use Babel, install the ```babel-jest``` and ```regenerator-runtime``` packages:
+
+> Using Matchers
+
+Jest uses "matchers" to let you test values in different ways. This document will introduce some commonly used matchers. For the full list, see the expect [API doc](https://jestjs.io/docs/en/expect).
+
+> Common Matchers
+
+
+
+> Using webpack
+
+> Using TypeScript
+
+## API
+
+> describe(name, fn)
+
+describe(name, fn) creates a block that groups together several related tests in one "test suite". For example, if you have a myBeverage object that is supposed to be delicious but not sour, you could test it with:
+
+```js
+const myBeverage = {
+  delicious: true,
+  sour: false,
+};
+
+describe('my beverage', () => {
+  test('is delicious', () => {
+    expect(myBeverage.delicious).toBeTruthy();
+  });
+
+  test('is not sour', () => {
+    expect(myBeverage.sour).toBeFalsy();
+  });
+});
+```
+
+> test(name, fn, timeout)
+
+Also under the alias: it(name, fn, timeout)
+
+All you need in a test file is the test method which runs a test. For example, let's say there's a function inchesOfRain() that should be zero. Your whole test could be:
+
+```js
+test('did not rain', () => {
+  expect(inchesOfRain()).toBe(0);
+});
+```
+
+- The first argument is the test name;
+- The second argument is a function that contains the expectations to test.
+- The third argument (optional) is timeout (in milliseconds) for specifying how long to wait before aborting. Note: The default timeout is 5 seconds.
+
+> expect(value)
+
+The expect function is used every time you want to test a value. You will rarely call expect by itself. Instead, you will use expect along with a "matcher" function to assert something about a value.
+
+It's easier to understand this with an example. Let's say you have a method bestLaCroixFlavor() which is supposed to return the string 'grapefruit'. Here's how you would test that:
+
+```js
+test('the best flavor is grapefruit', () => {
+  expect(bestLaCroixFlavor()).toBe('grapefruit');
+});
+```
+
+In this case, ```toBe``` is the matcher function. There are a lot of different matcher functions, documented below, to help you test different things.
+
+
+
+
+
+
+
+
+
+
+# Webpack
+
+## 配置Typescript
+
+- 安装
+
+```
+npm install ts-loader -D
+```
+
+- 基本webpack.config.js配置
+
+```js
+module.exports = {
+    entry: "./src/index.tsx",
+    output: {
+        filename: "bundle.js"
+    },
+    resolve: {
+        // Add '.ts' and '.tsx' as a resolvable extension.
+        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+    },
+    module: {
+        loaders: [
+            // all files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'
+            { test: /\.tsx?$/, loader: "ts-loader" }
+        ]
+    }
+};
+```
+
+
+# Home
+
+- address: 805 Rooms, 8 Blocks, Fengjing Street, Hesheng Hushan International Community, Xintang Town, Zengcheng District,Guangzhou,China
+
+
+## 区块链
+
+### 作用与意义：
+
+第三方，用于价值传递，一种特殊的分布式数据库，没有中心，无管理员，全民记账，只能增查，转账会改变数据，但不能删除。
+
+### 区块链的特点
+
+  - 不可篡改
+  - 可追溯
+  - 去中心化
+
+### 区块链分类：
+
+  - 公有链：比特币 以太坊 EOS
+  - 私有链： 开发节点 测试节点
+  - 联盟链： Fabric R3联盟 EEA 阳光链
+
+### 区块链的架构模型
+
+  - 应用层：应用场景与案例
+  - 合约层：电子合同，达到条件时自动生效
+  - 激励层：激励遵守规则的节点，惩罚不遵守的节点
+  - 共识层：网络节点计算算法
+  - 网络层：P2P组网技术，自动组网功能
+  - 数据层：底层数据结构，非对称公私钥加密技术，时间戳技术
+
+
+# 慢性咽炎
+
+  - 海金沙，用量5g,煮水喝，3次可好
+  - 按摩天突穴（锁骨中心，轻轻揉按）主治气喘、咳嗽、暴喑、咽喉肿痛、呕逆、瘿瘤、梅核气，现代常用于治疗支气管哮喘、支气管炎、咽喉炎、甲状腺肿大、食道炎、癔病等。
+  - 生吃白萝卜
+  - 生吃贡梨
+  - 金银花 10g，胎菊 10g，胖大海 10g，山楂 10g，用闷烧杯闷烂，一口气喝下去(只喝水)，难闻难喝，但有奇效。
+
+# 鼻炎
+
+  - 每天跑步20分钟左右,多运动可以增加自身免疫力，对鼻炎能起到很好的抑制作用，跑步或者运动过后，鼻子会突然变得不塞了
+  - 按摩迎香穴效果显著，5分钟见效。
+
+
+# 使用CNPM
+
+  $ npm install -g cnpm --registry=https://registry.npm.taobao.org
+  $ npm config set registry https://registry.npm.taobao.org
+  这样就可以使用 cnpm 命令来安装模块了：
+
+  $ cnpm install [name]
+
+# React安装
+
+  ```
+  npm install --save react react-dom
+  ```
+
+# Redux安装
+
+  ```
+  npm install --save redux react-redux redux-thunk
+  npm install --save-dev redux-logger
+  ```
+
+
+# Movie
+
+磁力Pro
+
+<<美丽心灵的永恒阳光>>
+
+
+
+# App
+
+google calender
 
 
 # Mongodb
