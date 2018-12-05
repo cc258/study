@@ -1,4 +1,4 @@
-夜空中最亮的星 —— canvas 动画
+# 夜空中最亮的星 —— canvas 动画
 
 * 简单动画
 * 易于理解
@@ -6,7 +6,7 @@
 
 ## 画一个矩形## 
 
-![](https://github.com/cc258/frontend/blob/master/canvas/images/step_static.gif)
+![](https://github.com/cc258/study/blob/master/canvas/images/step_static.gif)
 
 ```
 ctx.fillRect(50,70,25,25);
@@ -17,7 +17,7 @@ ctx.fillRect(50,70,25,25);
 
 ## 让矩形移动## 
 
-![](https://github.com/cc258/frontend/blob/master/canvas/images/step_active.gif)
+![](https://github.com/cc258/study/blob/master/canvas/images/step_active.gif)
 
 * 三要素：更新，清除，绘制
 * 准确记忆图形的内容和位置
@@ -40,7 +40,7 @@ playAnimate = setInterval(function() {
 
 ## 移动多个矩形## 
 
-![](https://github.com/cc258/frontend/blob/master/canvas/images/step_simple.gif)
+![](https://github.com/cc258/study/blob/master/canvas/images/step_simple.gif)
 
 * 怎样记忆多个内容位置值————对象
 * 不复制代码的情况下，绘制多个矩形————数组
@@ -105,7 +105,7 @@ function randomData() {
 }
 ```
 
-![](https://github.com/cc258/frontend/blob/master/canvas/images/step_group.gif)
+![](https://github.com/cc258/study/blob/master/canvas/images/step_group.gif)
 
 
 
@@ -118,12 +118,12 @@ function randomData() {
 tmpRec.x += Math.random() * 4 - 2;
 tmpRec.y += Math.random() * 4 - 2;
 ```
-![](https://github.com/cc258/frontend/blob/master/canvas/images/step_rock.gif)
+![](https://github.com/cc258/study/blob/master/canvas/images/step_rock.gif)
 
 
 
 ## 反弹
-![](https://github.com/cc258/frontend/blob/master/canvas/images/step_border.gif)
+![](https://github.com/cc258/study/blob/master/canvas/images/step_border.gif)
 
 ```
 function ArrayData(x, y, vX, vY, w, h) {
@@ -172,7 +172,7 @@ function ArrayData(x, y, vX, vY, w, h) {
 
 ## 圆周运动
 
-![](https://github.com/cc258/frontend/blob/master/canvas/images/step_round.gif)
+![](https://github.com/cc258/study/blob/master/canvas/images/step_round.gif)
 
 * 三角函数的知识
 
@@ -202,7 +202,7 @@ function ArrayData(x, y, vX, vY, w, h) {
 
 * 《捕鱼达人》
 
-![](https://github.com/cc258/frontend/blob/master/canvas/images/step_fish.gif)
+![](https://github.com/cc258/study/blob/master/canvas/images/step_fish.gif)
 
 
 
