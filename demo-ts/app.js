@@ -1,11 +1,13 @@
 
 const Koa = require('koa');
-const Router = require('koa-router')();
-const bodyParser = require('koa-bodyparser');
 const app = new Koa();
 
-app.use(bodyParser());
-app.use(require('./app/router'));
+const bodyParser = require('koa-bodyparser');
 
+app.use(bodyParser());
+
+app.use(require('./app/router').routes());
 app.listen(3000);
+
+console.log('http://localhost:3000/index');
 console.log('启动成功');

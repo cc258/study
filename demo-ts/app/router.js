@@ -1,14 +1,10 @@
 
-// const Home = require('./controller/home');
-import Home from './controller/home';
+const Home = require('./controller/home');
+const router = require('koa-router')();
 
-module.exports = app => {
+console.log('---------into router----------');
 
-    app.get('/', Home.index);
-    console.log(Home);
-
-    app.get('/application', Home.application);
-    console.log('-------------------');
-
-
-}
+module.exports = router
+    .get('/', Home.index)
+    .get('/index', Home.index)
+    .get('/app', Home.app);
