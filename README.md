@@ -1,20 +1,17 @@
 # Great plan
 
-# Preact
-# React
-# Koa
-# Vue
-# Node
-# Git
-# CI
-# UAE
-# Mongodb
-# npm
+## ES6
+## React
+## Koa
+## Vue
+## Node
+## Git
+## CI
+## UAE
+## Mongodb
+## npm
 
 
-# Great Plan
-
----
 
 # ES6
 
@@ -274,8 +271,9 @@ mysql> SHOW DATABASE;
 
 > [webpack中library和libraryTarget与externals的使用](https://github.com/zhengweikeng/blog/issues/10)
 
-
 > [webpack使用优化（基本篇）](https://github.com/lcxfs1991/blog/issues/2)
+
+
 
 
 > js-xlsx导出Excel文件时，添加支持浏览器补丁
@@ -284,10 +282,6 @@ mysql> SHOW DATABASE;
 Forked version of js-xlsx to add browserify support. See [https://github.com/SheetJS/js-xlsx/issues/143](https://github.com/SheetJS/js-xlsx/issues/143) for details on the original issue, and this commit for the fix.
 
 $ npm install xlsx-browserify-shim
-
-# Preact
-
-> [Preact – React的轻量解决方案](https://github.com/lcxfs1991/blog/issues/13)
 
 
 # React
@@ -302,13 +296,13 @@ $ npm install xlsx-browserify-shim
 > [分享一个 react + redux 完整的项目，同时写一下个人感悟](http://react-china.org/t/react-redux/9072/13)
 
 
-### 查看安装的React版本
+## 查看安装的React版本
 
 ```shell
 npm ls react
 ```
 
-### 组件的生命周期
+## 组件的生命周期
 
 > 组件在初始化时会触发5个钩子函数：
 
@@ -354,7 +348,26 @@ npm ls react
 
 以上可以看出来react总共有10个周期函数（render重复一次），这个10个函数可以满足我们所有对组件操作的需求，利用的好可以提高开发效率和组件性能。
 
-### 项目搭建
+# 项目初始化
+
+```
+npm init
+```
+
+# React安装
+
+```
+npm install -S react react-dom
+```
+
+# Redux安装
+
+```
+npm install -S redux react-redux redux-thunk
+npm install -D redux-logger
+```
+
+# 项目搭建
 
 上面说了react，react-router和redux的知识点。但是怎么样将它们整合起来，搭建一个完整的项目。
 
@@ -476,6 +489,7 @@ JSX 本身其实也是一种表达式
 React DOM 在渲染之前默认会 过滤 所有传入的值。它可以确保你的应用不会被注入攻击。所有的内容在渲染之前都被转换成了字符串。这样可以有效地防止 XSS(跨站脚本) 攻击。
 
 
+# [Redux](https://www.redux.org.cn/)
 
 # Koa
 
@@ -1153,18 +1167,7 @@ module.exports = {
 
   $ cnpm install [name]
 
-# React安装
 
-  ```
-  npm install --save react react-dom
-  ```
-
-# Redux安装
-
-  ```
-  npm install --save redux react-redux redux-thunk
-  npm install --save-dev redux-logger
-  ```
 
 
 # Movie
