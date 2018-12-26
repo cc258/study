@@ -13,11 +13,9 @@ const mapStateToProps = (state, ownProps) => {
   return state;
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
-  return {
-    addTodo,
-    selectCateloge
-  };
+const mapDispatchToProps = {
+  addTodo,
+  selectCateloge
 };
 
 export default connect(

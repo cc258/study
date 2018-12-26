@@ -1,5 +1,4 @@
 import React from "react";
-import { createLogicalAnd } from "typescript";
 
 class Todo extends React.Component {
   constructor() {
@@ -15,18 +14,15 @@ class Todo extends React.Component {
     };
   }
   render() {
-    const {
-      addTodo,
-      addTodoData,
-      selectCateloge,
-      selectCatelogeData
-    } = this.props;
+    const { addTodo, selectCateloge } = this.props;
     const { todos } = this.state;
 
     console.log("----------todo--------", this.props);
     return (
       <div>
-        <div>{`addTodoData: ${addTodoData}, selectCatelogeData: ${selectCatelogeData}`}</div>
+        <div>{`addTodoData: ${
+          this.props.todos.addTodoData
+        }, selectCatelogeData: ${this.props.todos.selectCatelogeData}`}</div>
         <div>
           <select onChange={selectCateloge}>
             <option value="select1">select I</option>
