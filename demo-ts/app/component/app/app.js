@@ -1,14 +1,26 @@
-import React from 'react'
-import Footer from './footer'
-import AddTodo from '../addtodo/addtodo';
-import VisibleTodoList from '../component/visibletodolist/visibletodolist'
+import React from "react";
+import { connect } from "react-redux";
+import { addTodo, selectCateloge } from "../../action/index";
+import Todo from "../todo/todo";
 
-const App = () => (
-  <div>
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
-  </div>
-)
+class App extends React.Component {
+  render() {
+    return <Todo {...this.props} />;
+  }
+}
 
-export default App
+const mapStateToProps = (state, ownProps) => {
+  return state;
+};
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    addTodo,
+    selectCateloge
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);

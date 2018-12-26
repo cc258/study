@@ -1,18 +1,12 @@
 const todos = (state = [], action) => {
+  console.log(`%c redux====`, "color: green");
   switch (action.type) {
     case "ADD_TODO":
-      return [
-        ...state,
-        {
-          id: action.id,
-          text: action.text,
-          completed: false
-        }
-      ];
-    case "TOGGLE_TODO":
-      return state.map(todo => {
-        todo.id === action.id ? { ...todo, completed: !todo.completed } : todo;
-      });
+      console.log(`%c ADD_TODO====${action.data}`, "color: red");
+      return Object.assign({}, state, action.data);
+    case "SELECTCATELOGE":
+      console.log(`%c SELECTCATELOGE====${action.data}`, "color: blue");
+      return Object.assign({}, state, action.data);
     default:
       return state;
   }
