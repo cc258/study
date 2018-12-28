@@ -848,8 +848,17 @@ $ git branch -d temp
 ### 关联远程分支
 
 git branch --set-upstream-to=origin/release-admin-v1.4.0 release-admin-v1.4.0
-git branch --set-upstream-to=origin/relase dev
+git branch --set-upstream-to=origin/release dev
 
+### 暂存
+
+$ git stash
+$ git stash pop
+$ git stash apply @{0}
+
+### 重置
+
+$ git reset head
 
 
 ### Git规范
@@ -865,6 +874,12 @@ git branch --set-upstream-to=origin/relase dev
 * test: 增加修改测试用例
 * chore: 修改工具相关（包括但不限于文档、代码生成等）
 * deps: 升级依赖
+
+```
+feat(Epic#ECFDEV-1234, US#ECFDEV-1234): add page
+fix(Bug#ECFDEV-2768): add ellipsis & icon align field & Datepick align
+
+```
 
 
 修改文件的范围（包括但不限于 doc, middleware, proxy, core, config, plugin）
