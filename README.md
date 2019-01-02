@@ -1,33 +1,39 @@
 # Great plan
 
 ## ES6
+
 ## React
+
 ## Koa
+
 ## Vue
+
 ## Node
+
 ## Git
+
 ## CI
+
 ## Mongodb
+
 ## npm
-
-
 
 # ES6
 
 > [ECMAScript 6 入门](http://es6.ruanyifeng.com/?search=values&x=0&y=0#docs/let)
 
-> Promise精简写法
+> Promise 精简写法
 
 下面两种写法一样：
 
 ```js
 // demo1
 new Promise(function(resolve, reject) {
-  resolve('value');
+  resolve("value");
 }).then(function(data) {});
 
 // demo2
-Promise.resolve('value').then(function(data) {});
+Promise.resolve("value").then(function(data) {});
 ```
 
 > 时间转换
@@ -37,7 +43,7 @@ Date.parse(Date());
 // 1488372059000 时间戳
 
 const today = new Date();
-today.toISOString().slice(0,10);
+today.toISOString().slice(0, 10);
 
 // "2017-03-01"
 
@@ -51,15 +57,14 @@ today.toISOString();
 
 // 也可以通过以下方式获得
 
-today.getFullYear()
-today.getMonth() + 1
-today.getDate()
-today.getHours()
-today.getMinutes()
+today.getFullYear();
+today.getMonth() + 1;
+today.getDate();
+today.getHours();
+today.getMinutes();
 ```
 
 > 字符串提取
-
 
 ```
 slice() - 提取字符串的片断，并在新的字符串中返回被提取的部分。
@@ -67,28 +72,24 @@ slice() - 提取字符串的片断，并在新的字符串中返回被提取的�
 // 从位置6，到位置11
 ```
 
-> uri编码
-
+> uri 编码
 
 ```
 var p = '?keyword=' + encodeURIComponent('hello');
 var p = encodeURI('http://www.uc.cn');
 ```
 
-* encodeURIComponent() 部分URI进行编码，它输出符号的utf-8形式，不编译的特殊字符 - _ . ! ~ * ’ ( )
-* encodeURI() 完整的URI进行编码，不编译的特殊字符 - _ . ! ~ * ’ ( ) ;/?:pout:&=+$,#
+- encodeURIComponent() 部分 URI 进行编码，它输出符号的 utf-8 形式，不编译的特殊字符 - \_ . ! ~ \* ’ ( )
+- encodeURI() 完整的 URI 进行编码，不编译的特殊字符 - \_ . ! ~ \* ’ ( ) ;/?:pout:&=+\$,#
 
-
-> uri解码
-
+> uri 解码
 
 ```
 decodeURIComponent()
 decodeURI()
 ```
 
-> 数组去重——使用Set特性
-
+> 数组去重——使用 Set 特性
 
 ```markup
 const arr1 = [1, 3, 5, 5, 8];
@@ -96,41 +97,38 @@ const arr2 = Array.from(new Set(arr1))
 [1, 3, 5, 8]
 ```
 
-
 # CSS
 
 > 有序列表数字符号
 
-
 ```css
-ol{
-  	counter-reset: section;
-  	>li{
-  		position: relative;
-  		padding: 0 0 0 30px;
-  		line-height: 30px;
-  		margin: 0 0 48px;
-  		counter-increment: section;
-  	}
-  	>li:before{
-  		display: block;
-  		position: absolute;
-  		top: 7px;
-  		left: 5px;
-  		font-size: 12px;
-  		width: 15px;
-  		height: 15px;
-  		line-height: 15px;
-  		color: #fff;
-  		background: #0081ff;
-  		text-align: center;
-  		content: counter(section);
-  	}
+ol {
+  counter-reset: section;
+  > li {
+    position: relative;
+    padding: 0 0 0 30px;
+    line-height: 30px;
+    margin: 0 0 48px;
+    counter-increment: section;
   }
+  > li:before {
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    color: #fff;
+    background: #0081ff;
+    text-align: center;
+    content: counter(section);
+  }
+}
 ```
 
 > Flex 垂直中齐
-
 
 ```css
 .cont {
@@ -141,7 +139,6 @@ ol{
 ```
 
 > Flex 兼容样式，添加到父元素
-
 
 ```css
 display -webkit-box
@@ -182,29 +179,25 @@ white-space: nowrap;
 text-overflow: ellipsis;
 ```
 
-
 # Chai
 
 # MySQL
 
-[MySQL教程](http://www.yiibai.com/mysql/show-databases.html)
+[MySQL 教程](http://www.yiibai.com/mysql/show-databases.html)
 
-### Mac配置MySQL
+### Mac 配置 MySQL
 
-* Mac配置MySQL
+- Mac 配置 MySQL
 
+推荐去官网上直接下载 dmg 包，下一步，安装后，记录下 root 用户的初始密码。
 
-推荐去官网上直接下载dmg包，下一步，安装后，记录下root用户的初始密码。
+- 启动 MySQL
 
-* 启动MySQL
+在系统偏好设置里面找到 Mysql,并点击 start mysql server：running 表示成功
 
+- 配置路径
 
-在系统偏好设置里面找到Mysql,并点击start mysql server：running表示成功
-
-* 配置路径
-
-
-打开「默认」终端配置文件，（如果你的终端是Zsh,对应的配置文件是~/.zshrc)
+打开「默认」终端配置文件，（如果你的终端是 Zsh,对应的配置文件是~/.zshrc)
 
 `vi ~/.zshrc`
 
@@ -222,17 +215,16 @@ source ~/.bash_profile
 
 ok
 
-* 登陆
-
+- 登陆
 
 ```shell
 mysql -u root -p
 ```
 
-接下来输入安装时的默认密码，回车之后成功进入mysql；
+接下来输入安装时的默认密码，回车之后成功进入 mysql；
 在当前环境下输入
 
-* 修改密码
+- 修改密码
 
 ```sql
 SET PASSWORD FOR 'root'@'localhost' = PASSWORD('123');
@@ -242,7 +234,7 @@ SET PASSWORD FOR 'root'@'localhost' = PASSWORD('123');
 
 完成后，重新登陆验证。
 
-* 登陆后使用mysql语句
+- 登陆后使用 mysql 语句
 
 先执行登陆语句
 
@@ -258,44 +250,29 @@ mysql> SHOW DATABASE;
 
 ** 注意一条语句，是必须要用;结束 **
 
-
-
-
-
-
-
 # Mock
 
 # Webpack
 
-> [webpack中library和libraryTarget与externals的使用](https://github.com/zhengweikeng/blog/issues/10)
+> [webpack 中 library 和 libraryTarget 与 externals 的使用](https://github.com/zhengweikeng/blog/issues/10)
 
-> [webpack使用优化（基本篇）](https://github.com/lcxfs1991/blog/issues/2)
+> [webpack 使用优化（基本篇）](https://github.com/lcxfs1991/blog/issues/2)
 
-
-
-
-> js-xlsx导出Excel文件时，添加支持浏览器补丁
-
+> js-xlsx 导出 Excel 文件时，添加支持浏览器补丁
 
 Forked version of js-xlsx to add browserify support. See [https://github.com/SheetJS/js-xlsx/issues/143](https://github.com/SheetJS/js-xlsx/issues/143) for details on the original issue, and this commit for the fix.
 
-$ npm install xlsx-browserify-shim
-
+\$ npm install xlsx-browserify-shim
 
 # React
 
 > [React 中文文档@编程思想](https://chenyitian.gitbooks.io/react-docs/content/docs/thinking-in-react.html)
 
-
-> [React小书](http://huziketang.com/books/react/lesson2)
-> [基于webpack + react + react-router + redux + less + flex.css + ES6 的React版cnode社区](http://react-china.org/t/webpack-react-react-router-redux-less-flex-css-es6-react-cnode/6332)
-
+> [React 小书](http://huziketang.com/books/react/lesson2) > [基于 webpack + react + react-router + redux + less + flex.css + ES6 的 React 版 cnode 社区](http://react-china.org/t/webpack-react-react-router-redux-less-flex-css-es6-react-cnode/6332)
 
 > [分享一个 react + redux 完整的项目，同时写一下个人感悟](http://react-china.org/t/react-redux/9072/13)
 
-
-## 查看安装的React版本
+## 查看安装的 React 版本
 
 ```shell
 npm ls react
@@ -303,49 +280,45 @@ npm ls react
 
 ## 组件的生命周期
 
-> 组件在初始化时会触发5个钩子函数：
+> 组件在初始化时会触发 5 个钩子函数：
 
+- `getDefaultProps()`
+  设置默认的 props，也可以用 defaultProps 设置组件的默认属性。
 
-* `getDefaultProps()`
-  设置默认的props，也可以用defaultProps设置组件的默认属性。
+- `getInitialState()`
+  在使用 es6 的 class 语法时是没有这个钩子函数的，可以直接在 constructor 中定义 this.state。此时可以访问 this.props。
 
-* `getInitialState()`
-  在使用es6的class语法时是没有这个钩子函数的，可以直接在constructor中定义this.state。此时可以访问this.props。
+- `componentWillMount()`
+  组件初始化时只调用一次，此时可以修改 state。
 
-* `componentWillMount()`
-  组件初始化时只调用一次，此时可以修改state。
+- `render()`
+  react 最重要的步骤，创建虚拟 dom，进行 diff 算法，更新 dom 树都在此进行。此时就不能更改 state 了。
 
-* `render()`
-  react最重要的步骤，创建虚拟dom，进行diff算法，更新dom树都在此进行。此时就不能更改state了。
+- `componentDidMount()`
+  组件渲染之后调用，可以通过 this.getDOMNode()获取和操作 dom 节点，只调用一次。
 
-* `componentDidMount()`
-  组件渲染之后调用，可以通过this.getDOMNode()获取和操作dom节点，只调用一次。
+> 组件还有其他 5 个钩子函数：
 
+- `componentWillReceiveProps(nextProps)`
+  组件初始化时不调用，组件接受新的 props 时调用。
 
-> 组件还有其他5个钩子函数：
+- `shouldComponentUpdate(nextProps, nextState)`
+  react 性能优化非常重要的一环。组件接受新的 state 或者 props 时调用，
+  我们可以设置在此对比前后两个 props 和 state 是否相同，如果相同则返回 false 阻止更新，因为相同的属性状态一定会生成相同的 dom 树，这样就不需要创造新的 dom 树和旧的 dom 树进行 diff 算法对比，节省大量性能，尤其是在 dom 结构复杂的时候。不过调用 this.forceUpdate 会跳过此步骤。
 
+- `componentWillUpdata(nextProps, nextState)`
+  组件初始化时不调用，只有在组件将要更新时才调用，此时可以修改 state
 
-* `componentWillReceiveProps(nextProps)`
-  组件初始化时不调用，组件接受新的props时调用。
-
-* `shouldComponentUpdate(nextProps, nextState)`
-  react性能优化非常重要的一环。组件接受新的state或者props时调用，
-  我们可以设置在此对比前后两个props和state是否相同，如果相同则返回false阻止更新，因为相同的属性状态一定会生成相同的dom树，这样就不需要创造新的dom树和旧的dom树进行diff算法对比，节省大量性能，尤其是在dom结构复杂的时候。不过调用this.forceUpdate会跳过此步骤。
-
-* `componentWillUpdata(nextProps, nextState)`
-  组件初始化时不调用，只有在组件将要更新时才调用，此时可以修改state
-
-* `render()`
+- `render()`
   不多说
 
-* `componentDidUpdate()`
-  组件初始化时不调用，组件更新完成后调用，此时可以获取dom节点。
+- `componentDidUpdate()`
+  组件初始化时不调用，组件更新完成后调用，此时可以获取 dom 节点。
 
-* `componentWillUnmount()`
+- `componentWillUnmount()`
   组件将要卸载时调用，一些事件监听和定时器需要在此时清除。
 
-
-以上可以看出来react总共有10个周期函数（render重复一次），这个10个函数可以满足我们所有对组件操作的需求，利用的好可以提高开发效率和组件性能。
+以上可以看出来 react 总共有 10 个周期函数（render 重复一次），这个 10 个函数可以满足我们所有对组件操作的需求，利用的好可以提高开发效率和组件性能。
 
 # 项目初始化
 
@@ -353,13 +326,13 @@ npm ls react
 npm init
 ```
 
-# React安装
+# React 安装
 
 ```
 npm install -S react react-dom
 ```
 
-# Redux安装
+# Redux 安装
 
 ```
 npm install -S redux react-redux redux-thunk
@@ -368,64 +341,68 @@ npm install -D redux-logger
 
 # 项目搭建
 
-上面说了react，react-router和redux的知识点。但是怎么样将它们整合起来，搭建一个完整的项目。
+上面说了 react，react-router 和 redux 的知识点。但是怎么样将它们整合起来，搭建一个完整的项目。
 
-1. 先引用 react.js，redux，react-router 等基本文件，建议用npm安装，直接在文件中引用。
+1. 先引用 react.js，redux，react-router 等基本文件，建议用 npm 安装，直接在文件中引用。
 
 2. 从 react.js，redux，react-router 中引入所需要的对象和方法。
 
-
 ```js
-import React, {Component, PropTypes} from 'react';
-import ReactDOM, {render} from 'react-dom';
-import {Provider, connect} from 'react-redux';
-import {createStore, combineReducers, applyMiddleware} from 'redux';
-import { Router, Route, Redirect, IndexRoute, browserHistory, hashHistory } from 'react-router';
+import React, { Component, PropTypes } from "react";
+import ReactDOM, { render } from "react-dom";
+import { Provider, connect } from "react-redux";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import {
+  Router,
+  Route,
+  Redirect,
+  IndexRoute,
+  browserHistory,
+  hashHistory
+} from "react-router";
 ```
 
-1. 根据需求创建顶层ui组件，每个顶层ui组件对应一个页面。
+1. 根据需求创建顶层 ui 组件，每个顶层 ui 组件对应一个页面。
 
-2. 创建actionCreators和reducers，并用combineReducers将所有的reducer合并成一个大的reduer。利用createStore创建store并引入combineReducers和applyMiddleware。
+2. 创建 actionCreators 和 reducers，并用 combineReducers 将所有的 reducer 合并成一个大的 reduer。利用 createStore 创建 store 并引入 combineReducers 和 applyMiddleware。
 
-3. 利用connect将actionCreator，reuder和顶层的ui组件进行关联并返回一个新的组件。
+3. 利用 connect 将 actionCreator，reuder 和顶层的 ui 组件进行关联并返回一个新的组件。
 
-4. 利用connect返回的新的组件配合react-router进行路由的部署，返回一个路由组件Router。
+4. 利用 connect 返回的新的组件配合 react-router 进行路由的部署，返回一个路由组件 Router。
 
-5. 将Router放入最顶层组件Provider，引入store作为Provider的属性。
+5. 将 Router 放入最顶层组件 Provider，引入 store 作为 Provider 的属性。
 
-6. 调用render渲染Provider组件且放入页面的标签中。
+6. 调用 render 渲染 Provider 组件且放入页面的标签中。
 
+可以看到顶层的 ui 组件其实被套了四层组件，Provider，Router，Route，Connect，这四个并不会在视图上进行任何改变，它们只是功能性的。
 
-可以看到顶层的ui组件其实被套了四层组件，Provider，Router，Route，Connect，这四个并不会在视图上进行任何改变，它们只是功能性的。
+上图的顶层 ui 组件属性总共有 18 个，如果刚刚接触 react，可能对这些属性怎么来的感到困惑，其实这些属性来自五个地方：
 
-上图的顶层ui组件属性总共有18个，如果刚刚接触react，可能对这些属性怎么来的感到困惑，其实这些属性来自五个地方：
+组件自定义属性 1 个，actionCreator 返回的对象 6 个，reducer 返回的 state4 个，Connect 组件属性 0 个，以及 Router 注入的属性 7 个。
 
-组件自定义属性1个，actionCreator返回的对象6个，reducer返回的state4个，Connect组件属性0个，以及Router注入的属性7个。
+### 总结 react 中遇到的坑和一些小的知识点
 
-### 总结react中遇到的坑和一些小的知识点
+在使用 react 中经常会遇到各种个样的问题，如果对 react 不熟悉则会对遇到的问题感到莫名其妙而束手无策，接下来分析一下 react 中容易遇到的问题和注意点。
 
-在使用react 中经常会遇到各种个样的问题，如果对react不熟悉则会对遇到的问题感到莫名其妙而束手无策，接下来分析一下react中容易遇到的问题和注意点。
+- setState()是异步的
+  this.setState()会调用 render 方法，但并不会立即改变 state 的值，state 是在 render 方法中赋值的。所以执行 this.setState()后立即获取 state 的值是不变的。同样的直接赋值 state 并不会出发更新，因为没有调用 render 函数。
 
-* setState()是异步的
-  this.setState()会调用render方法，但并不会立即改变state的值，state是在render方法中赋值的。所以执行this.setState()后立即获取state的值是不变的。同样的直接赋值state并不会出发更新，因为没有调用render函数。
-
-* 组件的生命周期
+- 组件的生命周期
   componentWillMount，componentDidMount 只有在初始化的时候才调用。
   componentWillReceiveProps，shouldComponentUpdate，componentWillUpdata，componentDidUpdate 只有组件在更新的时候才被调用，初始化时不调用。
 
-* reducer必须返回一个新的对象才能触发组件的更新
-  因为在connect函数中会对新旧两个state进行浅对比，如果state只是值改变但是引用地址没有改变，connect会认为它们相同而不触发更新。
+- reducer 必须返回一个新的对象才能触发组件的更新
+  因为在 connect 函数中会对新旧两个 state 进行浅对比，如果 state 只是值改变但是引用地址没有改变，connect 会认为它们相同而不触发更新。
 
-* 组件命名的首字母必须是大写，这是类命名的规范。
+- 组件命名的首字母必须是大写，这是类命名的规范。
 
-* 组件卸载之前，加在dom元素上的监听事件，和定时器需要手动清除，因为这些并不在react的控制范围内，必须手动清除。
+- 组件卸载之前，加在 dom 元素上的监听事件，和定时器需要手动清除，因为这些并不在 react 的控制范围内，必须手动清除。
 
-* 按需加载时如果组件是通过export default 暴露出去，那么require.ensure时必须加上default。
+- 按需加载时如果组件是通过 export default 暴露出去，那么 require.ensure 时必须加上 default。
 
-* componentWillUpdate中可以直接改变state的值，而不能用setState。
+- componentWillUpdate 中可以直接改变 state 的值，而不能用 setState。
 
-* 如果使用es6class类继承react的component组件，constructor中必须调用super，因为子类需要用super继承component的this，否则实例化的时候会报错。
-
+- 如果使用 es6class 类继承 react 的 component 组件，constructor 中必须调用 super，因为子类需要用 super 继承 component 的 this，否则实例化的时候会报错。
 
 ### 组件的所有子节点（this.props.children）
 
@@ -436,11 +413,9 @@ var NotesList = React.createClass({
   render: function() {
     return (
       <ol>
-      {
-        this.props.children.map(function (child) {
-          return <li>{child}</li>
-        })
-      }
+        {this.props.children.map(function(child) {
+          return <li>{child}</li>;
+        })}
       </ol>
     );
   }
@@ -457,16 +432,13 @@ React.render(
 
 上面代码的 NoteList 组件有两个 span 子节点，它们都可以通过 this.props.children 读取，运行结果如下。
 
-这里需要注意，只有当子节点多于1个时，this.props.children 才是一个数组，否则是不能用 map 方法的， 会报错。
+这里需要注意，只有当子节点多于 1 个时，this.props.children 才是一个数组，否则是不能用 map 方法的， 会报错。
 
-
-### React中使用HTML展示
+### React 中使用 HTML 展示
 
 ```jsx
-<div dangerouslySetInnerHTML={{__html: '<sup>xx</sup>'}} />
+<div dangerouslySetInnerHTML={{ __html: "<sup>xx</sup>" }} />
 ```
-
-
 
 > JSX 简介
 
@@ -487,7 +459,6 @@ JSX 本身其实也是一种表达式
 
 React DOM 在渲染之前默认会 过滤 所有传入的值。它可以确保你的应用不会被注入攻击。所有的内容在渲染之前都被转换成了字符串。这样可以有效地防止 XSS(跨站脚本) 攻击。
 
-
 # [Redux](https://www.redux.org.cn/)
 
 # Koa
@@ -496,12 +467,9 @@ React DOM 在渲染之前默认会 过滤 所有传入的值。它可以确保�
 
 > [《一起学 Node.js》-koa blog](https://nswbmw.github.io/N-club/7/7.3.html)
 
-> [一步步学KOA【死马】： learn koa step by step](https://github.com/dead-horse/koa-step-by-step#generator)
-
-> [Koa2进阶学习笔记](https://chenshenhai.github.io/koa2-note/)
+> [一步步学 KOA【死马】： learn koa step by step](https://github.com/dead-horse/koa-step-by-step#generator)
 
 有助于基础理解
-
 
 ## Koa1
 
@@ -509,19 +477,66 @@ React DOM 在渲染之前默认会 过滤 所有传入的值。它可以确保�
 
 ## Koa2
 
+> [Koa2 源码](https://github.com/koajs/koa)
 
+> [Koa2 搭建 Node.js 实战项目教程](https://github.com/ikcamp/koa2-tutorial)
 
+> [Koa2 进阶学习笔记](https://chenshenhai.github.io/koa2-note/)
 
-# Vue
+## 使用 Koa.js，离不开这十个中间件
+
+随着 ES6 的普及，async/await 的语法受到更多 JS 开发者的青睐，Koa.js 作为比较早支持使用该语法的 Node 框架越来越受到大家的喜爱，虽然 Koa.js 本身支持的功能很有限，但官方和社区提供了很多各种功能的中间件，本文精选了其中的十个，对于我们开发应用程序或者框架将会特别有用。
+
+- No.1 koa-router
+
+路由是 Web 框架必不可少的基础功能，koa.js 为了保持自身的精简，并没有像 Express.js 自带了路由功能，因此 koa-router 做了很好的补充，作为 koa 星数最多的中间件，koa-router 提供了全面的路由功能，比如类似 Express 的 app.get/post/put 的写法，URL 命名参数、路由命名、支持加载多个中间件、嵌套路由等。其他可选路由中间件：koa-route, koa-joi-router, koa-trie-router
+
+- No.2 koa-bodyparser
+
+koa.js 并没有内置 Request Body 的解析器，当我们需要解析请求体时需要加载额外的中间件，官方提供的 koa-bodyparser 是个很不错的选择，支持 x-www-form-urlencoded, application/json 等格式的请求体，但不支持 form-data 的请求体，需要借助 formidable 这个库，也可以直接使用 koa-body 或 koa-better-body
+
+- No.3 koa-views
+
+koa-views 对需要进行视图模板渲染的应用是个不可缺少的中间件，支持 ejs, nunjucks 等众多模板引擎。
+
+- No.4 koa-static
+
+Node.js 除了处理动态请求，也可以用作类似 Nginx 的静态文件服务，在本地开发时特别方便，可用于加载前端文件或后端 Fake 数据，可结合 koa-compress 和 koa-mount 使用。
+
+- No.5 koa-session
+
+HTTP 是无状态协议，为了保持用户状态，我们一般使用 Session 会话，koa-session 提供了这样的功能，既支持将会话信息存储在本地 Cookie，也支持存储在如 Redis, MongoDB 这样的外部存储设备。
+
+- No.6 koa-jwt
+
+随着网站前后端分离方案的流行，越来越多的网站从 Session Base 转为使用 Token Base，JWT(Json Web Tokens)作为一个开放的标准被很多网站采用，koa-jwt 这个中间件使用 JWT 认证 HTTP 请求。
+
+- No.7 koa-helmet
+
+网络安全得到越来越多的重视，helmet 通过增加如 Strict-Transport-Security, X-Frame-Options, X-Frame-Options 等 HTTP 头提高 Express 应用程序的安全性，koa-helmet 为 koa 程序提供了类似的功能，参考 Node.js 安全清单。
+
+- No.8 koa-compress
+
+当响应体比较大时，我们一般会启用类似 Gzip 的压缩技术减少传输内容，koa-compress 提供了这样的功能，可根据需要进行灵活的配置。
+
+- No.9 koa-logger
+
+koa-logger 提供了输出请求日志的功能，包括请求的 url、状态码、响应时间、响应体大小等信息，对于调试和跟踪应用程序特别有帮助，koa-bunyan-logger 提供了更丰富的功能。
+
+- No.10 koa-convert
+
+对于比较老的使用 Generate 函数的 koa 中间件(< koa2)，官方提供了一个灵活的工具可以将他们转为基于 Promise 的中间件供 Koa2 使用，同样也可以将新的基于 Promise 的中间件转为旧式的 Generate 中间件。
+
+原文链接：https://www.jianshu.com/p/c1e0ca3f9764
+
 # Node
 
-* `>version`
-* `>=version`
-* `<version`
-* `<=version`
-* `~version` 大致版本
-* `^version` 兼容版本
-
+- `>version`
+- `>=version`
+- `<version`
+- `<=version`
+- `~version` 大致版本
+- `^version` 兼容版本
 
 语义化版本（semver）
 
@@ -529,40 +544,36 @@ React DOM 在渲染之前默认会 过滤 所有传入的值。它可以确保�
 
 semver 格式：主版本号.次版本号.修订号。版本号递增规则如下：
 
-* `主版本号`：做了不兼容的 API 修改
-* `次版本号`：做了向下兼容的功能性新增
-* `修订号`：做了向下兼容的 bug 修正
-
+- `主版本号`：做了不兼容的 API 修改
+- `次版本号`：做了向下兼容的功能性新增
+- `修订号`：做了向下兼容的 bug 修正
 
 作为 Node.js 的开发者，我们在发布 npm 模块的时候一定要遵守语义化版本的命名规则，即：有 breaking change 发大版本，有新增的功能发小版本，有小的 bug 修复或优化则发修订版本。
 
-* `dependencies` 产品依赖
-* `devDependencies` 开发依赖
-
+- `dependencies` 产品依赖
+- `devDependencies` 开发依赖
 
 npm i -S egg 安装产品依赖
 npm i -D egg-bin 安装开发依赖
 
-
 如果执行 `npm i` 会安装所有模块
 如果执行 `npm install --production` 只会安装 `dependencies` 产品依赖
 
+# NVM —— node 版本管理工具
 
+## 开始安装(Linux 系统下)
 
-# NVM —— node版本管理工具
-
-## 开始安装(Linux系统下)
-
-curl方式
+curl 方式
 
 ```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 ```
+
 ## 可能遇到的问题
 
-安装完后，如果是用xshell连远程主机的话，先重连一次，不然会发现提示找不到nvm命令
+安装完后，如果是用 xshell 连远程主机的话，先重连一次，不然会发现提示找不到 nvm 命令
 
-如果是zsh的话，请用
+如果是 zsh 的话，请用
 
 ```bash
 source ~/.zshrc
@@ -570,7 +581,7 @@ source ~/.zshrc
 
 ## 常用命令一览
 
-- 终端输入nvm，会看到帮助信息
+- 终端输入 nvm，会看到帮助信息
 
 ```
 nvm
@@ -609,23 +620,21 @@ nvm ls
 
 # Markdown
 
-> metalsmith API［Markdown 转 HTML工具］
+> metalsmith API［Markdown 转 HTML 工具］
 
+- [metalsmith API & 插件](http://www.metalsmith.io/)
 
-* [metalsmith API & 插件](http://www.metalsmith.io/)
-
-
-### 使用API做一个真正的实例。
+### 使用 API 做一个真正的实例。
 
 .use(plugin)
 
-添加插件函数处理中间件队列，Metalsmith支持使用多个中间件，所以插件需要遵守相同的模式附带参数 (files, metalsmith, callback), 推荐修改文件或数据参数，并回调进入下个步骤。
+添加插件函数处理中间件队列，Metalsmith 支持使用多个中间件，所以插件需要遵守相同的模式附带参数 (files, metalsmith, callback), 推荐修改文件或数据参数，并回调进入下个步骤。
 
 Add the given plugin function to the middleware stack. Metalsmith uses ware to support middleware, so plugins should follow the same pattern of taking arguments of (files, metalsmith, callback), modifying the files or metalsmith.metadata() argument by reference, and then calling callback to trigger the next step.
 
 .build(fn)
 
-使用给定的设置和具有签名fn（err，files）的回调来构建。
+使用给定的设置和具有签名 fn（err，files）的回调来构建。
 
 .source(path)
 
@@ -641,33 +650,33 @@ Set the relative path to the destination directory, or get the full one if no pa
 
 .concurrency(max)
 
-指定文件第一次打开或编辑时的最大值， 默认无限制。避免一次打开太多文件，将并发设置为低于ulimit -n的值。
+指定文件第一次打开或编辑时的最大值， 默认无限制。避免一次打开太多文件，将并发设置为低于 ulimit -n 的值。
 
 Set the maximum number of files to open at once when reading or writing. Defaults to Infinity. To avoid having too many files open at once (EMFILE errors), set the concurrency to something lower than ulimit -n.
 
 .clean(boolean)
 
-设置在写入目标目录之前是否删除目标目录，或获取当前设置。 默认为true。
+设置在写入目标目录之前是否删除目标目录，或获取当前设置。 默认为 true。
 
 Set whether to remove the destination directory before writing to it, or get the current setting. Defaults to true.
 
 .frontmatter(boolean)
 
-设置是否解析YAML frontmatter。 默认为true
+设置是否解析 YAML frontmatter。 默认为 true
 
 .ignore(path)
 
-忽略文件/路径加载到Metalsmith。
+忽略文件/路径加载到 Metalsmith。
 
 路径可以是字符串，函数或字符串和/或函数的数组。
 
-字符串使用glob语法从minimatch匹配文件和目录忽略。
+字符串使用 glob 语法从 minimatch 匹配文件和目录忽略。
 
 函数以文件的完整路径作为它们的第一个参数，
 
-以及Node的fs.lstat函数返回的lstat对象作为它们的第二个参数来调用，
+以及 Node 的 fs.lstat 函数返回的 lstat 对象作为它们的第二个参数来调用，
 
-并且必须返回true来忽略该文件，否则返回false来保留它。
+并且必须返回 true 来忽略该文件，否则返回 false 来保留它。
 
 .metadata(json)
 
@@ -683,12 +692,11 @@ Resolve any amount of paths… relative to the working directory. This is useful
 
 .run(files, fn)
 
-在文件的字典上运行所有中间件函数，并使用fn（err，files）回调函数，其中文件是更改的字典。
+在文件的字典上运行所有中间件函数，并使用 fn（err，files）回调函数，其中文件是更改的字典。
 
 Run all of the middleware functions on a dictionary of files and callback with fn(err, files), where files is the altered dictionary.
 
 ---
-
 
 ### Plan I：
 
@@ -710,7 +718,7 @@ Run all of the middleware functions on a dictionary of files and callback with f
    }
    ```
 
-3. 建立配置好的目录和ejs模版文件
+3. 建立配置好的目录和 ejs 模版文件
 
 4. package.json 安装对应的插件
 
@@ -723,63 +731,63 @@ Run all of the middleware functions on a dictionary of files and callback with f
 
 5. 运行 `metalsmith`
 
-
 ---
 
-> [Raneto](https://github.com/gilbitron/Raneto)--支持Markdown的开源知识库
+> [Raneto](https://github.com/gilbitron/Raneto)--支持 Markdown 的开源知识库
 
 - 本地新增文档
-- 可视化编辑markdown
+- 可视化编辑 markdown
 - 管理用户，管理本地文档
-
-
 
 ### API
 
-免费开源API发布系统，书写官方文档，发布与展示
+免费开源 API 发布系统，书写官方文档，发布与展示
 
 RAML vs. Swagger vs. API Blueprint
 
-
 # Git
-* [https://github.com/Gazler/githug](https://github.com/Gazler/githug)
-* [http://www.jianshu.com/p/482b32716bbe](http://www.jianshu.com/p/482b32716bbe)
-* [http://backlogtool.com/git-guide/cn/](http://backlogtool.com/git-guide/cn/)
 
+- [https://github.com/Gazler/githug](https://github.com/Gazler/githug)
+- [http://www.jianshu.com/p/482b32716bbe](http://www.jianshu.com/p/482b32716bbe)
+- [http://backlogtool.com/git-guide/cn/](http://backlogtool.com/git-guide/cn/)
 
 ### 标签
-* 轻标签
+
+- 轻标签
 
   ```
   $ git tag <tagname>
   ```
 
-  添加apple标签
+  添加 apple 标签
 
   ```
   $ git tag apple
   ```
-  如果没有使用参数而执行tag，可以显示已有标签列表。
+
+  如果没有使用参数而执行 tag，可以显示已有标签列表。
 
   ```
   $ git tag
   ```
-* 注解标签
 
-  若要添加注解标签，可以在tag命令指定 -a选项执行。
+- 注解标签
+
+  若要添加注解标签，可以在 tag 命令指定 -a 选项执行。
   执行后会启动编辑区，请输入注解，
-  也可以指定-m选项来添加注解。
+  也可以指定-m 选项来添加注解。
+
   ```
   $ git tag -a <tagname>
   ```
 
-  在HEAD指向的提交里添加名为banana的标签，请执行以下的命令。
+  在 HEAD 指向的提交里添加名为 banana 的标签，请执行以下的命令。
 
   ```
   $ git tag -am "连猴子都懂的Git" banana
   ```
 
-  如果在tag命令指定-n选项执行，可以显示标签的列表和注解。
+  如果在 tag 命令指定-n 选项执行，可以显示标签的列表和注解。
 
   ```
   $ git tag -n
@@ -793,17 +801,18 @@ RAML vs. Swagger vs. API Blueprint
   $ git tag -d <tagname>
   ```
 
-
 ### 新建分支
 
 新建一个开发分支 develop
+
 ```
 $ git branch develop
 ```
 
 ### 提交分支
 
-分支修改后，就可以提交commit了。
+分支修改后，就可以提交 commit 了。
+
 ```
 $ git add .
 $ git status
@@ -812,19 +821,19 @@ $ git commit --verbose
 
 ### 合并分支
 
-该命令将 **指定分支** 导入到HEAD指定的分支。
+该命令将 **指定分支** 导入到 HEAD 指定的分支。
+
 ```
 $ git merge <commit>
 ```
 
 合并 develop 分支到 release
 
-1. 切换到release分支
+1. 切换到 release 分支
 2. 拉取最新代码
 3. 合并 develop 分支到 release
 4. 提交最新代码
 5. 切换回 develop 分支
-
 
 ```
 $ git checkout release
@@ -836,7 +845,8 @@ $ git checkout develop
 
 ### 删除分支
 
-branch命令指定-d选项，删除指定分支.
+branch 命令指定-d 选项，删除指定分支.
+
 ```
 $ git branch -d <branchname>
 
@@ -853,26 +863,25 @@ git branch --set-upstream-to=origin/release dev
 
 $ git stash
 $ git stash pop
-$ git stash apply @{0}
+\$ git stash apply @{0}
 
 ### 重置
 
-$ git reset head
+\$ git reset head
 
-
-### Git规范
+### Git 规范
 
 ** 提交 commit 的类型，包括以下几种: **
 
-* feat: 新功能
-* fix: 修复问题
-* docs: 修改文档
-* style: 修改代码格式，不影响代码逻辑
-* refactor: 重构代码，理论上不影响现有功能
-* perf: 提升性能
-* test: 增加修改测试用例
-* chore: 修改工具相关（包括但不限于文档、代码生成等）
-* deps: 升级依赖
+- feat: 新功能
+- fix: 修复问题
+- docs: 修改文档
+- style: 修改代码格式，不影响代码逻辑
+- refactor: 重构代码，理论上不影响现有功能
+- perf: 提升性能
+- test: 增加修改测试用例
+- chore: 修改工具相关（包括但不限于文档、代码生成等）
+- deps: 升级依赖
 
 ```
 feat(Epic#ECFDEV-1234, US#ECFDEV-1234): add page
@@ -880,48 +889,43 @@ fix(Bug#ECFDEV-2768): add ellipsis & icon align field & Datepick align
 
 ```
 
-
 修改文件的范围（包括但不限于 doc, middleware, proxy, core, config, plugin）
 用一句话清楚的描述这次提交做了什么
 
 ** 分支的划分 **
 
-* 主分支(master)
-* 开发分支(develop)
-* 特征分支(feature)
-* 发布分支(release)
-* 修复分支(hotfix)
+- 主分支(master)
+- 开发分支(develop)
+- 特征分支(feature)
+- 发布分支(release)
+- 修复分支(hotfix)
 
-
-master和develop是长期分支，master分支上是稳定版本的演进，develop保持最新代码；而feature/release/hotfix是研发过程中的短期辅助分支，开发后需要清除；
+master 和 develop 是长期分支，master 分支上是稳定版本的演进，develop 保持最新代码；而 feature/release/hotfix 是研发过程中的短期辅助分支，开发后需要清除；
 
 ** 约定版本号 **
 
-简单而言，在这个版本规范中，版本以X.Y.Z的形式存在，其中X表示不向下兼容的框架级改动版本，Y表示向下兼容的功能性新增版本，Z表示向下兼容的内部问题修复版本。
+简单而言，在这个版本规范中，版本以 X.Y.Z 的形式存在，其中 X 表示不向下兼容的框架级改动版本，Y 表示向下兼容的功能性新增版本，Z 表示向下兼容的内部问题修复版本。
 
 ```
 v1.2.4
 ```
 
 # Design
-* [UI设计有哪些规范？](https://www.zhihu.com/question/32216660)
-* [移动端设计最佳实践](https://zhuanlan.zhihu.com/p/24097113)
-* [文字排版规范](http://huaban.com/pins/958880888/)
-* [普惠生活](http://huaban.com/pins/920390067/)
-* [Visual pecification](http://huaban.com/pins/920384025/)
-* [网易云音乐](http://huaban.com/pins/833856117/)
-* [给设计师和开发者的参考手册](http://huaban.com/pins/38541070/)
-* [移动应用UI规范](http://www.zcool.com.cn/article/ZMzc5MTQ0.html)
 
-
-
-
+- [UI 设计有哪些规范？](https://www.zhihu.com/question/32216660)
+- [移动端设计最佳实践](https://zhuanlan.zhihu.com/p/24097113)
+- [文字排版规范](http://huaban.com/pins/958880888/)
+- [普惠生活](http://huaban.com/pins/920390067/)
+- [Visual pecification](http://huaban.com/pins/920384025/)
+- [网易云音乐](http://huaban.com/pins/833856117/)
+- [给设计师和开发者的参考手册](http://huaban.com/pins/38541070/)
+- [移动应用 UI 规范](http://www.zcool.com.cn/article/ZMzc5MTQ0.html)
 
 # Typescript
 
 > [TypeScript 入门教程](https://ts.xcatliu.com/)
 
-> [Typescript官网——语句都不通顺，读起来很吃力](https://typescript.bootcss.com/)
+> [Typescript 官网——语句都不通顺，读起来很吃力](https://typescript.bootcss.com/)
 
 ## 安装
 
@@ -930,13 +934,13 @@ npm install -g typescript
 npm install -D typescript ts-loader source-map-loader
 ```
 
-- 这些依赖会让TypeScript和webpack在一起良好地工作。
-- ts-loader可以让Webpack使用TypeScript的标准配置文件tsconfig.json编译TypeScript代码。
--source-map-loader使用TypeScript输出的sourcemap文件来告诉webpack何时生成自己的sourcemaps。 这就允许你在调试最终生成的文件时就好像在调试TypeScript源码一样。
+- 这些依赖会让 TypeScript 和 webpack 在一起良好地工作。
+- ts-loader 可以让 Webpack 使用 TypeScript 的标准配置文件 tsconfig.json 编译 TypeScript 代码。
+  -source-map-loader 使用 TypeScript 输出的 sourcemap 文件来告诉 webpack 何时生成自己的 sourcemaps。 这就允许你在调试最终生成的文件时就好像在调试 TypeScript 源码一样。
 
-## 使用tsconfig.json
+## 使用 tsconfig.json
 
-如果一个目录下存在一个tsconfig.json文件，那么它意味着这个目录是TypeScript项目的根目录。 tsconfig.json文件中指定了用来编译这个项目的根文件和编译选项。
+如果一个目录下存在一个 tsconfig.json 文件，那么它意味着这个目录是 TypeScript 项目的根目录。 tsconfig.json 文件中指定了用来编译这个项目的根文件和编译选项。
 
 ```
 {
@@ -967,29 +971,29 @@ npm install -D typescript ts-loader source-map-loader
 
 可以通过以下方式之一来编译：
 
-- ```tsc``` 编译器会从当前目录开始去查找tsconfig.json文件，逐级向上搜索父目录。
-- ```tsc -p 目录``` 指定一个包含tsconfig.json文件的目录。
-- ```tsc tsconfig.json```
+- `tsc` 编译器会从当前目录开始去查找 tsconfig.json 文件，逐级向上搜索父目录。
+- `tsc -p 目录` 指定一个包含 tsconfig.json 文件的目录。
+- `tsc tsconfig.json`
 
-## ```compileOnSave```
+## `compileOnSave`
 
-最顶层设置compileOnSave标记，可以让IDE在保存文件的时候根据tsconfig.json重新生成文件。
+最顶层设置 compileOnSave 标记，可以让 IDE 在保存文件的时候根据 tsconfig.json 重新生成文件。
 
-## ```files```
+## `files`
 
 "files"或"include"文件的引用文件也会包含进来
 
-## ```include```
+## `include`
 
 使用"include"引入的文件可以使用"exclude"属性过滤。
 
-## ```exclude```
+## `exclude`
 
-如果没有特殊指定，"exclude"默认情况下会排除node_modules，bower_components，jspm_packages和<outDir>目录。
+如果没有特殊指定，"exclude"默认情况下会排除 node_modules，bower_components，jspm_packages 和<outDir>目录。
 
-## ```extends```
+## `extends`
 
-tsconfig.json文件可以利用extends属性从另一个配置文件里继承配置。
+tsconfig.json 文件可以利用 extends 属性从另一个配置文件里继承配置。
 
 ## [配置选项文档](https://zhongsp.gitbooks.io/typescript-handbook/content/doc/handbook/Compiler%20Options.html)
 
@@ -998,7 +1002,6 @@ tsconfig.json文件可以利用extends属性从另一个配置文件里继承配
 ### TypeScript 只会进行静态检查，如果发现有错误，编译的时候就会报错。TypeScript 编译的时候即使报错了，还是会生成编译结果。
 
 ### 如果要在报错的时候终止 js 文件的生成，可以在 tsconfig.json 中配置 noEmitOnError 即可。
-
 
 # Jest
 
@@ -1018,15 +1021,13 @@ jest --init
 
 > Using Babel
 
-To use Babel, install the ```babel-jest``` and ```regenerator-runtime``` packages:
+To use Babel, install the `babel-jest` and `regenerator-runtime` packages:
 
 > Using Matchers
 
 Jest uses "matchers" to let you test values in different ways. This document will introduce some commonly used matchers. For the full list, see the expect [API doc](https://jestjs.io/docs/en/expect).
 
 > Common Matchers
-
-
 
 > Using webpack
 
@@ -1041,15 +1042,15 @@ describe(name, fn) creates a block that groups together several related tests in
 ```js
 const myBeverage = {
   delicious: true,
-  sour: false,
+  sour: false
 };
 
-describe('my beverage', () => {
-  test('is delicious', () => {
+describe("my beverage", () => {
+  test("is delicious", () => {
     expect(myBeverage.delicious).toBeTruthy();
   });
 
-  test('is not sour', () => {
+  test("is not sour", () => {
     expect(myBeverage.sour).toBeFalsy();
   });
 });
@@ -1062,7 +1063,7 @@ Also under the alias: it(name, fn, timeout)
 All you need in a test file is the test method which runs a test. For example, let's say there's a function inchesOfRain() that should be zero. Your whole test could be:
 
 ```js
-test('did not rain', () => {
+test("did not rain", () => {
   expect(inchesOfRain()).toBe(0);
 });
 ```
@@ -1078,25 +1079,16 @@ The expect function is used every time you want to test a value. You will rarely
 It's easier to understand this with an example. Let's say you have a method bestLaCroixFlavor() which is supposed to return the string 'grapefruit'. Here's how you would test that:
 
 ```js
-test('the best flavor is grapefruit', () => {
-  expect(bestLaCroixFlavor()).toBe('grapefruit');
+test("the best flavor is grapefruit", () => {
+  expect(bestLaCroixFlavor()).toBe("grapefruit");
 });
 ```
 
-In this case, ```toBe``` is the matcher function. There are a lot of different matcher functions, documented below, to help you test different things.
-
-
-
-
-
-
-
-
-
+In this case, `toBe` is the matcher function. There are a lot of different matcher functions, documented below, to help you test different things.
 
 # Webpack
 
-## 配置Typescript
+## 配置 Typescript
 
 - 安装
 
@@ -1104,32 +1096,30 @@ In this case, ```toBe``` is the matcher function. There are a lot of different m
 npm install ts-loader -D
 ```
 
-- 基本webpack.config.js配置
+- 基本 webpack.config.js 配置
 
 ```js
 module.exports = {
-    entry: "./src/index.tsx",
-    output: {
-        filename: "bundle.js"
-    },
-    resolve: {
-        // Add '.ts' and '.tsx' as a resolvable extension.
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
-    },
-    module: {
-        loaders: [
-            // all files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'
-            { test: /\.tsx?$/, loader: "ts-loader" }
-        ]
-    }
+  entry: "./src/index.tsx",
+  output: {
+    filename: "bundle.js"
+  },
+  resolve: {
+    // Add '.ts' and '.tsx' as a resolvable extension.
+    extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"]
+  },
+  module: {
+    loaders: [
+      // all files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'
+      { test: /\.tsx?$/, loader: "ts-loader" }
+    ]
+  }
 };
 ```
-
 
 # Home
 
 - address: 805 Rooms, 8 Blocks, Fengjing Street, Hesheng Hushan International Community, Xintang Town, Zengcheng District,Guangzhou,China
-
 
 ## 区块链
 
@@ -1139,78 +1129,70 @@ module.exports = {
 
 ### 区块链的特点
 
-  - 不可篡改
-  - 可追溯
-  - 去中心化
+- 不可篡改
+- 可追溯
+- 去中心化
 
 ### 区块链分类：
 
-  - 公有链：比特币 以太坊 EOS
-  - 私有链： 开发节点 测试节点
-  - 联盟链： Fabric R3联盟 EEA 阳光链
+- 公有链：比特币 以太坊 EOS
+- 私有链： 开发节点 测试节点
+- 联盟链： Fabric R3 联盟 EEA 阳光链
 
 ### 区块链的架构模型
 
-  - 应用层：应用场景与案例
-  - 合约层：电子合同，达到条件时自动生效
-  - 激励层：激励遵守规则的节点，惩罚不遵守的节点
-  - 共识层：网络节点计算算法
-  - 网络层：P2P组网技术，自动组网功能
-  - 数据层：底层数据结构，非对称公私钥加密技术，时间戳技术
-
+- 应用层：应用场景与案例
+- 合约层：电子合同，达到条件时自动生效
+- 激励层：激励遵守规则的节点，惩罚不遵守的节点
+- 共识层：网络节点计算算法
+- 网络层：P2P 组网技术，自动组网功能
+- 数据层：底层数据结构，非对称公私钥加密技术，时间戳技术
 
 # 慢性咽炎
 
-  - 海金沙，用量5g,煮水喝，3次可好
-  - 按摩天突穴（锁骨中心，轻轻揉按）主治气喘、咳嗽、暴喑、咽喉肿痛、呕逆、瘿瘤、梅核气，现代常用于治疗支气管哮喘、支气管炎、咽喉炎、甲状腺肿大、食道炎、癔病等。
-  - 生吃白萝卜
-  - 生吃贡梨
-  - 金银花 10g，胎菊 10g，胖大海 10g，山楂 10g，用闷烧杯闷烂，一口气喝下去(只喝水)，难闻难喝，但有奇效。
+- 海金沙，用量 5g,煮水喝，3 次可好
+- 按摩天突穴（锁骨中心，轻轻揉按）主治气喘、咳嗽、暴喑、咽喉肿痛、呕逆、瘿瘤、梅核气，现代常用于治疗支气管哮喘、支气管炎、咽喉炎、甲状腺肿大、食道炎、癔病等。
+- 生吃白萝卜
+- 生吃贡梨
+- 金银花 10g，胎菊 10g，胖大海 10g，山楂 10g，用闷烧杯闷烂，一口气喝下去(只喝水)，难闻难喝，但有奇效。
 
 # 鼻炎
 
-  - 每天跑步20分钟左右,多运动可以增加自身免疫力，对鼻炎能起到很好的抑制作用，跑步或者运动过后，鼻子会突然变得不塞了
-  - 按摩迎香穴效果显著，5分钟见效。
+- 每天跑步 20 分钟左右,多运动可以增加自身免疫力，对鼻炎能起到很好的抑制作用，跑步或者运动过后，鼻子会突然变得不塞了
+- 按摩迎香穴效果显著，5 分钟见效。
 
+# 使用 CNPM
 
-# 使用CNPM
-
-  $ npm install -g cnpm --registry=https://registry.npm.taobao.org
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org
   $ npm config set registry https://registry.npm.taobao.org
-  这样就可以使用 cnpm 命令来安装模块了：
+这样就可以使用 cnpm 命令来安装模块了：
 
-  $ cnpm install [name]
-
-
-
+\$ cnpm install [name]
 
 # Movie
 
-磁力Pro
+磁力 Pro
 
 <<美丽心灵的永恒阳光>>
-
-
 
 # App
 
 google calender
 
-
 # Mongodb
 
 # npm
 
-### 什么是npm?
+### 什么是 npm?
 
-js开发者可以通过npm方便地分享，更新，和重复使用代码。
+js 开发者可以通过 npm 方便地分享，更新，和重复使用代码。
 
 # NPM 包应用
 
-### axios 处理ajax请求
+### axios 处理 ajax 请求
 
-跨域post实例，用到了qs组件来避开ajax信使请求，并兼容Android。
-信使请求:post请求中，请求头部带有OPTIONS
+跨域 post 实例，用到了 qs 组件来避开 ajax 信使请求，并兼容 Android。
+信使请求:post 请求中，请求头部带有 OPTIONS
 
 ```
 import axios from axios;
@@ -1227,9 +1209,9 @@ axios.post(chapter_url, qs.stringify(params))
 });
 ```
 
-### xml-js 解析XML文件
+### xml-js 解析 XML 文件
 
-解析XML文件，安装NPM插件
+解析 XML 文件，安装 NPM 插件
 
 ```
 npm i -S xml-js
@@ -1254,43 +1236,48 @@ _loadXMLDoc = u => {
   }
   xmlhttp.onreadystatechange = function() {
     if (this.readyState === 4 && this.status === 200) {
-
       // JSON.parse,格式化为JSON
       // xmljs.xml2json,xmljs转xml为json方法
       // this.response,返回值
       // alwaysChildren属性, 有更多属性可以选择
 
-      let txt = JSON.parse(xmljs.xml2json(this.response, { alwaysChildren: true }));
-      if (txt && txt.elements && txt.elements[0] && txt.elements[0].elements && txt.elements[0].elements[0] && txt.elements[0].elements[0].cdata) {
+      let txt = JSON.parse(
+        xmljs.xml2json(this.response, { alwaysChildren: true })
+      );
+      if (
+        txt &&
+        txt.elements &&
+        txt.elements[0] &&
+        txt.elements[0].elements &&
+        txt.elements[0].elements[0] &&
+        txt.elements[0].elements[0].cdata
+      ) {
         txt = txt.elements[0].elements[0].cdata;
         // 凯撒解密
         txt = rot13(txt);
         /*
-        * atob - base64解密
-        * escape - 已经不推荐使用，不能直接用于URL编码，它的真正作用是返回一个字符的Unicode编码值
-        * decodeURIComponent - URL解码，
-        * 下面的这一句话，让你避开小说的天坑
-        * 一定需要 decodeURIComponent + escape 才能解，原因未知
-        */
+         * atob - base64解密
+         * escape - 已经不推荐使用，不能直接用于URL编码，它的真正作用是返回一个字符的Unicode编码值
+         * decodeURIComponent - URL解码，
+         * 下面的这一句话，让你避开小说的天坑
+         * 一定需要 decodeURIComponent + escape 才能解，原因未知
+         */
         txt = decodeURIComponent(escape(atob(txt)));
       }
       self.setState({
-        chapterCont: txt,
+        chapterCont: txt
       });
     }
   };
-  xmlhttp.open('GET', u, true);
-  xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+  xmlhttp.open("GET", u, true);
+  xmlhttp.setRequestHeader("Content-Type", "text/xml");
   xmlhttp.send(null);
-}
+};
 ```
 
 ### 日期处理类库 —— moment.js
 
 [API](http://momentjs.cn/)
-
-
-
 
 ### 复制按钮——将文本剪切到粘贴板
 
@@ -1302,15 +1289,14 @@ import copy from 'copy-to-clipboard';
 <Button onClick={copy('url')} />
 ```
 
-
 ### [富文本编辑器——Simditor](http://simditor.tower.im/docs/doc-event.html#anchor-decorate)
 
 ```js
 // uc-open-admin project code
-import React, { Component } from 'react';
-import Simditor from 'simditor';
+import React, { Component } from "react";
+import Simditor from "simditor";
 // var $ = require('jquery');
-import '../../../../node_modules/simditor/styles/simditor.css';
+import "../../../../node_modules/simditor/styles/simditor.css";
 
 class Editor extends Component {
   componentDidMount() {
@@ -1318,30 +1304,30 @@ class Editor extends Component {
     this.editor = new Simditor({
       textarea: textbox,
       toolbar: [
-        'title',
-        'bold',
-        'italic',
-        'underline',
+        "title",
+        "bold",
+        "italic",
+        "underline",
         // 'strikethrough',
         // 'fontScale',
-        'color',
-        'ol',
-        'ul',
-        'blockquote',
-        'code',
-        'table',
-        'link',
-        'image',
+        "color",
+        "ol",
+        "ul",
+        "blockquote",
+        "code",
+        "table",
+        "link",
+        "image",
         // 'indent',
         // 'outdent',
-        'alignment',
+        "alignment"
         // 'hr',
         // '|',
         // 'html',
-      ],
+      ]
     });
 
-    this.editor.on('valuechanged', () => {
+    this.editor.on("valuechanged", () => {
       this.props.onHandle(this.editor.getValue());
     });
   }
@@ -1350,7 +1336,9 @@ class Editor extends Component {
     const val = this.props.val;
     return (
       <div>
-        <textarea className="form-control" ref='textarea' rows="30">{val}</textarea>
+        <textarea className="form-control" ref="textarea" rows="30">
+          {val}
+        </textarea>
       </div>
     );
   }
@@ -1364,10 +1352,9 @@ export default Editor;
 <Editor onHandle={this._handle} />
 ```
 
-
 # Egg
 
-* [egg是什么](https://eggjs.org/zh-cn/intro/index.html)
+- [egg 是什么](https://eggjs.org/zh-cn/intro/index.html)
 
 ### Part A 快速初始化
 
@@ -1377,8 +1364,6 @@ $ npm i egg-init -g
 $ egg-init egg-example --type=simple
 $ cd egg-example
 $ npm i
-
-
 
 ### Part B 正常的初始化
 
@@ -1392,7 +1377,7 @@ npm i -S egg
 npm i -D egg-bin
 ```
 
- 添加 npm scripts 到 package.json:
+添加 npm scripts 到 package.json:
 
 ```
 {
@@ -1404,7 +1389,7 @@ npm i -D egg-bin
 
 ### 编写 Controller
 
-第一步需要编写的是 ```Controller``` 和 ```Router```。
+第一步需要编写的是 `Controller` 和 `Router`。
 
 ```
 // app/controller/home.js
@@ -1437,24 +1422,21 @@ exports.keys = <此处改为你自己的 Cookie 安全字符串>;
 ```
 
 Config 有 module.exports 和 exports 的写法:
+
 - module.exports.hello = true;
 - exports.hello = true
-
-
 
 启动项目:
 
 $ npm run dev
 $ open localhost:7001
 
-
 ### 静态资源
 
 Egg 内置了 static 插件，线上环境建议部署到 CDN，无需该插件。
-static 插件默认映射 /public/* -> app/public/* 目录
+static 插件默认映射 /public/_ -> app/public/_ 目录
 
 此处，我们把静态资源都放到 app/public 目录即可：
-
 
 ### 模板渲染
 
@@ -1462,14 +1444,13 @@ static 插件默认映射 /public/* -> app/public/* 目录
 $ npm i egg-view-nunjucks --save
 ```
 
-
 开启插件：
 
 ```js
 // config/plugin.js
 exports.nunjucks = {
   enable: true,
-  package: 'egg-view-nunjucks'
+  package: "egg-view-nunjucks"
 };
 ```
 
@@ -1497,9 +1478,7 @@ exports.view = {
   <body>
     <div class="news-view view">
       {% for item in list %}
-        <div class="item">
-          <a href="{{ item.url }}">{{ item.title }}</a>
-        </div>
+      <div class="item"><a href="{{ item.url }}">{{ item.title }}</a></div>
       {% endfor %}
     </div>
   </body>
@@ -1512,31 +1491,30 @@ exports.view = {
 // app/controller/news.js
 module.exports = app => {
   class NewsController extends app.Controller {
-    * list() {
+    *list() {
       const dataList = {
         list: [
-          { id: 1, title: 'this is news 1', url: '/news/1' },
-          { id: 2, title: 'this is news 2', url: '/news/2' }
+          { id: 1, title: "this is news 1", url: "/news/1" },
+          { id: 2, title: "this is news 2", url: "/news/2" }
         ]
       };
-      yield this.ctx.render('news/list.tpl', dataList);
+      yield this.ctx.render("news/list.tpl", dataList);
     }
   }
   return NewsController;
 };
 // app/router.js
 module.exports = app => {
-  app.get('/', app.controller.home.index);
-  app.get('/news', app.controller.news.list);
+  app.get("/", app.controller.home.index);
+  app.get("/news", app.controller.news.list);
 };
 ```
 
-** 提示：开发期默认开启了 ```development``` 插件，修改后端代码后，会自动重启 Worker 进程。**
-
+** 提示：开发期默认开启了 `development` 插件，修改后端代码后，会自动重启 Worker 进程。**
 
 ### 编写 service
 
-在实际应用中，```Controller``` 一般不会自己产出数据，也不会包含复杂的逻辑，复杂的过程应抽象为业务逻辑层 ```Service```。
+在实际应用中，`Controller` 一般不会自己产出数据，也不会包含复杂的逻辑，复杂的过程应抽象为业务逻辑层 `Service`。
 
 我们来添加一个 Service 抓取 Hacker News 的数据 ，如下：
 
@@ -1544,22 +1522,25 @@ module.exports = app => {
 // app/service/news.js
 module.exports = app => {
   class NewsService extends app.Service {
-    * list(page = 1) {
+    *list(page = 1) {
       // read config
       const { serverUrl, pageSize } = this.app.config.news;
       // use build-in http client to GET hacker-news api
-      const { data: idList } = yield this.ctx.curl(`${serverUrl}/topstories.json`, {
-        data: {
-          orderBy: '"$key"',
-          startAt: `"${pageSize * (page - 1)}"`,
-          endAt: `"${pageSize * page - 1}"`,
-        },
-        dataType: 'json',
-      });
+      const { data: idList } = yield this.ctx.curl(
+        `${serverUrl}/topstories.json`,
+        {
+          data: {
+            orderBy: '"$key"',
+            startAt: `"${pageSize * (page - 1)}"`,
+            endAt: `"${pageSize * page - 1}"`
+          },
+          dataType: "json"
+        }
+      );
       // parallel GET detail, see `yield {}` from co
       const newsList = yield Object.keys(idList).map(key => {
         const url = `${serverUrl}/item/${idList[key]}.json`;
-        return this.ctx.curl(url, { dataType: 'json' });
+        return this.ctx.curl(url, { dataType: "json" });
       });
       return newsList.map(res => res.data);
     }
@@ -1568,10 +1549,9 @@ module.exports = app => {
 };
 ```
 
-框架提供了内置的 ```HttpClient``` 来方便开发者使用 HTTP 请求。
+框架提供了内置的 `HttpClient` 来方便开发者使用 HTTP 请求。
 
-
-### MySQL连接
+### MySQL 连接
 
 在 Web 应用方面 MySQL 是最常见，最好的关系型数据库之一。非常多网站都选择 MySQL 作为网站数据库。本篇文档介绍了如何使用 Egg 框架及其插件来访问数据库。
 
@@ -1593,33 +1573,27 @@ exports.mysql = {
 };
 ```
 
-在 config/config.${env}.js 配置各个环境的数据库连接信息。
+在 config/config.\${env}.js 配置各个环境的数据库连接信息。
 
+# Node 读写 Excel 文件探究实践
 
-
-
-
-
-
-
-# Node读写Excel文件探究实践
-
-[Node读写Excel文件探究实践](https://aotu.io/notes/2016/04/07/node-excel/)
+[Node 读写 Excel 文件探究实践](https://aotu.io/notes/2016/04/07/node-excel/)
 
 # Zsh
 
 ### 添加环境变量
 
-* 很多时候需要为系统添加应用，如果默认的终端是zsh，
+- 很多时候需要为系统添加应用，如果默认的终端是 zsh，
 
-  通过vi修改对应的配置文件是：
+  通过 vi 修改对应的配置文件是：
 
   ```
   $ vi ~/.zshrc
   ```
+
   按下 i 表示进入编辑状态
 
-* 给 Linux/Unix 系统增加环境变量，是使用 export 命令。
+- 给 Linux/Unix 系统增加环境变量，是使用 export 命令。
 
   ```
   # Java默认路径配置,#是注释，不会生效
@@ -1631,17 +1605,15 @@ exports.mysql = {
 
   环境变量中，各个值是以冒号分隔开的。
 
-  上面的语句表示给 PATH 这个变量重新赋值，让它等于  $JAVA_HOME 同时后面加上原来的 $PATH
+  上面的语句表示给 PATH 这个变量重新赋值，让它等于 $JAVA_HOME 同时后面加上原来的 $PATH
 
-  * 退出vi编辑
+  - 退出 vi 编辑
 
+按下 ESC 退出编辑状态
 
-  按下 ESC 退出编辑状态
+按下 :wq 表示保存并退出 vi
 
-  按下 :wq 表示保存并退出vi
-
-* 使配置生效
-
+- 使配置生效
 
 ```
 $ source ~/.zshrc
@@ -1652,25 +1624,24 @@ $ source ~/.zshrc
 其实我用了 oh-my-zsh 原来他自带了很多插件没有开启。。。
 
 如何开启？
-zsh配置文件 `~/.zshrc` 有一行 `plugins=(git)`，想加什么插件就把名字放里面就是了
+zsh 配置文件 `~/.zshrc` 有一行 `plugins=(git)`，想加什么插件就把名字放里面就是了
 比如 `plugins=(npm git)` 就开启了`npm`，`git`插件。
 
 更多插件?
 [Plugins Overview](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins-Overview)
-或者进入 ~/.oh-my-zsh/plugins文件夹探索，每个人的需求不一样，里面有一些比较神奇的插件，比如敲两下esc 它会给你自动加上 sudo 的 sudo 插件，让复制显示进度条的cp插件，解压用的 extract 插件（有没有觉得在命令行下敲一大堆选项才能解压有点奇怪？），vi 粉的vi-mode npm等等
-
+或者进入 ~/.oh-my-zsh/plugins 文件夹探索，每个人的需求不一样，里面有一些比较神奇的插件，比如敲两下 esc 它会给你自动加上 sudo 的 sudo 插件，让复制显示进度条的 cp 插件，解压用的 extract 插件（有没有觉得在命令行下敲一大堆选项才能解压有点奇怪？），vi 粉的 vi-mode npm 等等
 
 ### git 插件
 
 | Alias                | Command                                                                                                                                 |
-|:---------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
+| :------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
 | g                    | git                                                                                                                                     |
 | ga                   | git add                                                                                                                                 |
 | gaa                  | git add --all                                                                                                                           |
 | gapa                 | git add --patch                                                                                                                         |
 | gb                   | git branch                                                                                                                              |
 | gba                  | git branch -a                                                                                                                           |
-| gbda                 | git branch --merged \| command grep -vE "^(\*\|\s*master\s*$)" \| command xargs -n 1 git branch -d                                      |
+| gbda                 | git branch --merged \| command grep -vE "^(\*\|\s*master\s*\$)" \| command xargs -n 1 git branch -d                                     |
 | gbl                  | git blame -b -w                                                                                                                         |
 | gbnm                 | git branch --no-merged                                                                                                                  |
 | gbr                  | git branch --remote                                                                                                                     |
@@ -1707,18 +1678,18 @@ zsh配置文件 `~/.zshrc` 有一行 `plugins=(git)`，想加什么插件就把�
 | gfo                  | git fetch origin                                                                                                                        |
 | gg                   | git gui citool                                                                                                                          |
 | gga                  | git gui citool --amend                                                                                                                  |
-| ggf                  | git push --force origin $(current_branch)                                                                                                                  |
+| ggf                  | git push --force origin \$(current_branch)                                                                                              |
 | ghh                  | git help                                                                                                                                |
 | ggpull               | ggl                                                                                                                                     |
 | ggpur                | ggu                                                                                                                                     |
 | ggpush               | ggp                                                                                                                                     |
-| ggsup                | git branch --set-upstream-to = origin/$(current_branch)                                                                                 |
-| gpsup                | git push --set-upstream origin $(current_branch)                                                                                        |
+| ggsup                | git branch --set-upstream-to = origin/\$(current_branch)                                                                                |
+| gpsup                | git push --set-upstream origin \$(current_branch)                                                                                       |
 | gignore              | git update-index --assume-unchanged                                                                                                     |
 | gignored             | git ls-files -v \| grep "^[[:lower:]]"                                                                                                  |
 | git-svn-dcommit-push | git svn dcommit && git push github master:svntrunk                                                                                      |
 | gk                   | \gitk --all --branches                                                                                                                  |
-| gke                  | \gitk --all $(git log -g --pretty = format:%h)                                                                                          |
+| gke                  | \gitk --all \$(git log -g --pretty = format:%h)                                                                                         |
 | gl                   | git pull                                                                                                                                |
 | glg                  | git log --stat --color                                                                                                                  |
 | glgg                 | git log --graph --color                                                                                                                 |
@@ -1729,7 +1700,7 @@ zsh配置文件 `~/.zshrc` 有一行 `plugins=(git)`，想加什么插件就把�
 | glog                 | git log --oneline --decorate --color --graph                                                                                            |
 | glol                 | git log --graph --pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit       |
 | glola                | git log --graph --pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all |
-| glp                  | _git_log_prettily                                                                                                                       |
+| glp                  | \_git_log_prettily                                                                                                                      |
 | gm                   | git merge                                                                                                                               |
 | gmom                 | git merge origin/master                                                                                                                 |
 | gmt                  | git mergetool --no-prompt                                                                                                               |
@@ -1754,7 +1725,7 @@ zsh配置文件 `~/.zshrc` 有一行 `plugins=(git)`，想加什么插件就把�
 | grmv                 | git remote rename                                                                                                                       |
 | grrm                 | git remote remove                                                                                                                       |
 | grset                | git remote set-url                                                                                                                      |
-| grt                  | cd $(git rev-parse --show-toplevel \|\| echo ".")                                                                                       |
+| grt                  | cd \$(git rev-parse --show-toplevel \|\| echo ".")                                                                                      |
 | gru                  | git reset --                                                                                                                            |
 | grup                 | git remote update                                                                                                                       |
 | grv                  | git remote -v                                                                                                                           |
@@ -1765,7 +1736,7 @@ zsh配置文件 `~/.zshrc` 有一行 `plugins=(git)`，想加什么插件就把�
 | gsr                  | git svn rebase                                                                                                                          |
 | gss                  | git status -s                                                                                                                           |
 | gst                  | git status                                                                                                                              |
-| gsta                 | git stash save                                                                                                                              |
+| gsta                 | git stash save                                                                                                                          |
 | gstaa                | git stash apply                                                                                                                         |
 | gstd                 | git stash drop                                                                                                                          |
 | gstl                 | git stash list                                                                                                                          |
@@ -1781,34 +1752,29 @@ zsh配置文件 `~/.zshrc` 有一行 `plugins=(git)`，想加什么插件就把�
 | glum                 | git pull upstream master                                                                                                                |
 | gvt                  | git verify-tag                                                                                                                          |
 | gwch                 | git whatchanged -p --abbrev-commit --pretty = medium                                                                                    |
-| gwip                 | git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit -m "--wip--"
+| gwip                 | git add -A; git rm \$(git ls-files --deleted) 2> /dev/null; git commit -m "--wip--"                                                     |
 
+# Mac 80 端口使用
 
+Mac OS X 因为要绑定 80 端口需要 ROOT 权限,
 
+让连接到本机 80 端口的请求， 都转发到 9090 端口;
 
+注意,Mac OS 会使用 80 端口做网络文件共享， 要先关闭掉
 
+修改/etc/pf.conf, 使用 sudo vim /etc/pf.conf
 
-# Mac 80端口使用
+pf.conf 是对顺序强要求的， 所以注意添加的内容放的顺序
 
-Mac OS X 因为要绑定80端口需要ROOT权限,
-
-让连接到本机80端口的请求， 都转发到9090端口;
-
-注意,Mac OS 会使用80端口做网络文件共享， 要先关闭掉
-
-修改/etc/pf.conf, 使用sudo vim /etc/pf.conf
-
-pf.conf是对顺序强要求的， 所以注意添加的内容放的顺序
-
-rdr-anchor “com.apple/*”
+rdr-anchor “com.apple/\*”
 
 rdr on lo0 inet proto tcp from any to 127.0.0.1 port 80 -> 127.0.0.1 port 9090
 
-添加rdr on lo0 inet proto tcp from any to 127.0.0.1 port 80 -> 127.0.0.1 port 9090
+添加 rdr on lo0 inet proto tcp from any to 127.0.0.1 port 80 -> 127.0.0.1 port 9090
 
-到pf.conf文件的rdr-anchor “com.apple/*” 这一行后面。
+到 pf.conf 文件的 rdr-anchor “com.apple/\*” 这一行后面。
 
-lo0 通过ifconfig 看自己那个设备绑定的是127.0.0.1, lo0是这个网络设备的名字。 修改好pf.conf之后执行一下命令，让端口转发生效
+lo0 通过 ifconfig 看自己那个设备绑定的是 127.0.0.1, lo0 是这个网络设备的名字。 修改好 pf.conf 之后执行一下命令，让端口转发生效
 
 ```
 sudo pfctl -d
@@ -1816,11 +1782,11 @@ sudo pfctl -f /etc/pf.conf
 sudo pfctl -e
 ```
 
-在tomcat的配置中，设定启动端口为9090
+在 tomcat 的配置中，设定启动端口为 9090
 
-好了这样只需要普通权限启动tomcat在9090端口即可， 访问本地应用时直接访问80端口即可。
+好了这样只需要普通权限启动 tomcat 在 9090 端口即可， 访问本地应用时直接访问 80 端口即可。
 
-# Mac 修改hosts
+# Mac 修改 hosts
 
 ```
 $ vi /etc/hosts
@@ -1834,42 +1800,37 @@ press `:wq` 保存并退出
 
 press `:q!` 不保存并退出
 
-# Homebrew的安装及使用
+# Homebrew 的安装及使用
 
 [官网](https://brew.sh/index_zh-cn.html)
 
-### Homebrew的安装
+### Homebrew 的安装
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-### Homebrew的使用
+### Homebrew 的使用
 
-* 安装软件：brew install 软件名，例：brew install wget
-* 搜索软件：brew search 软件名，例：brew search wget
-* 卸载软件：brew uninstall 软件名，例：brew uninstall wget
-* 更新Homebrew：brew update
+- 安装软件：brew install 软件名，例：brew install wget
+- 搜索软件：brew search 软件名，例：brew search wget
+- 卸载软件：brew uninstall 软件名，例：brew uninstall wget
+- 更新 Homebrew：brew update
 
-* 更新具体软件：brew upgrade 软件名 ，例：brew upgrade git
-* 显示已安装软件：brew list
-* 查看软件信息：brew info／home 软件名 ，例：brew info git ／ brew home git
+- 更新具体软件：brew upgrade 软件名 ，例：brew upgrade git
+- 显示已安装软件：brew list
+- 查看软件信息：brew info／home 软件名 ，例：brew info git ／ brew home git
 
-* 查看那些已安装的程序需要更新： brew outdated
-* 显示包依赖：brew reps
-
-
-
+- 查看那些已安装的程序需要更新： brew outdated
+- 显示包依赖：brew reps
 
 # Platform
 
-> 前端UI组件
+> 前端 UI 组件
 
-
-* [material-ui](http://www.material-ui.com/#/)
-* [iview](https://www.iviewui.com/)
-* [AntD](https://ant.design/index-cn)
-
+- [material-ui](http://www.material-ui.com/#/)
+- [iview](https://www.iviewui.com/)
+- [AntD](https://ant.design/index-cn)
 
 # vs code
 
@@ -1877,13 +1838,13 @@ press `:q!` 不保存并退出
 
 # No Smoking
 
-* 早晨的口臭，喉咙干燥
+- 早晨的口臭，喉咙干燥
 
-* 夜间的猛力咳嗽和干呕
+- 夜间的猛力咳嗽和干呕
 
-* 抽烟没有好处，再好的烟也是毒
+- 抽烟没有好处，再好的烟也是毒
 
-* 注意心脏和肺部健康
+- 注意心脏和肺部健康
 
 否则，吸烟者终其一生，都无法好好享受：
 
@@ -1905,19 +1866,17 @@ press `:q!` 不保存并退出
 
 ·自由
 
-
 # 减肥
 
-* 最近两天晚上没东西吃，小肚子仿佛消瘦了一些，注意坚持过9点不再吃零食，防蛀牙，也能保持好身材
-
+- 最近两天晚上没东西吃，小肚子仿佛消瘦了一些，注意坚持过 9 点不再吃零食，防蛀牙，也能保持好身材
 
 分享我理解的减肥十件事：
 
 1.不要减少用餐数量
 
-2.把用餐的碟子从12寸改为10寸，可以少吃22%食物
+2.把用餐的碟子从 12 寸改为 10 寸，可以少吃 22%食物
 
-3.计算卡路里数量，人体需求2000卡路里/天，超过需要的热量将变成脂肪
+3.计算卡路里数量，人体需求 2000 卡路里/天，超过需要的热量将变成脂肪
 
 4.吃蛋白质食物可以饱腹更长时间
 
@@ -1927,7 +1886,7 @@ press `:q!` 不保存并退出
 
 7.吃低脂乳制品，因为钙会与食物脂肪结合，变成皂质的物质，肠道不能吸收，从身体排出。
 
-8.运动，可燃烧脂肪，运动后持续燃烧脂肪24小时
+8.运动，可燃烧脂肪，运动后持续燃烧脂肪 24 小时
 
 9.保持活跃，相同的饮食
 
@@ -1935,14 +1894,13 @@ press `:q!` 不保存并退出
 
 # 咳嗽-治疗
 
-1. 茄子把冰冻5小时，再煮水喝
+1. 茄子把冰冻 5 小时，再煮水喝
 
 2. 煲点老鸭汤
 
 3. 冰糖雪梨不能治疗有痰咳嗽
 
 4. 橙子削顶后抹盐，蒸
-
 
 # Some words
 
@@ -1982,27 +1940,23 @@ press `:q!` 不保存并退出
 
 有梦不觉寒
 
-
 # Health
 
- 1.健康生活方式：
-（1）饮食---会吃就是会养生。A.早餐要吃够五种颜色，五谷杂粮粥（大米，小米，糙米，燕麦，红豆，绿豆，薏米熬粥），或者吃够五种颜色的蔬菜，肉类在早上吃最好；午餐吃饱，有荤有素；晚餐吃少（不吃最好），米饭+粥+薯类，不要吃肉和油；B.一顿三餐，主食要占到50%以上，最好在70-80%，蔬菜20-30%，肉类5-30%，绝对不要超过30%；
-（2）起居---跟着太阳公公的节奏。早上6:00之前要起床（升阳气），不加班的话，22:30之前一定要睡觉，23:00-3:00是肝胆经回血的时候，要熟睡；每天要7次小便，早9:00前大便；
-（3）运动---运动是健康向上的阶梯。推荐传统健身方法：站桩（大成桩），八段锦，太极拳和禅坐，女同学推荐瑜伽。无论男女，一定要有一项持之以恒的运动健身方法，哪怕是跑步也好。“日有百痛（运动痛），可度百岁而无病痛，日无一痛则一病呜呼”；
- 2.常见疾病的缓解调理方法：
-（1）颈椎肩周疾病：每坐1-2个小时，起来远眺窗外，双手带双臂从胸前环绕到头顶最后到身后画圆数十次；也可以练八段锦前四式；早晚练两次：身体直立，两臂自然下垂，头向身体的左右前后上五个方向最大限度的放松倾斜拉伸1分钟；揉手上的后溪穴和肩上的肩井穴；艾灸大椎穴；
-（2）习惯性便秘：晚餐不吃油腻，多吃薯类和蔬菜，早餐吃五谷杂粮粥，早5:00-7:00敲两臂的大肠经，早起一杯阴阳水（前晚的凉白开和刚烧的开水混合）；
-（3）小儿湿疹：隔衣服艾灸双臂尺泽穴和合谷穴各7分钟；
-（4）小儿免疫力低下，便秘，脾胃虚弱：每晚睡前捏脊9/21次，上下捋脊柱及两侧，抹按摩油从内向外拔捋四肢，顺时针揉肚子49次；常吃北京同仁堂产的“小儿健脾丸”
-（5）甲状腺结节：每天喝三杯黑茶或普洱茶+玫瑰花+陈皮泡水，晨起空腹运动或快走至少30分钟，早晚两次翘脚跟远眺10分钟；
-（6）预防老人突发性中风：70岁以上老人，每天出门前用力空掌拍腋下极泉、肩膀尖、肩井穴各36次；家里常备、随身携带北京同仁堂产的“安宫牛黄丸”，发现中风马上热水服下；
+1.健康生活方式：
+（1）饮食---会吃就是会养生。A.早餐要吃够五种颜色，五谷杂粮粥（大米，小米，糙米，燕麦，红豆，绿豆，薏米熬粥），或者吃够五种颜色的蔬菜，肉类在早上吃最好；午餐吃饱，有荤有素；晚餐吃少（不吃最好），米饭+粥+薯类，不要吃肉和油；B.一顿三餐，主食要占到 50%以上，最好在 70-80%，蔬菜 20-30%，肉类 5-30%，绝对不要超过 30%；
+（2）起居---跟着太阳公公的节奏。早上 6:00 之前要起床（升阳气），不加班的话，22:30 之前一定要睡觉，23:00-3:00 是肝胆经回血的时候，要熟睡；每天要 7 次小便，早 9:00 前大便；
+（3）运动---运动是健康向上的阶梯。推荐传统健身方法：站桩（大成桩），八段锦，太极拳和禅坐，女同学推荐瑜伽。无论男女，一定要有一项持之以恒的运动健身方法，哪怕是跑步也好。“日有百痛（运动痛），可度百岁而无病痛，日无一痛则一病呜呼”； 2.常见疾病的缓解调理方法：
+（1）颈椎肩周疾病：每坐 1-2 个小时，起来远眺窗外，双手带双臂从胸前环绕到头顶最后到身后画圆数十次；也可以练八段锦前四式；早晚练两次：身体直立，两臂自然下垂，头向身体的左右前后上五个方向最大限度的放松倾斜拉伸 1 分钟；揉手上的后溪穴和肩上的肩井穴；艾灸大椎穴；
+（2）习惯性便秘：晚餐不吃油腻，多吃薯类和蔬菜，早餐吃五谷杂粮粥，早 5:00-7:00 敲两臂的大肠经，早起一杯阴阳水（前晚的凉白开和刚烧的开水混合）；
+（3）小儿湿疹：隔衣服艾灸双臂尺泽穴和合谷穴各 7 分钟；
+（4）小儿免疫力低下，便秘，脾胃虚弱：每晚睡前捏脊 9/21 次，上下捋脊柱及两侧，抹按摩油从内向外拔捋四肢，顺时针揉肚子 49 次；常吃北京同仁堂产的“小儿健脾丸”
+（5）甲状腺结节：每天喝三杯黑茶或普洱茶+玫瑰花+陈皮泡水，晨起空腹运动或快走至少 30 分钟，早晚两次翘脚跟远眺 10 分钟；
+（6）预防老人突发性中风：70 岁以上老人，每天出门前用力空掌拍腋下极泉、肩膀尖、肩井穴各 36 次；家里常备、随身携带北京同仁堂产的“安宫牛黄丸”，发现中风马上热水服下；
 （7）脾胃虚寒、大便不成型：晨起喝一杯红糖姜水，吃附子理中丸+桂附地黄丸；
 （8）饭水分离养生法：每顿饭前后各两个小时不喝任何汤和水，先吃米饭再吃菜，每口饭细嚼慢咽，让食物与唾液充分搅拌；
-（9）肾虚：两手空拳放置腰眼处，两腿与肩同宽站立微曲带动身体颤动5分钟；八段锦的“两手攀足固肾腰”；睡前练“还阳卧”；
+（9）肾虚：两手空拳放置腰眼处，两腿与肩同宽站立微曲带动身体颤动 5 分钟；八段锦的“两手攀足固肾腰”；睡前练“还阳卧”；
 （10）失眠：睡前泡脚，搓脚底涌泉穴，深呼吸法（连续深呼吸几十次，然后自然呼吸数呼吸次数），自我暗示放松法（观想从头到脚，默念放松，放松。。。），推荐用软管枕（头凉脚暖睡得香，天猫有卖）；
- 好了，就写这些吧。以上均为验证过的方法，至少本人和家人是有效的。大家日后如果有疑问和需要，可以加我随问随答！祝各位看官及家人，吉祥安康！！！最后唠叨一句，再忙再累，也不要忽视健康！
-
-
+好了，就写这些吧。以上均为验证过的方法，至少本人和家人是有效的。大家日后如果有疑问和需要，可以加我随问随答！祝各位看官及家人，吉祥安康！！！最后唠叨一句，再忙再累，也不要忽视健康！
 
 # Good Habit
 
@@ -2017,11 +1971,3 @@ press `:q!` 不保存并退出
 良性循环
 
 你会越来越美丽
-
-
-
-
-
-
-
-

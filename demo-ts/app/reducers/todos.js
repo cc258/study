@@ -5,13 +5,13 @@ export default (state = initState, action) => {
     case "ADD_TODO":
       console.log(
         `%c ADD_TODO====${JSON.stringify(action.data)}`,
-        "color: red"
+        "color: deeppink"
       );
       return Object.assign({}, state, action.data);
     case "SELECTCATELOGE":
       console.log(
         `%c SELECTCATELOGE====${JSON.stringify(action.data)}`,
-        "color: blue"
+        "color: forestgreen"
       );
       return Object.assign({}, state, action.data);
     default:

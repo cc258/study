@@ -1,6 +1,6 @@
 module.exports = class HomeController {
   static async index(ctx) {
-    ctx.body = "hi, index";
+    await ctx.render("index.html");
   }
 
   static async app(ctx) {
