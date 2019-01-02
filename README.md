@@ -16,6 +16,8 @@
 
 ## <a href="#git">Git</a>
 
+## <a href="#mysql">MySQL</a>
+
 ## <a href="#mongodb">Mongodb</a>
 
 ## <a href="#ci">CI</a>
@@ -66,6 +68,10 @@ today.getMonth() + 1;
 today.getDate();
 today.getHours();
 today.getMinutes();
+
+
+today.setDate(today.getDate() + 1);
+// 返回明天的日期
 ```
 
 > 字符串提取
@@ -74,6 +80,9 @@ today.getMinutes();
 slice() - 提取字符串的片断，并在新的字符串中返回被提取的部分。
 ('hello world').slice(6,11);
 // 从位置6，到位置11
+
+('hello world').slice(-2);
+// ld 返回最后2个字符
 ```
 
 > uri 编码
@@ -185,7 +194,7 @@ text-overflow: ellipsis;
 
 # Chai
 
-# MySQL
+# <p id="mysql">MySQL</p>
 
 [MySQL 教程](http://www.yiibai.com/mysql/show-databases.html)
 
