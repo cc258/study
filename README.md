@@ -883,9 +883,10 @@ $ git stash pop
 - chore: 修改工具相关（包括但不限于文档、代码生成等）
 - deps: 升级依赖
 
+
 ```
 feat(Epic#ECFDEV-1234, US#ECFDEV-1234): add page
-fix(Bug#ECFDEV-2768): add ellipsis & icon align field & Datepick align
+fix(Bug#ECFDEV-2768, US#ECFDEV-1234): add ellipsis
 
 ```
 
