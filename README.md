@@ -22,6 +22,8 @@
 
 ## <a href="#ci">CI</a>
 
+## <a href="#habit">Good Habit</a>
+
 
 
 # <p id="es6">ES6</p>
@@ -758,13 +760,39 @@ Run all of the middleware functions on a dictionary of files and callback with f
 
 RAML vs. Swagger vs. API Blueprint
 
+
+# CMD
+
+```
+# 创建文件
+
+md <folderName>
+mkdir <folderName>
+
+# 删除文件
+
+del <folderName>
+
+# 删除目录
+
+rmdir <dirName>
+rmdir /s /q [盘符:\][路径\]目录名
+
+/s  直接删除
+/q  不再询问 quiet 模式
+
+```
+
+
+
+
 # Git
 
 - [https://github.com/Gazler/githug](https://github.com/Gazler/githug)
 - [http://www.jianshu.com/p/482b32716bbe](http://www.jianshu.com/p/482b32716bbe)
 - [http://backlogtool.com/git-guide/cn/](http://backlogtool.com/git-guide/cn/)
 
-### 标签
+## 标签
 
 - 轻标签
 
@@ -808,13 +836,121 @@ RAML vs. Swagger vs. API Blueprint
   banana          连猴子都懂的Git
   ```
 
-  － 删除标签
+  - 删除标签
 
   ```
   $ git tag -d <tagname>
   ```
 
-### 新建分支
+## 查看配置
+
+git config --list
+
+### 用户配置
+
+学习git的时候, 大家刚开始使用之前都配置了一个全局的用户名和邮箱
+
+```
+$ git config --global user.name "your Name"
+$ git config --global user.email "github@xx.com"
+$ git config --list
+
+```
+
+如果你不进行配置用户名和邮箱的话, 则会使用全局的, ,
+正确的做法是针对公司的项目, 在项目根目录下进行单独配置
+
+```
+// 不要引号
+
+$ git config user.name your name
+$ git config user.email zzz@xx.com
+$ git config --list
+
+```
+
+.git文件夹
+open config 命令打开，添加如下配置：
+
+```
+[user]
+    name = XXX(自己的名称英文)
+    email = XXXX(邮箱)
+```
+保存，command+s 即可。
+
+## 克隆一个仓库
+
+- 克隆一个仓库
+
+```
+// https://github.com/Gazler/cloneme
+
+```
+- 克隆一个仓库, 改名为 clonemy
+
+```
+git clone https://github.com/Gazler/cloneme clonemy
+```
+
+
+## .gitignore 文件
+
+用来忽略Git中不想提交的文件
+
+lib.a 文件，其他所有的 .a 后缀名的文件都忽略
+
+```
+#               表示此为注释,将被Git忽略
+*.a             表示忽略所有 .a 结尾的文件
+!lib.a          表示但lib.a除外
+/TODO           表示仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+build/          表示忽略 build/目录下的所有文件，过滤整个build文件夹；
+doc/*.txt       表示会忽略doc/notes.txt但不包括 doc/server/arch.txt
+ 
+bin/:           表示忽略当前路径下的bin文件夹，该文件夹下的所有内容都会被忽略，不忽略 bin 文件
+/bin:           表示忽略根目录下的bin文件
+/*.c:           表示忽略cat.c，不忽略 build/cat.c
+debug/*.obj:    表示忽略debug/io.obj，不忽略 debug/common/io.obj和tools/debug/io.obj
+**/foo:         表示忽略/foo,a/foo,a/b/foo等
+a/**/b:         表示忽略a/b, a/x/b,a/x/y/b等
+!/bin/run.sh    表示不忽略bin目录下的run.sh文件
+*.log:          表示忽略所有 .log 文件
+config.php:     表示忽略当前路径的 config.php 文件
+ 
+/mtk/           表示过滤整个文件夹
+*.zip           表示过滤所有.zip文件
+/mtk/do.c       表示过滤某个具体文件
+
+```
+
+
+## 删除文件
+
+
+使用 ```--cached``` 选项可以仅从索引中取消索引和删除路径。
+
+工作树文件，无论修改与否，都将保持不变。
+
+```
+git rm --cached deleteme.txt
+```
+
+## 重命名文件
+
+```
+git mv oldname.md newname.md
+```
+
+## 移动文件
+
+PS: CMD中一次只能移动一个文件，移动多个会报错
+
+```
+git mv oldname.md src
+```
+
+## 新建分支
 
 新建一个开发分支 develop
 
@@ -822,17 +958,22 @@ RAML vs. Swagger vs. API Blueprint
 $ git branch develop
 ```
 
-### 提交分支
+## 提交分支
 
 分支修改后，就可以提交 commit 了。
 
 ```
 $ git add .
 $ git status
-$ git commit --verbose
+$ git commit -m 'feat'
+
+// 定时提交
+$ git commit --date=00.03.2019T18:14:00
+
 ```
 
-### 合并分支
+
+## 合并分支
 
 该命令将 **指定分支** 导入到 HEAD 指定的分支。
 
@@ -856,7 +997,7 @@ $ git push origin release
 $ git checkout develop
 ```
 
-### 删除分支
+## 删除分支
 
 branch 命令指定-d 选项，删除指定分支.
 
@@ -867,22 +1008,41 @@ $ git branch -d <branchname>
 $ git branch -d temp
 ```
 
-### 关联远程分支
+## 关联远程分支
 
 git branch --set-upstream-to=origin/release-admin-v1.4.0 release-admin-v1.4.0
 git branch --set-upstream-to=origin/release dev
 
-### 暂存
+## 暂存
 
+```
 $ git stash
 $ git stash pop
-\$ git stash apply @{0}
+$ git stash apply @{0}
+```
 
-### 重置
+## 重置
 
-\$ git reset head
+```
+$ git reset head
 
-### Git 规范
+// 撤销上一次的提交
+$ git reset head~1 --soft
+
+--soft 参数将上一次的修改放入 staging area
+--mixed 参数将上一次的修改放入 working directory
+--hard 参数直接将上一次的修改抛弃
+```
+
+## 签出和重置文件
+
+有时候改了一些代码，结果发现这个需求取消了，怎么能快速扔掉所有的变更，回到没有修改之前的状态呢？
+
+```
+$ git checkout abc.md
+```
+
+## Git 规范
 
 ** 提交 commit 的类型，包括以下几种: **
 
@@ -1195,11 +1355,23 @@ google calender
 
 # Mongodb
 
-# npm
+# NPM
 
 ### 什么是 npm?
 
 js 开发者可以通过 npm 方便地分享，更新，和重复使用代码。
+
+### npx npm
+
+npm v5.2.0引入的一条命令（npx），引入这个命令的目的是为了提升开发者使用包内提供的命令行工具的体验。
+
+1. 临时安装可执行依赖包，不用全局安装，不用担心长期的污染。
+
+2. 可以执行依赖包中的命令，安装完成自动运行。
+
+3. 自动加载node_modules中依赖包，不用指定$PATH。
+
+4. 可以指定node版本、命令的版本，解决了不同项目使用不同版本的命令的问题。
 
 # NPM 包应用
 
@@ -1972,7 +2144,7 @@ press `:q!` 不保存并退出
 （10）失眠：睡前泡脚，搓脚底涌泉穴，深呼吸法（连续深呼吸几十次，然后自然呼吸数呼吸次数），自我暗示放松法（观想从头到脚，默念放松，放松。。。），推荐用软管枕（头凉脚暖睡得香，天猫有卖）；
 好了，就写这些吧。以上均为验证过的方法，至少本人和家人是有效的。大家日后如果有疑问和需要，可以加我随问随答！祝各位看官及家人，吉祥安康！！！最后唠叨一句，再忙再累，也不要忽视健康！
 
-# Good Habit
+# <p id="habit">Good Habit</p>
 
 1.读书 —— 读书可以改变气质
 
