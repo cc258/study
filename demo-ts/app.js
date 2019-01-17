@@ -1,3 +1,4 @@
+const path = require("path");
 const Koa = require("koa");
 const views = require("koa-views");
 const static = require("koa-static");
@@ -7,8 +8,8 @@ const bodyParser = require("koa-bodyparser");
 
 const port = 8090;
 app.use(bodyParser());
-app.use(views(__dirname, { map: { html: "nunjucks" } }));
-app.use(static(__dirname + "./dist"));
+app.use(views(path.join(__dirname, "./dist"), { map: { html: "nunjucks" } }));
+app.use(static(path.join(__dirname + "./dist")));
 app.use(require("./app/router").routes());
 
 app.listen(port);

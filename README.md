@@ -24,24 +24,73 @@
 
 ## <a href="#habit">Good Habit</a>
 
-
-
 # <p id="es6">ES6</p>
 
 > [ECMAScript 6 入门](http://es6.ruanyifeng.com/?search=values&x=0&y=0#docs/let)
 
-> Promise 精简写法
+> Promise
 
-下面两种写法一样：
+Promise 是异步编程的一种解决方案
+
+Promise 构造函数接受一个函数作为参数，该函数的两个参数分别是`resolve`和`reject`。它们是两个函数，由 JavaScript 引擎提供，不用自己部署。
+
+- [Promise 用法]http://es6.ruanyifeng.com/#docs/promise#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95
+  下面两种写法一样：
 
 ```js
+// 标准写法
 // demo1
-new Promise(function(resolve, reject) {
-  resolve("value");
-}).then(function(data) {});
+new Promise((resolve, reject) => {
+  //处理一些异步事情
+}).then(data => {
+  // 第一个是 resolve 函数
+}, data => {
+  // 第二个是 reject 函数
+}).catch(
+  error => console.log(error)
+).finally(
+  () => console.log('end');
+);
 
+// 精简写法
 // demo2
 Promise.resolve("value").then(function(data) {});
+Promise.reject("value").then(function(data) {});
+promise.catch(() => {
+  // 语句
+});
+promise.finally(() => {
+  // 语句
+});
+
+// 用法
+<Button onClick={this.clicked}></Button>
+
+clicked = () => {
+  this.props.clicked(1);
+}
+
+// action
+clicked = data => {
+  new Promise((resolve, reject) => {
+    //处理一些事情
+    if (data) {
+      resolve(data);
+    } else {
+      reject(data);
+    }
+  }).then(data => {
+    // 第一个是 resolve 函数
+  }, data => {
+    // 第二个是 reject 函数
+  }).catch(
+    error => console.log(error)
+  ).finally(
+    () => console.log('end');
+  );
+}
+
+
 ```
 
 > 时间转换
@@ -70,7 +119,6 @@ today.getMonth() + 1;
 today.getDate();
 today.getHours();
 today.getMinutes();
-
 
 today.setDate(today.getDate() + 1);
 // 返回明天的日期
@@ -225,7 +273,7 @@ export PATH=$PATH:/usr/local/mysql/bin
 保存后，之后在命令行输入
 
 ```
-source ~/.bash_profile
+source ~/.zshrc
 ```
 
 ok
@@ -260,7 +308,7 @@ mysql -u root -p
 再显示已有的数据库
 
 ```
-mysql> SHOW DATABASE;
+mysql> SHOW DATABASES;
 ```
 
 ** 注意一条语句，是必须要用;结束 **
@@ -760,7 +808,6 @@ Run all of the middleware functions on a dictionary of files and callback with f
 
 RAML vs. Swagger vs. API Blueprint
 
-
 # CMD
 
 ```
@@ -782,9 +829,6 @@ rmdir /s /q [盘符:\][路径\]目录名
 /q  不再询问 quiet 模式
 
 ```
-
-
-
 
 # Git
 
@@ -848,7 +892,7 @@ git config --list
 
 ### 用户配置
 
-学习git的时候, 大家刚开始使用之前都配置了一个全局的用户名和邮箱
+学习 git 的时候, 大家刚开始使用之前都配置了一个全局的用户名和邮箱
 
 ```
 $ git config --global user.name "your Name"
@@ -869,7 +913,7 @@ $ git config --list
 
 ```
 
-.git文件夹
+.git 文件夹
 open config 命令打开，添加如下配置：
 
 ```
@@ -877,6 +921,7 @@ open config 命令打开，添加如下配置：
     name = XXX(自己的名称英文)
     email = XXXX(邮箱)
 ```
+
 保存，command+s 即可。
 
 ## 克隆一个仓库
@@ -887,16 +932,16 @@ open config 命令打开，添加如下配置：
 // https://github.com/Gazler/cloneme
 
 ```
+
 - 克隆一个仓库, 改名为 clonemy
 
 ```
 git clone https://github.com/Gazler/cloneme clonemy
 ```
 
-
 ## .gitignore 文件
 
-用来忽略Git中不想提交的文件
+用来忽略 Git 中不想提交的文件
 
 lib.a 文件，其他所有的 .a 后缀名的文件都忽略
 
@@ -907,7 +952,7 @@ lib.a 文件，其他所有的 .a 后缀名的文件都忽略
 /TODO           表示仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
 build/          表示忽略 build/目录下的所有文件，过滤整个build文件夹；
 doc/*.txt       表示会忽略doc/notes.txt但不包括 doc/server/arch.txt
- 
+
 bin/:           表示忽略当前路径下的bin文件夹，该文件夹下的所有内容都会被忽略，不忽略 bin 文件
 /bin:           表示忽略根目录下的bin文件
 /*.c:           表示忽略cat.c，不忽略 build/cat.c
@@ -917,18 +962,16 @@ a/**/b:         表示忽略a/b, a/x/b,a/x/y/b等
 !/bin/run.sh    表示不忽略bin目录下的run.sh文件
 *.log:          表示忽略所有 .log 文件
 config.php:     表示忽略当前路径的 config.php 文件
- 
+
 /mtk/           表示过滤整个文件夹
 *.zip           表示过滤所有.zip文件
 /mtk/do.c       表示过滤某个具体文件
 
 ```
 
-
 ## 删除文件
 
-
-使用 ```--cached``` 选项可以仅从索引中取消索引和删除路径。
+使用 `--cached` 选项可以仅从索引中取消索引和删除路径。
 
 工作树文件，无论修改与否，都将保持不变。
 
@@ -944,7 +987,7 @@ git mv oldname.md newname.md
 
 ## 移动文件
 
-PS: CMD中一次只能移动一个文件，移动多个会报错
+PS: CMD 中一次只能移动一个文件，移动多个会报错
 
 ```
 git mv oldname.md src
@@ -971,7 +1014,6 @@ $ git commit -m 'feat'
 $ git commit --date=00.03.2019T18:14:00
 
 ```
-
 
 ## 合并分支
 
@@ -1055,7 +1097,6 @@ $ git checkout abc.md
 - test: 增加修改测试用例
 - chore: 修改工具相关（包括但不限于文档、代码生成等）
 - deps: 升级依赖
-
 
 ```
 feat(Epic#ECFDEV-1234, US#ECFDEV-1234): add page
@@ -1363,15 +1404,15 @@ js 开发者可以通过 npm 方便地分享，更新，和重复使用代码。
 
 ### npx npm
 
-npm v5.2.0引入的一条命令（npx），引入这个命令的目的是为了提升开发者使用包内提供的命令行工具的体验。
+npm v5.2.0 引入的一条命令（npx），引入这个命令的目的是为了提升开发者使用包内提供的命令行工具的体验。
 
 1. 临时安装可执行依赖包，不用全局安装，不用担心长期的污染。
 
 2. 可以执行依赖包中的命令，安装完成自动运行。
 
-3. 自动加载node_modules中依赖包，不用指定$PATH。
+3. 自动加载 node_modules 中依赖包，不用指定\$PATH。
 
-4. 可以指定node版本、命令的版本，解决了不同项目使用不同版本的命令的问题。
+4. 可以指定 node 版本、命令的版本，解决了不同项目使用不同版本的命令的问题。
 
 # NPM 包应用
 
