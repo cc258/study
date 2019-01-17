@@ -999,6 +999,7 @@ git mv oldname.md src
 
 ```
 $ git branch develop
+$ git branch test_branch HEAD~1     // 使用上次的提交创建分支
 ```
 
 ## 提交分支
@@ -1023,6 +1024,13 @@ $ git commit --date=00.03.2019T18:14:00
 $ git merge <commit>
 ```
 
+git merge命令或者git rebase命令，在本地分支上合并远程分支。
+
+```
+$ git merge origin/master
+$ git rebase origin/master
+```
+
 合并 develop 分支到 release
 
 1. 切换到 release 分支
@@ -1038,6 +1046,8 @@ $ git merge develop
 $ git push origin release
 $ git checkout develop
 ```
+
+## rebase
 
 ## 删除分支
 
@@ -1083,6 +1093,38 @@ $ git reset head~1 --soft
 ```
 $ git checkout abc.md
 ```
+
+## 远程分支
+
+```
+$ git remote    // 远程分支的名称
+$ git remote    // 远程分支链接
+
+$ git remote add <主机名> <网址>    // 添加远程主机
+$ git remote add origin https://github.com/githug/githug
+
+
+```
+
+## 拉取分支
+
+```
+$ git pull    // 拉取分支
+$ git pull origin master    // 拉取master分支
+
+```
+
+## 查看某个文件的修改人
+
+```
+$ git blame abc.md
+```
+
+## git branch
+## git repack
+
+
+
 
 ## Git 规范
 
