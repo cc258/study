@@ -8,9 +8,9 @@ const bodyParser = require("koa-bodyparser");
 
 const port = 8090;
 app.use(bodyParser());
-app.use(views(path.join(__dirname, "./dist"), { map: { html: "nunjucks" } }));
-app.use(static(path.join(__dirname + "./dist")));
-app.use(require("./app/router").routes());
+app.use(views(path.join(__dirname, "dist"), { map: { html: "nunjucks" } }));
+app.use(static(path.join(__dirname + "dist")));
+app.use(require("./router").routes());
 
 app.listen(port);
 

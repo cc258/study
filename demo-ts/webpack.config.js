@@ -4,13 +4,13 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: ["./app/component/index/index.js"],
+  entry: ["/static/component/index/index.js"],
   // plugins: [
-  //     new HtmlWebpackPlugin({
-  //         title: 'Output Management'
-  //     }),
-  //     // 清除dist目录
-  //     new CleanWebpackPlugin(['dist']),
+  //   new HtmlWebpackPlugin({
+  //     title: "Output Management"
+  //   }),
+  //   // 清除dist目录
+  //   new CleanWebpackPlugin(["dist"])
   // ],
   // 使用 source map
   // 当 webpack 打包源代码时，可能会很难追踪到错误和警告在源代码中的原始位置。
@@ -24,7 +24,7 @@ module.exports = {
   devtool: "inline-source-map",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "/dist")
   },
   module: {
     rules: [
