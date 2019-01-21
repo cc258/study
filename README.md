@@ -126,7 +126,7 @@ today.setDate(today.getDate() + 1);
 
 > 字符串提取
 
-```
+```js
 slice() - 提取字符串的片断，并在新的字符串中返回被提取的部分。
 ('hello world').slice(6,11);
 // 从位置6，到位置11
@@ -137,7 +137,7 @@ slice() - 提取字符串的片断，并在新的字符串中返回被提取的�
 
 > uri 编码
 
-```
+```js
 var p = '?keyword=' + encodeURIComponent('hello');
 var p = encodeURI('http://www.uc.cn');
 ```
@@ -147,14 +147,14 @@ var p = encodeURI('http://www.uc.cn');
 
 > uri 解码
 
-```
+```js
 decodeURIComponent()
 decodeURI()
 ```
 
 > 数组去重——使用 Set 特性
 
-```markup
+```js
 const arr1 = [1, 3, 5, 5, 8];
 const arr2 = Array.from(new Set(arr1))
 [1, 3, 5, 8]
@@ -546,6 +546,8 @@ React DOM 在渲染之前默认会 过滤 所有传入的值。它可以确保�
 
 > [Koa2 进阶学习笔记](https://chenshenhai.github.io/koa2-note/)
 
+> [Koa2 进阶DEMO](https://github.com/chenshenhai/koa2-note/tree/master/demo)
+
 ## 使用 Koa.js，离不开这十个中间件
 
 随着 ES6 的普及，async/await 的语法受到更多 JS 开发者的青睐，Koa.js 作为比较早支持使用该语法的 Node 框架越来越受到大家的喜爱，虽然 Koa.js 本身支持的功能很有限，但官方和社区提供了很多各种功能的中间件，本文精选了其中的十个，对于我们开发应用程序或者框架将会特别有用。
@@ -834,7 +836,6 @@ rmdir /s /q [盘符:\][路径\]目录名
 
 - [https://github.com/Gazler/githug](https://github.com/Gazler/githug)
 - [http://www.jianshu.com/p/482b32716bbe](http://www.jianshu.com/p/482b32716bbe)
-- [http://backlogtool.com/git-guide/cn/](http://backlogtool.com/git-guide/cn/)
 
 ## 标签
 
@@ -1002,6 +1003,12 @@ $ git branch develop
 $ git branch test_branch HEAD~1     // 使用上次的提交创建分支
 ```
 
+## 查看分支
+
+```
+$ git branch –r     // 列出所有远程的分支名
+```
+
 ## 提交分支
 
 分支修改后，就可以提交 commit 了。
@@ -1065,7 +1072,7 @@ $ git branch -d temp
 git branch --set-upstream-to=origin/release-admin-v1.4.0 release-admin-v1.4.0
 git branch --set-upstream-to=origin/release dev
 
-## 暂存
+## [stash](https://git-scm.com/docs/git-stash)
 
 ```
 $ git stash

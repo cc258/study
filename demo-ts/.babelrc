@@ -1,3 +1,13 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"]
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  // 升级到Babel 7的经验
+  // https://segmentfault.com/a/1190000016541105
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ]
+
+  feat(Epic#ECFDEV-2955, US#ECFDEV-2955): get response
 }

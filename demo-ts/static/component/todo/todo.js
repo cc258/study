@@ -1,18 +1,16 @@
 import React from "react";
 
 class Todo extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      todos: [
-        {
-          id: 1,
-          text: "xxxx",
-          st: 0
-        }
-      ]
-    };
-  }
+  state = {
+    todos: [
+      {
+        id: 1,
+        text: "xxxx",
+        st: 0
+      }
+    ]
+  };
+  
   render() {
     const { addTodo, selectCateloge } = this.props;
     const { todos } = this.state;

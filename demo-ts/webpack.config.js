@@ -4,7 +4,7 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: ["/static/component/index/index.js"],
+  entry: ["./static/component/index/index.js"],
   // plugins: [
   //   new HtmlWebpackPlugin({
   //     title: "Output Management"
@@ -24,14 +24,14 @@ module.exports = {
   devtool: "inline-source-map",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "/dist")
+    path: path.resolve(__dirname, "./static/dist")
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        loader: "babel-loader",
       }
     ]
   }
