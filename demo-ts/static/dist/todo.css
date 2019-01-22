@@ -19,7 +19,7 @@ h1{
 .new{
     background-color: #fff;
     padding: 20px 40px;
-    margin: 20px;
+    margin: 20px 0;
 }
 .new span{
     display: inline-block;
