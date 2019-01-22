@@ -1,20 +1,33 @@
-import React from 'react';
+import React from "react";
 
-class TodoList extends React.Component{
+class TodoList extends React.Component {
+  render = () => {
+    const { list } = this.props;
+    console.log(`list=================list===========`, list);
+    return (
+      <ul>
+        {list.map((item, idx) => {
+          return (
+            <li className={`do-${item.st}`} key={idx}>
+              <span onClick={() => this.handerChangeStatus(item, idx)}>
+                &#x2665;
+              </span>
+              {item.txt}
+            </li>
+          );
+        })}
+      </ul>
+    );
+  };
 
-    render = () => {
-        const { list } = this.props;
-        console.log(`list=================list===========`, list);
-        return (
-            <ul>
-                {
-                    list.map((item, idx) => {
-                        return <li className={`do-${item.st}`} key={idx}><span>&#x2665;</span>{item.txt}</li>
-                    })
-                }
-            </ul>
-        );
-    }
+  handerChangeStatus = (it, idx) => {
+    const { list, changeStatus } = this.props;
+    const item = {
+      st: it.st ? 0 : 1,
+      txt: it.txt
+    };
+    changeStatus(list, item, idx);
+  };
 }
 
 export default TodoList;

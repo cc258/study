@@ -1,5 +1,7 @@
 const Home = require("./controller/home");
 const User = require("./controller/user");
+const Api = require("./controller/api");
+
 const router = require("koa-router")();
 
 console.log("---------into router----------");
@@ -7,6 +9,7 @@ console.log("---------into router----------");
 module.exports = router
   .get("/", Home.index)
   .get("/index", Home.index)
+  .get("/getdata", Api.getData)
   .get("/sn/:id", Home.sn)
   .get("/user/reg", User.reg)
   .post("/user/validate", User.validate)

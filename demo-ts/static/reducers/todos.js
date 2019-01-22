@@ -1,14 +1,26 @@
+// Ducks
+
+import axios from "axios";
+
 // Actions
-const TODO_ADD = 'TODO_ADD';
+const TODO_ADD = "TODO_ADD";
+const TODO_CHANGE = "TODO_CHANGE";
+const TODO_GETDATA = "TODO_GETDATA";
 
 // Reducer
 
 const initState = {};
 export default (state = initState, action) => {
   const data = action.data;
+  console.log(data);
   switch (action.type) {
     case TODO_ADD:
       console.log(`TODO_ADD ############# list######`, data);
+      return Object.assign({}, state, data);
+    case TODO_CHANGE:
+      return Object.assign({}, state, data);
+    case TODO_GETDATA:
+      console.log(data);
       return Object.assign({}, state, data);
     default:
       return state;
@@ -17,14 +29,44 @@ export default (state = initState, action) => {
 
 // Action Creators
 export const actions = {
-
-  addTodo: function(ls, d){
-    // 这个坑，我踩哭了
+  addTodo: function(ls, d) {
+    // 这个坑，我踩哭了，数组部分更新不会render
     const list = ls.slice();
-    list.unshift({st: 0, txt: d});
-    console.log(`action ############# list######`, list);
+    list.unshift({ st: 0, txt: d });
+    console.log(`action ############# list ######`, list);
     const payData = { list };
-    return { type: TODO_ADD, data: payData};
-    
+    return { type: TODO_ADD, data: payData };
+  },
+
+  changeStatus: function(ls, item, idx) {
+    const list = ls.slice();
+    list[idx] = item;
+    const payData = { list };
+    return { type: TODO_CHANGE, data: payData };
+  },
+
+  getData: () => dispatch => {
+    return new Promise((resolve, reject) => {
+      axios
+        .get("/getdata", {
+          params: {
+            id: 12345
+          }
+        })
+        .then(function(res) {
+          if (res) {
+            resolve(res.data);
+          } else {
+            reject(res.data);
+          }
+        });
+    }).then(
+      data => {
+        return dispatch({ type: TODO_GETDATA, data });
+      },
+      data => {
+        return dispatch({ type: TODO_GETDATA, data });
+      }
+    );
   }
-}
+};
