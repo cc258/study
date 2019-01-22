@@ -2,8 +2,9 @@ body,ul,li,p{ margin:0; padding:0}
 ul,ol{list-style: none}
 image{vertical-align: middle}
 
-#app{
+html,#app{
     background: #f5f8fc;
+    min-height: 100%;
 }
 h1{
     font-size: 50px;
@@ -40,6 +41,11 @@ h1{
 .todo li span{
     clear: both;
     float: right;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
 }
 .do-0{
     color: #f95073;
