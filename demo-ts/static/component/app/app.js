@@ -40,7 +40,6 @@ class App extends React.Component {
     return (
       <div>
         <div>React!!!</div>
-        <Todo {...this.props} />
       </div>
     );
   };

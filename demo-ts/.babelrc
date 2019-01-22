@@ -8,6 +8,4 @@
   "plugins": [
     "@babel/plugin-proposal-class-properties"
   ]
-
-  feat(Epic#ECFDEV-2955, US#ECFDEV-2955): get response
 }
