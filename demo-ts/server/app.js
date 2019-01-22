@@ -9,6 +9,7 @@ const bodyParser = require("koa-bodyparser");
 const port = 8090;
 // 关于静态资源地址，相对于app.js的路径，如果遇到路径不正确，打点或console查看
 const public = "../static";
+
 app.use(bodyParser());
 
 app.use(static(path.resolve(__dirname, public)));
@@ -21,6 +22,7 @@ app.use(
     }
   })
 );
+
 // ext (default: 'njk'): Extension that will be automatically appended to the file name in ctx.render calls. Set to a falsy value to disable.
 // path (default: current directory): Path to the templates. Also supports passing an array of paths.
 // writeResponse (default: true): If true, writes the rendered output to response.body.
@@ -29,7 +31,6 @@ app.use(
 // configureEnvironment: A function to modify the Nunjucks environment. See the Extending Nunjucks section below for usage.
 
 app.use(require("./router").routes());
-
 app.listen(port);
 
 console.info(`http://localhost:${port}/index`);

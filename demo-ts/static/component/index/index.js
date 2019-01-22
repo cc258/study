@@ -1,16 +1,25 @@
 import React from "react";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
-import reducer from "../../reducers/index";
-import App from "../app/app";
+import { createStore, applyMiddleware, combineReducers } from "redux";
 
-const store = createStore(reducer);
+import thunk from 'redux-thunk';
+import todos from "../../reducers/todos";
+
+import Todos from "../app/todos";
+
+const INITIAL = {};
+
+const store = createStore(combineReducers({
+    INITIAL,
+    todos,
+  })
+);
 
 const mount = document.getElementById("app");
 render(
   <Provider store={store}>
-    <App />
+    <Todos />
   </Provider>,
   mount
 );
