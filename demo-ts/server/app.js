@@ -7,13 +7,12 @@ const app = new Koa();
 const bodyParser = require("koa-bodyparser");
 
 const port = 8090;
-const public = "static";
+const public = "/static";
 app.use(bodyParser());
 
 app.use(static(
-  path.join( __dirname,  public)
+  path.join(__dirname, public)
 ))
-
 
 app.use(
   koaNunjucks({
