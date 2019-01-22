@@ -1,17 +1,8 @@
 const path = require("path");
-// const HtmlWebpackPlugin = require("html-webpack-plugin");
-// const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   mode: "development",
   entry: ["./static/component/index/index.js"],
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     title: "Output Management"
-  //   }),
-  //   // 清除dist目录
-  //   new CleanWebpackPlugin(["dist"])
-  // ],
   // 使用 source map
   // 当 webpack 打包源代码时，可能会很难追踪到错误和警告在源代码中的原始位置。
   // 例如，如果将三个源文件（a.js, b.js 和 c.js）打包到一个 bundle（bundle.js）中，
@@ -31,7 +22,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: "babel-loader"
       }
     ]
   }

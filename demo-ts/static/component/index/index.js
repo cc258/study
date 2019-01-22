@@ -7,8 +7,6 @@ import App from "../app/app";
 
 const store = createStore(reducer);
 
-console.log(store);
-
 const mount = document.getElementById("app");
 render(
   <Provider store={store}>

@@ -1,23 +1,21 @@
 const path = require("path");
 const Koa = require("koa");
-const koaNunjucks = require('koa-nunjucks-2');
+const koaNunjucks = require("koa-nunjucks-2");
 const static = require("koa-static");
 const app = new Koa();
 
 const bodyParser = require("koa-bodyparser");
 
 const port = 8090;
-const public = "/static";
+// 关于静态资源地址，相对于app.js的路径，如果遇到路径不正确，打点或console查看
+const public = "../static";
 app.use(bodyParser());
 
-app.use(static(
-  path.join(__dirname, public)
-))
-
+app.use(static(path.resolve(__dirname, public)));
 app.use(
   koaNunjucks({
-    ext: 'html',
-    path: path.join(__dirname, 'views'),
+    ext: "html",
+    path: path.resolve(__dirname, "views"),
     nunjucksConfig: {
       trimBlocks: true
     }
@@ -29,7 +27,6 @@ app.use(
 // functionName (default: 'render'): The name of the function that will be called to render the template.
 // nunjucksConfig: Object of Nunjucks config options.
 // configureEnvironment: A function to modify the Nunjucks environment. See the Extending Nunjucks section below for usage.
-
 
 app.use(require("./router").routes());
 
