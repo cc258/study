@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import PropTypes from 'prop-types';
 import { actions } from "../../reducers/todos";
 
 import Todo from "./todo";
@@ -10,13 +11,19 @@ class Todos extends React.Component {
   // 在React v15.3.0版本，推荐使用prop-types这个包替代React.PropTypes。
   //使用静态属性(ES7)声明propTypes越早越好
 
-  // static propTypes = {
-  //   list: Array
-  // };
+  static propTypes = {
+    list: PropTypes.array,
+    addTodo: PropTypes.func,
+    changeStatus: PropTypes.func,
+    getData: PropTypes.func
+  };
 
   // 在propTypes后声明defaultProps
   static defaultProps = {
-    list: []
+    list: [],
+    addTodo:() => {},
+    changeStatus: ()=>{},
+    getData: () => {}
   };
 
   // 使用在方法中箭头函数来替代this.handleExpand.bind(this)
