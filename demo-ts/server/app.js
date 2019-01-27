@@ -16,7 +16,7 @@ app.use(static(path.resolve(__dirname, public)));
 app.use(
   koaNunjucks({
     ext: "html",
-    path: path.resolve(__dirname, "views"),
+    path: path.resolve(__dirname, "../static/views"),
     nunjucksConfig: {
       trimBlocks: true
     }

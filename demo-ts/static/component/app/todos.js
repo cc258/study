@@ -1,8 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { actions } from "../../reducers/todos";
-
 import Todo from "./todo";
 
 class Todos extends React.Component {
@@ -21,8 +20,8 @@ class Todos extends React.Component {
   // 在propTypes后声明defaultProps
   static defaultProps = {
     list: [],
-    addTodo:() => {},
-    changeStatus: ()=>{},
+    addTodo: () => {},
+    changeStatus: () => {},
     getData: () => {}
   };
 

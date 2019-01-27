@@ -9,7 +9,6 @@ class Todo extends React.Component {
 
   render = () => {
     const { list, changeStatus, getData } = this.props;
-    console.log(`todo---------------list------------`, list);
     return (
       <div>
         <h1 onClick={getData}>To do</h1>
