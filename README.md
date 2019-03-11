@@ -1151,6 +1151,9 @@ $ git blame abc.md
 feat(Epic#ECFDEV-1234, US#ECFDEV-1234): add page
 fix(Bug#ECFDEV-2768, US#ECFDEV-1234): add ellipsis
 
+alarms refactor
+feat(Epic#ECFDEV-3163, US#ECFDEV-3163): alarms page refact
+
 ```
 
 修改文件的范围（包括但不限于 doc, middleware, proxy, core, config, plugin）

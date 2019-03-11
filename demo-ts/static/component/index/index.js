@@ -5,7 +5,7 @@ import { createStore, applyMiddleware, combineReducers } from "redux";
 import "./todo.css";
 
 import thunk from "redux-thunk";
-import todos from "../../reducers/todos";
+import todos from "../app/todos.reducer";
 
 import Todos from "../app/todos";
 

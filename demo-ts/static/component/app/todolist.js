@@ -3,7 +3,7 @@ import React from "react";
 class TodoList extends React.Component {
   render = () => {
     const { list } = this.props;
-    console.log(`list=================list===========`, list);
+    // console.log(`list=================list===========`, list);
     return (
       <ul>
         {list.map((item, idx) => {

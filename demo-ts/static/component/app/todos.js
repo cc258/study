@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { actions } from "../../reducers/todos";
+import { actions } from "./todos.reducer";
 import Todo from "./todo";
 
 class Todos extends React.Component {
