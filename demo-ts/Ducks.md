@@ -1,4 +1,6 @@
-# Scaling Redux App with ducks
+# Improve coding experience
+
+### Scaling Redux App with ducks
 
 ![ducks](https://images-na.ssl-images-amazon.com/images/I/6122cNvGwmL._SL1200_.jpg)
 
@@ -110,3 +112,11 @@ The migration to this code structure was painless, and I foresee it reducing muc
 
 
 https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be
+
+https://github.com/erikras/ducks-modular-redux
+
+https://www.robinwieruch.de/the-soundcloud-client-in-react-redux-ducks/
+
+https://medium.com/swlh/the-good-the-bad-of-react-redux-and-why-ducks-might-be-the-solution-1567d5bdc698
+
+https://medium.com/building-crowdriff/react-redux-file-architecture-ducks-it-up-6b32eaaba341
