@@ -1,16 +1,38 @@
 import React from "react";
 import { connect } from "react-redux";
-import actions from './FeatureA.action'
+import {
+  getA,
+  getB,
+  getC,
+  getD,
+  getE,
+} from './FeatureA.action'
 
-class FeatureB extends React.Component {
+class FeatureA extends React.Component {
   render = () => <div>Feature</div>;
 }
 
-const mapStateToProps = state.feature;
+const mapStateToProps = (state, props) => {
+  return {
+    a: state.a,
+    b: state.b,
+    c: state.c,
+    d: state.d,
+    e: state.e,
+  }
+};
 
-const mapDispatchToProps = actions;
+const mapDispatchToProps = dispatch => {
+  return {
+    getA: () => dispatch(getA()),
+    getB: () => dispatch(getB()),
+    getC: () => dispatch(getC()),
+    getD: () => dispatch(getD()),
+    getE: () => dispatch(getE()),
+  }
+}
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(FeatureB);
+)(FeatureA);

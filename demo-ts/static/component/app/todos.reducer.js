@@ -42,7 +42,7 @@ export const actions = {
     return { type: TODO_CHANGE, data: payData };
   },
 
-  getData: () => {
+  getData: () => dispatch => {
     axios
       .get("/getdata", {
         params: {
@@ -51,7 +51,7 @@ export const actions = {
       })
       .then(res => {
         const data = res.data;
-        return { type: TODO_GETDATA, data };
+        dispatch({ type: TODO_GETDATA, data });
       });
-  }
+  },
 };

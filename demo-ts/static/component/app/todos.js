@@ -43,9 +43,7 @@ class Todos extends React.Component {
   };
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return state.todos;
-};
+const mapStateToProps = state => state.todos;
 
 const mapDispatchToProps = actions;
 
