@@ -29,7 +29,7 @@ class Todos extends React.Component {
   // 提示： class严格来讲不是一个对象，class内定义的属性和方法并不需要用逗号','隔开。
   render = () => {
     const { list, addTodo, changeStatus, getData } = this.props;
-    console.log(`todos~~~~~~~~~~~~~~~~~~~~~~this.props~~~~~~~~~~`, this.props);
+    console.log(`todo~~~~~~~~~~~~~~~~~~~~~~this.props~~~~~~~~~~`, this.props);
     return (
       <div className="todo">
         <Todo
