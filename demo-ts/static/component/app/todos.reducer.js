@@ -53,5 +53,5 @@ export const actions = {
         const data = res.data;
         dispatch({ type: TODO_GETDATA, data });
       });
-  },
+  }
 };

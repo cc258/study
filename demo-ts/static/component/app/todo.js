@@ -1,5 +1,6 @@
 import React from "react";
 import TodoList from "./todolist";
+import { injectIntl, FormattedMessage } from "react-intl";
 
 class Todo extends React.Component {
   // 初始化state (ES7) 或者在构造函数(constructor)中初始化state (ES6)
@@ -9,9 +10,11 @@ class Todo extends React.Component {
 
   render = () => {
     const { list, changeStatus, getData } = this.props;
+    const { formatMessage } = this.props.intl;
+    console.log(this.props);
     return (
       <div>
-        <h1 onClick={getData}>To do</h1>
+        <h1 onClick={getData}>{formatMessage(hello)}</h1>
         <div className="new">
           <input
             className="newInput"
@@ -41,4 +44,4 @@ class Todo extends React.Component {
   };
 }
 
-export default Todo;
+export default injectIntl(Todo);

@@ -15,9 +15,11 @@
     "koa-nunjucks-2": "^3.0.2",
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
+    "mysql": "^2.16.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-intl": "^2.8.0",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0"
