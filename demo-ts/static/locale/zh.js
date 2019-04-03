@@ -1,9 +1,9 @@
 import { defineMessages } from "react-intl";
 
-const zhCN = {
+const zhCN = defineMessages({
   hello: {
-    id: "你好",
+    id: "hello",
     defaultMessage: "你好"
   }
-};
+});
 export default zhCN;

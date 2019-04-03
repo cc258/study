@@ -28,7 +28,7 @@ const store = createStore(
 
 const mount = document.getElementById("app");
 render(
-  <IntlProvider locale={"zh"} messages={zhCN}>
+  <IntlProvider locale={"en"}>
     <Provider store={store}>
       <Todos />
     </Provider>
